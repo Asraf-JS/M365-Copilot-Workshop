@@ -9,95 +9,169 @@
 :root{
   --navy:#1E2761;--teal:#028090;--teal-light:#E0F4F7;
   --text-dark:#1A1A2E;--text-mid:#4A5568;--text-muted:#8A9BB0;
-  --bg:#F7F9FC;--white:#fff;--border:#E2E6EA;--green:#1D6F42;
+  --bg:#FFFFFF;--bg-page:#F7F9FC;--border:#E2E6EA;--green:#1D6F42;
+  --warn:#E07B39;
 }
-body{font-family:'Georgia',serif;background:var(--bg);display:flex;min-height:100vh;}
+body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark);min-height:100vh;}
 
-/* SIDEBAR */
-.sidebar{width:200px;flex-shrink:0;background:var(--white);border-right:1px solid var(--border);position:fixed;top:0;left:0;height:100vh;display:flex;flex-direction:column;overflow:hidden;}
-.sidebar-logo{padding:18px 16px 14px;border-bottom:1px solid var(--border);}
-.logo-tag{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--teal);text-transform:uppercase;}
-.logo-title{font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:700;color:var(--navy);line-height:1.3;margin-top:3px;}
-.nav-scroll{flex:1;overflow-y:auto;padding:10px 0 12px;}
-.nav-scroll::-webkit-scrollbar{width:3px;}
-.nav-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
-.nav-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;padding:0 14px;margin-bottom:6px;}
-.nav-item{display:flex;align-items:center;gap:7px;padding:5px 10px 5px 14px;text-decoration:none;border-radius:5px;margin:1px 4px;transition:background .12s;}
-.nav-item:hover{background:#eef2f7;}
-.nav-item.active{background:var(--teal-light);}
-.nav-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);min-width:16px;flex-shrink:0;}
-.nav-name{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-mid);line-height:1.3;}
-.nav-item.active .nav-name{color:var(--navy);font-weight:700;}
-.sidebar-footer{padding:10px 14px;border-top:1px solid var(--border);}
-.sidebar-footer a{display:block;font-family:'Trebuchet MS',sans-serif;font-size:10px;color:var(--teal);text-decoration:none;padding:3px 0;}
-.sidebar-footer a:hover{text-decoration:underline;}
+/* ── TOP NAV ── */
+.topnav{background:var(--navy);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.08);}
+.topnav-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:52px;gap:32px;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;}
+.nav-logo-icon{width:28px;height:28px;background:var(--teal);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:.02em;flex-shrink:0;}
+.nav-logo-text{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;color:#fff;line-height:1.2;}
+.nav-logo-sub{font-family:'Trebuchet MS',sans-serif;font-size:9px;color:rgba(255,255,255,.5);display:block;margin-top:1px;}
+.nav-links{display:flex;align-items:center;gap:4px;flex:1;}
+.nav-link{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.6);text-decoration:none;padding:5px 10px;border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
+.nav-link:hover{background:rgba(255,255,255,.08);color:#fff;}
+.nav-link.active{color:#fff;background:rgba(255,255,255,.1);}
+.nav-right{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0;}
+.nav-btn{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.7);text-decoration:none;padding:5px 12px;border:1px solid rgba(255,255,255,.2);border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
+.nav-btn:hover{background:rgba(255,255,255,.08);color:#fff;}
 
-/* MAIN WRAPPER — fills space to right of sidebar */
-.main-wrap{margin-left:200px;flex:1;display:flex;justify-content:center;background:var(--bg);}
+/* ── BREADCRUMB ── */
+.breadcrumb-bar{background:var(--bg);border-bottom:1px solid var(--border);}
+.breadcrumb-inner{max-width:1100px;margin:0 auto;padding:0 32px;height:36px;display:flex;align-items:center;gap:6px;}
+.bc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);text-decoration:none;}
+.bc:hover{color:var(--teal);}
+.bc-sep{font-size:11px;color:var(--border);}
+.bc-current{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-mid);}
 
-/* CONTENT — constrained width, centered */
-.main{width:100%;max-width:740px;padding:44px 48px 80px;}
+/* ── PAGE LAYOUT ── */
+.page-outer{max-width:1100px;margin:0 auto;padding:48px 32px 80px;display:flex;gap:48px;align-items:flex-start;}
 
-.main h1{font-family:'Trebuchet MS',sans-serif;font-size:26px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.2;}
-.main h2{font-family:'Trebuchet MS',sans-serif;font-size:17px;font-weight:700;color:var(--navy);margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border);}
-.main h3{font-family:'Trebuchet MS',sans-serif;font-size:14px;font-weight:700;color:var(--text-mid);margin:18px 0 8px;}
-.main p{font-size:14px;color:var(--text-dark);line-height:1.75;margin-bottom:14px;}
-.main ul,.main ol{font-size:14px;color:var(--text-dark);line-height:1.75;margin:0 0 14px 20px;}
-.main li{margin-bottom:4px;}
-.main a{color:var(--teal);text-decoration:none;}
-.main a:hover{text-decoration:underline;}
-.main strong{font-weight:700;}
-.main em{font-style:italic;color:var(--text-mid);}
-.main blockquote{background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;padding:12px 16px;margin:16px 0;}
-.main blockquote p{font-size:13px;margin:0;}
-.main table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
-.main th{background:var(--navy);color:#fff;font-family:'Trebuchet MS',sans-serif;font-weight:700;padding:9px 12px;text-align:left;}
-.main td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
-.main tr:nth-child(even) td{background:var(--white);}
-.main img{max-width:100%;border-radius:6px;border:1px solid var(--border);margin:12px 0;display:block;}
-.main hr{border:none;border-top:1px solid var(--border);margin:24px 0;}
-.main code{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
-.main pre{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:14px 16px;font-family:'Courier New',monospace;font-size:12.5px;line-height:1.65;overflow-x:auto;margin:10px 0 18px;}
-.main pre code{background:none;border:none;padding:0;font-size:12.5px;}
+/* ── MAIN CONTENT ── */
+.page-content{flex:1;min-width:0;}
+.page-tag{display:inline-block;font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--teal);padding:3px 10px;border-radius:4px;text-transform:uppercase;margin-bottom:12px;}
+.page-content h1{font-family:'Trebuchet MS',sans-serif;font-size:30px;font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:12px;}
+.page-content h2{font-family:'Trebuchet MS',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin:32px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--border);}
+.page-content h2:first-of-type{margin-top:0;}
+.page-content h3{font-family:'Trebuchet MS',sans-serif;font-size:14px;font-weight:700;color:var(--text-mid);margin:20px 0 8px;}
+.page-content p{font-size:14px;color:var(--text-dark);line-height:1.8;margin-bottom:14px;}
+.page-content ul,.page-content ol{font-size:14px;color:var(--text-dark);line-height:1.8;margin:0 0 14px 20px;}
+.page-content li{margin-bottom:5px;}
+.page-content a{color:var(--teal);text-decoration:none;}
+.page-content a:hover{text-decoration:underline;}
+.page-content strong{font-weight:700;}
+.page-content em{font-style:italic;color:var(--text-mid);}
+.page-content blockquote{background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;padding:12px 18px;margin:16px 0;}
+.page-content blockquote p{font-size:13px;margin:0;color:var(--text-dark);}
+.page-content table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
+.page-content th{background:var(--navy);color:#fff;font-family:'Trebuchet MS',sans-serif;font-weight:700;padding:10px 14px;text-align:left;}
+.page-content td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-dark);}
+.page-content tr:nth-child(even) td{background:#F7F9FC;}
+.page-content img{max-width:100%;border-radius:8px;border:1px solid var(--border);margin:14px 0;display:block;}
+.page-content hr{border:none;border-top:1px solid var(--border);margin:28px 0;}
+.page-content code{background:#F7F9FC;border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
+.page-content pre{background:#F7F9FC;border:1px solid var(--border);border-radius:6px;padding:16px;font-family:'Courier New',monospace;font-size:12.5px;line-height:1.65;overflow-x:auto;margin:10px 0 20px;}
+.page-content pre code{background:none;border:none;padding:0;}
 
-@media(max-width:680px){
-  .sidebar{display:none;}
-  .main-wrap{margin-left:0;}
-  .main{padding:24px 20px 60px;}
+/* ── RIGHT SIDEBAR (meta panel) ── */
+.page-meta{width:200px;flex-shrink:0;position:sticky;top:72px;}
+.meta-section{margin-bottom:24px;}
+.meta-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:10px;}
+.meta-item{margin-bottom:10px;}
+.meta-item-label{font-family:'Trebuchet MS',sans-serif;font-size:10px;color:var(--text-muted);margin-bottom:2px;}
+.meta-item-value{font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:600;color:var(--navy);}
+.meta-link{display:block;font-family:'Trebuchet MS',sans-serif;font-size:12px;color:var(--teal);text-decoration:none;padding:4px 0;border-bottom:1px solid var(--border);}
+.meta-link:last-child{border-bottom:none;}
+.meta-link:hover{color:var(--navy);}
+
+/* HOME */
+.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;}
+.topic-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:border-color .15s,box-shadow .15s;display:block;}
+.topic-card:hover{border-color:var(--teal);box-shadow:0 2px 10px rgba(2,128,144,.08);}
+.tc-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px;}
+.tc-title{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.tc-desc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);line-height:1.4;margin-bottom:10px;}
+.tc-links{display:flex;gap:6px;}
+.tc-notes{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:#fff;background:var(--navy);padding:3px 9px;border-radius:4px;}
+.tc-prompts{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:var(--teal);border:1px solid var(--teal);padding:3px 9px;border-radius:4px;text-decoration:none;}
+.tc-prompts:hover{background:var(--teal-light);}
+.home-scenario{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;}
+.home-scenario p{font-size:13.5px;color:var(--text-dark);line-height:1.75;}
+.section-sublabel{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:12px;}
+
+@media(max-width:900px){
+  .page-meta{display:none;}
+  .nav-links{display:none;}
+}
+@media(max-width:640px){
+  .home-grid{grid-template-columns:1fr;}
+  .page-outer{padding:28px 20px 60px;}
+  .topnav-inner{padding:0 16px;}
 }
 </style>
 </head>
 <body>
 
-<div class="sidebar">
-  <div class="sidebar-logo">
-    <div class="logo-tag">M365 Workshop</div>
-    <div class="logo-title">Copilot Training<br>May 2026</div>
+<!-- TOP NAV -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="nav-logo" href="/M365-Copilot-Workshop/">
+      <div class="nav-logo-icon">M365</div>
+      <div class="nav-logo-text">Asraf Jaafar Sidik
+        <span class="nav-logo-sub">Copilot Workshop &nbsp;·&nbsp; May 2026</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link{% if page.url contains '01-copilot' %} active{% endif %}" href="/M365-Copilot-Workshop/01-copilot-fundamentals/">01 Fundamentals</a>
+      <a class="nav-link{% if page.url contains '02-prompt' %} active{% endif %}" href="/M365-Copilot-Workshop/02-prompt-engineering/">02 Prompts</a>
+      <a class="nav-link{% if page.url contains '03-copilot-chat' %} active{% endif %}" href="/M365-Copilot-Workshop/03-copilot-chat/">03 Chat</a>
+      <a class="nav-link{% if page.url contains '04-copilot-pages' %} active{% endif %}" href="/M365-Copilot-Workshop/04-copilot-pages/">04 Pages</a>
+      <a class="nav-link{% if page.url contains '05-copilot-word' %} active{% endif %}" href="/M365-Copilot-Workshop/05-copilot-word/">05 Word</a>
+      <a class="nav-link{% if page.url contains '06-copilot-outlook' %} active{% endif %}" href="/M365-Copilot-Workshop/06-copilot-outlook/">06 Outlook</a>
+      <a class="nav-link{% if page.url contains '07-copilot-powerpoint' %} active{% endif %}" href="/M365-Copilot-Workshop/07-copilot-powerpoint/">07 PowerPoint</a>
+      <a class="nav-link{% if page.url contains '08-copilot-forms' %} active{% endif %}" href="/M365-Copilot-Workshop/08-copilot-forms/">08 Forms</a>
+      <a class="nav-link{% if page.url contains '09-copilot-excel' %} active{% endif %}" href="/M365-Copilot-Workshop/09-copilot-excel/">09 Excel</a>
+      <a class="nav-link{% if page.url contains '10-copilot-studio' %} active{% endif %}" href="/M365-Copilot-Workshop/10-copilot-studio-intro/">10 Studio</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-btn" href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">GitHub</a>
+      <a class="nav-btn" href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Sample Data</a>
+    </div>
   </div>
-  <div class="nav-scroll">
-    <div class="nav-label">Topics</div>
-    <a class="nav-item{% if page.url contains '01-copilot' %} active{% endif %}" href="/M365-Copilot-Workshop/01-copilot-fundamentals/"><span class="nav-num">01</span><span class="nav-name">Fundamentals</span></a>
-    <a class="nav-item{% if page.url contains '02-prompt' %} active{% endif %}" href="/M365-Copilot-Workshop/02-prompt-engineering/"><span class="nav-num">02</span><span class="nav-name">Prompt Engineering</span></a>
-    <a class="nav-item{% if page.url contains '03-copilot-chat' %} active{% endif %}" href="/M365-Copilot-Workshop/03-copilot-chat/"><span class="nav-num">03</span><span class="nav-name">Copilot Chat</span></a>
-    <a class="nav-item{% if page.url contains '04-copilot-pages' %} active{% endif %}" href="/M365-Copilot-Workshop/04-copilot-pages/"><span class="nav-num">04</span><span class="nav-name">Copilot Pages</span></a>
-    <a class="nav-item{% if page.url contains '05-copilot-word' %} active{% endif %}" href="/M365-Copilot-Workshop/05-copilot-word/"><span class="nav-num">05</span><span class="nav-name">Copilot in Word</span></a>
-    <a class="nav-item{% if page.url contains '06-copilot-outlook' %} active{% endif %}" href="/M365-Copilot-Workshop/06-copilot-outlook/"><span class="nav-num">06</span><span class="nav-name">Copilot in Outlook</span></a>
-    <a class="nav-item{% if page.url contains '07-copilot-powerpoint' %} active{% endif %}" href="/M365-Copilot-Workshop/07-copilot-powerpoint/"><span class="nav-num">07</span><span class="nav-name">Copilot in PowerPoint</span></a>
-    <a class="nav-item{% if page.url contains '08-copilot-forms' %} active{% endif %}" href="/M365-Copilot-Workshop/08-copilot-forms/"><span class="nav-num">08</span><span class="nav-name">Copilot in Forms</span></a>
-    <a class="nav-item{% if page.url contains '09-copilot-excel' %} active{% endif %}" href="/M365-Copilot-Workshop/09-copilot-excel/"><span class="nav-num">09</span><span class="nav-name">Copilot in Excel</span></a>
-    <a class="nav-item{% if page.url contains '10-copilot-studio' %} active{% endif %}" href="/M365-Copilot-Workshop/10-copilot-studio-intro/"><span class="nav-num">10</span><span class="nav-name">Copilot Studio</span></a>
-  </div>
-  <div class="sidebar-footer">
-    <a href="/M365-Copilot-Workshop/">Home</a>
-    <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">GitHub Repo</a>
-    <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Sample Data</a>
+</nav>
+
+<!-- BREADCRUMB -->
+{% unless page.url == "/" or page.url == "/M365-Copilot-Workshop/" %}
+<div class="breadcrumb-bar">
+  <div class="breadcrumb-inner">
+    <a class="bc" href="/M365-Copilot-Workshop/">Workshop Home</a>
+    <span class="bc-sep">/</span>
+    <span class="bc-current">{{ page.title }}</span>
   </div>
 </div>
+{% endunless %}
 
-<div class="main-wrap">
-  <div class="main">
+<!-- PAGE BODY -->
+<div class="page-outer">
+  <div class="page-content">
     {{ content }}
   </div>
+
+  {% if page.show_meta %}
+  <div class="page-meta">
+    <div class="meta-section">
+      <div class="meta-label">This topic</div>
+      <div class="meta-item">
+        <div class="meta-item-label">Notes</div>
+        <div class="meta-item-value">{{ page.title }}</div>
+      </div>
+      {% if page.prompts_url %}
+      <div class="meta-item">
+        <div class="meta-item-label">Prompts</div>
+        <a class="meta-link" href="{{ page.prompts_url }}">View prompts</a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="meta-section">
+      <div class="meta-label">Navigation</div>
+      {% if page.prev_url %}<a class="meta-link" href="{{ page.prev_url }}">&#8592; {{ page.prev_title }}</a>{% endif %}
+      {% if page.next_url %}<a class="meta-link" href="{{ page.next_url }}">{{ page.next_title }} &#8594;</a>{% endif %}
+    </div>
+  </div>
+  {% endif %}
 </div>
 
 </body>
