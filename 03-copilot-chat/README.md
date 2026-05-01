@@ -24,6 +24,7 @@ Before you start prompting, it helps to know what each control around the messag
 ### The + button (Add content)
 
 ![Add content menu](./images/add-content.png)
+
 *Click + to attach content or switch to a specialist agent*
 
 | Option | What it does |
@@ -36,6 +37,7 @@ Before you start prompting, it helps to know what each control around the messag
 ### Grounding — Work vs Web
 
 ![Grounding toggle](./images/grounding.png)
+
 *The grounding toggle controls where Copilot searches*
 
 | Mode | What it searches |
@@ -48,6 +50,7 @@ For the research phase of this workshop, use **Web** mode to gather information 
 ### Quick filters — Files, Emails, People, Meetings
 
 ![Quick filters](./images/prompt-gallery-2.png)
+
 *Shortcut buttons to search specific M365 data types*
 
 These buttons below the message box let you quickly scope your question to a specific data type without writing a full prompt. Click **Files** to find a document, **Emails** to search your inbox, **People** to look up a colleague, or **Meetings** to reference a recent meeting.
@@ -55,9 +58,11 @@ These buttons below the message box let you quickly scope your question to a spe
 ### Voice input
 
 ![Start dictation](./images/start-dictation.png)
+
 *Microphone button — speak your prompt instead of typing*
 
 ![Voice chat](./images/voice-chat.png)
+
 *Sound wave button — have a full voice conversation with Copilot*
 
 The **microphone** transcribes your speech into text in the message box. The **sound wave** icon starts a live voice conversation where Copilot responds out loud — useful for hands-free brainstorming.
@@ -71,6 +76,7 @@ After you submit a prompt and receive a response, two sets of controls appear.
 ### Prompt controls (on your message)
 
 ![Prompt controls](./images/prompt-controls.png)
+
 *Controls on your submitted prompt: edit, copy, history, save, share*
 
 | # | Button | What it does |
@@ -84,6 +90,7 @@ After you submit a prompt and receive a response, two sets of controls appear.
 ### Output controls (on Copilot's response)
 
 ![Output controls](./images/output-controls.png)
+
 *Controls on Copilot's response: copy, thumbs up, thumbs down, share*
 
 | # | Button | What it does |
@@ -95,6 +102,7 @@ After you submit a prompt and receive a response, two sets of controls appear.
 ### Edit in Pages
 
 ![Edit in pages](./images/edit-in-pages.png)
+
 *The pencil icon sends the response directly to a new Copilot Page*
 
 The **Edit in Pages** button (pencil icon, far right of the output controls) opens the response as an editable Copilot Page — a live collaborative document you can continue working on. This is how you move from research in Copilot Chat into the drafting phase in Topic 04.
@@ -106,6 +114,7 @@ The **Edit in Pages** button (pencil icon, far right of the output controls) ope
 ### Temporary chat
 
 ![Temporary chat](./images/temporary-chat.png)
+
 *Temporary chat — this conversation will not be saved to your history*
 
 Click the dropdown arrow next to the new chat icon and select **Temporary chat** to start a session that is not saved to your chat history. Useful when you want to experiment or discuss something sensitive without it appearing in your recent chats.
@@ -113,6 +122,7 @@ Click the dropdown arrow next to the new chat icon and select **Temporary chat**
 ### Privacy and compliance indicator
 
 ![EDP indicator](./images/edp.png)
+
 *The shield icon confirms this chat is covered by your organisation's compliance policies*
 
 The shield icon in the top bar indicates that your conversation is protected under your organisation's Microsoft 365 compliance and data governance policies — it is not used to train Microsoft's AI models.
@@ -120,6 +130,7 @@ The shield icon in the top bar indicates that your conversation is protected und
 ### Recent pages
 
 ![Recent pages](./images/recent-pages.png)
+
 *Access your recent Copilot Pages and settings from the ... menu*
 
 The **...** menu (top right) gives you access to Recent pages, Settings, Scheduled Prompts, and Quick Help.
@@ -127,6 +138,7 @@ The **...** menu (top right) gives you access to Recent pages, Settings, Schedul
 ### Create — export a response as a document
 
 ![Create document](./images/create-in-pages.png)
+
 *Export the current conversation or response as a Word document or PDF*
 
 The **Create** button (top right, visible when a response is open) lets you export content directly as a Word document or PDF — useful when you want to take your research notes out of Copilot Chat.
@@ -136,6 +148,7 @@ The **Create** button (top right, visible when a response is open) lets you expo
 ## The Prompt Gallery
 
 ![Prompt Gallery](./images/prompt-gallery-1.png)
+
 *The Copilot Prompt Gallery — browse, search, and save prompts by task and job type*
 
 The Prompt Gallery is a built-in library of Microsoft-suggested prompts, organised by task and job type. You can also save your own prompts here using the bookmark icon on any prompt you submit. Access it via the **+** button or by clicking the book icon in the left sidebar.
@@ -177,6 +190,7 @@ Once you have useful research in Copilot Chat, you have two ways to move it into
 **Option 2 — Create:** Use the Create button to export the conversation as a Word document or PDF.
 
 ![Pages interface](./images/pages-interface.png)
+
 *A Copilot Page in action — the chat continues on the left, the editable document on the right*
 
 Topic 04 covers Copilot Pages in detail. The research you build here is the raw material you will shape into your AI Usage Guide draft there.
