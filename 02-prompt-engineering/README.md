@@ -2,7 +2,7 @@
 
 The quality of what Copilot gives you depends almost entirely on what you give it. This topic covers how to write prompts that get useful, relevant, and accurate results.
 
-> **Prompts to try:** See [prompts.md](./prompts.md) for copy-paste prompts you can use during and after this session.
+> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
 
 ---
 
