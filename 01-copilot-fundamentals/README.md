@@ -2,6 +2,8 @@
 
 Before we start using Copilot, it helps to understand what it actually is, what you're paying for, and the key terms you'll keep hearing.
 
+> **Prompts to try:** See [prompts.md](./prompts.md) for research prompts, model comparison exercises, and a consolidation prompt to wrap up your notes.
+
 ---
 
 ## What is Microsoft Copilot?
