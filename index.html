@@ -7,14 +7,12 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --navy:#1E2761;--teal:#028090;--teal-light:#E0F4F7;--accent:#02C39A;
+  --navy:#1E2761;--teal:#028090;--teal-light:#E0F4F7;
   --text-dark:#1A1A2E;--text-mid:#4A5568;--text-muted:#8A9BB0;
   --bg-side:#F4F6F9;--bg-main:#FFFFFF;--bg-code:#F7F9FC;
   --border:#E2E6EA;--ice:#CADCFC;--warn:#E07B39;--green:#1D6F42;
 }
 body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark);display:flex;min-height:100vh;}
-
-/* SIDEBAR */
 .sidebar{width:240px;flex-shrink:0;background:var(--bg-side);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;height:100vh;overflow:hidden;}
 .sidebar-logo{padding:20px 18px 16px;border-bottom:1px solid var(--border);}
 .logo-tag{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--teal);text-transform:uppercase;}
@@ -41,8 +39,6 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
 .nav-footer-links{display:flex;gap:12px;}
 .nav-footer-links a{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--teal);text-decoration:none;}
 .nav-footer-links a:hover{text-decoration:underline;}
-
-/* MAIN */
 .main{margin-left:240px;flex:1;padding:40px 56px 80px;max-width:860px;}
 .breadcrumb{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);margin-bottom:20px;}
 .breadcrumb a{color:var(--teal);text-decoration:none;}
@@ -50,19 +46,14 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
 .page-tag{display:inline-block;font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:#fff;background:var(--teal);padding:3px 10px;border-radius:4px;text-transform:uppercase;margin-bottom:10px;}
 .page-title{font-family:'Trebuchet MS',sans-serif;font-size:28px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:8px;}
 .divider{height:1px;background:var(--ice);margin-bottom:28px;}
-
-/* TABS */
 .tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:28px;}
 .tab{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:600;color:var(--text-muted);padding:8px 20px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;}
 .tab:hover{color:var(--navy);}
 .tab.active{color:var(--teal);border-bottom-color:var(--teal);}
 .tab-content{display:none;}
 .tab-content.active{display:block;}
-
-/* LOADING */
 .loading{font-family:'Trebuchet MS',sans-serif;font-size:13px;color:var(--text-muted);padding:24px 0;}
-
-/* RENDERED MARKDOWN */
+.error-msg{font-family:'Trebuchet MS',sans-serif;font-size:13px;color:var(--warn);padding:16px;background:#FEF3C7;border-radius:6px;border-left:3px solid var(--warn);}
 .md-body h1{font-family:'Trebuchet MS',sans-serif;font-size:22px;font-weight:700;color:var(--navy);margin:0 0 8px;}
 .md-body h2{font-family:'Trebuchet MS',sans-serif;font-size:17px;font-weight:700;color:var(--navy);margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border);}
 .md-body h2:first-child{margin-top:0;}
@@ -72,33 +63,26 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
 .md-body li{margin-bottom:4px;}
 .md-body a{color:var(--teal);text-decoration:none;}
 .md-body a:hover{text-decoration:underline;}
-.md-body strong{font-weight:700;color:var(--text-dark);}
+.md-body strong{font-weight:700;}
 .md-body em{font-style:italic;color:var(--text-mid);}
 .md-body blockquote{background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;padding:12px 16px;margin:16px 0;}
-.md-body blockquote p{font-size:13px;margin:0;color:var(--text-dark);}
+.md-body blockquote p{font-size:13px;margin:0;}
 .md-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
 .md-body th{background:var(--navy);color:#fff;font-family:'Trebuchet MS',sans-serif;font-weight:700;padding:9px 12px;text-align:left;}
-.md-body td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text-dark);vertical-align:top;}
+.md-body td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
 .md-body tr:nth-child(even) td{background:var(--bg-code);}
-.md-body img{max-width:100%;border-radius:6px;border:1px solid var(--border);margin:12px 0;}
+.md-body img{max-width:100%;border-radius:6px;border:1px solid var(--border);margin:12px 0;display:block;}
 .md-body hr{border:none;border-top:1px solid var(--border);margin:24px 0;}
-
-/* CODE BLOCKS */
+.md-body code:not(pre code){background:var(--bg-code);border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
 .code-wrap{position:relative;margin:10px 0 18px;}
 .code-wrap pre{background:var(--bg-code);border:1px solid var(--border);border-radius:6px;padding:14px 52px 14px 16px;font-family:'Courier New',monospace;font-size:12.5px;color:var(--text-dark);line-height:1.65;white-space:pre-wrap;word-break:break-word;margin:0;}
-.code-wrap code{font-family:'Courier New',monospace;font-size:12.5px;}
 .copy-btn{position:absolute;top:8px;right:8px;font-family:'Trebuchet MS',sans-serif;font-size:10px;color:var(--text-muted);cursor:pointer;padding:3px 9px;border:1px solid var(--border);border-radius:4px;background:#fff;transition:color .15s,border-color .15s;}
 .copy-btn:hover{color:var(--teal);border-color:var(--teal);}
 .copy-btn.copied{color:var(--green);border-color:var(--green);}
-.md-body code:not(pre code){background:var(--bg-code);border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
-
-/* PAGE NAV */
 .page-nav{display:flex;justify-content:space-between;margin-top:48px;padding-top:20px;border-top:1px solid var(--border);}
 .page-nav a{font-family:'Trebuchet MS',sans-serif;font-size:12px;color:var(--teal);text-decoration:none;padding:8px 14px;border:1px solid var(--border);border-radius:6px;transition:background .15s,border-color .15s;}
 .page-nav a:hover{background:var(--teal-light);border-color:var(--teal);}
-.page-nav a.disabled{color:var(--text-muted);pointer-events:none;border-color:var(--border);}
-
-/* HOME */
+.page-nav a.disabled{color:var(--text-muted);pointer-events:none;}
 .home-scenario{background:var(--teal-light);border-radius:8px;padding:20px 24px;margin:16px 0 32px;border-left:4px solid var(--teal);}
 .home-scenario p{font-size:14px;color:var(--text-dark);line-height:1.7;}
 .topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;}
@@ -107,13 +91,7 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
 .topic-card-num{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:700;color:var(--teal);margin-bottom:3px;}
 .topic-card-title{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
 .topic-card-desc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);line-height:1.4;}
-
-@media(max-width:700px){
-  .sidebar{transform:translateX(-100%);transition:transform .25s;}
-  .sidebar.open{transform:translateX(0);}
-  .main{margin-left:0;padding:24px 20px 60px;}
-  .topic-grid{grid-template-columns:1fr;}
-}
+@media(max-width:700px){.sidebar{display:none;}.main{margin-left:0;padding:24px 20px 60px;}.topic-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -124,7 +102,6 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
     </div>
     <div class="nav-scroll">
       <div class="nav-section-label">Topics</div>
-      
       <div class="nav-topic">
         <div class="nav-topic-row" onclick="toggleAccordion('01')">
           <span class="nav-num">01</span>
@@ -246,15 +223,12 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
   </div>
 <div class="main">
   <div class="page-tag">M365 Copilot Workshop</div>
-  <h1 class="page-title">Microsoft 365 Copilot Training</h1>
+  <h1 class="page-title" style="font-family:'Trebuchet MS',sans-serif;font-size:28px;font-weight:700;color:var(--navy);margin-bottom:8px;">Microsoft 365 Copilot Training</h1>
   <div class="divider"></div>
-
   <p style="font-size:14px;color:var(--text-mid);line-height:1.7;margin-bottom:0;">Prompts, reference notes, and sample datasets for the 2-day workshop. Each topic has a Notes tab and a Prompts tab. All prompts have a Copy button.</p>
-
   <div class="home-scenario">
     <p><strong>Workshop Scenario:</strong> You are creating an AI Usage Guide for your department. You will research it in Copilot Chat, draft it in Pages, refine it as a proposal in Word, email it for approval in Outlook, present it in PowerPoint, collect feedback with Forms, analyse results in Excel, and finish with a hands-on Copilot Studio agent.</p>
   </div>
-
   <p style="font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--text-muted);text-transform:uppercase;margin-bottom:10px;">Topics</p>
   <div class="topic-grid">
     <a class="topic-card" href="01-copilot-fundamentals/index.html">
@@ -311,27 +285,26 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
 </div>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
+const REPO_API = "https://api.github.com/repos/Asraf-JS/M365-Copilot-Workshop/contents";
 const REPO_RAW = "https://raw.githubusercontent.com/Asraf-JS/M365-Copilot-Workshop/main";
 
-marked.setOptions({
-  breaks: true,
-  gfm: true
-});
+marked.setOptions({breaks:true, gfm:true});
 
 async function loadMd(slug, file, targetId) {
-  const el = document.getElementById(targetId);
+  var el = document.getElementById(targetId);
   if (!el) return;
   try {
-    const url = `${REPO_RAW}/${slug}/${file}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('Not found');
-    const text = await res.text();
-    const html = marked.parse(text);
+    var url = REPO_API + '/' + slug + '/' + file;
+    var res = await fetch(url, {headers:{'Accept':'application/vnd.github.v3+json'}});
+    if (!res.ok) throw new Error(res.status);
+    var data = await res.json();
+    var text = decodeURIComponent(escape(atob(data.content.replace(/\n/g,''))));
+    var html = marked.parse(text);
     el.innerHTML = '<div class="md-body">' + html + '</div>';
     addCopyButtons(el);
-    fixImagePaths(el, slug);
+    fixImages(el, slug);
   } catch(e) {
-    el.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Content will be available once the site is deployed to GitHub Pages.</p>';
+    el.innerHTML = '<div class="error-msg">Could not load content. If you are viewing this locally, deploy to GitHub Pages first. Error: ' + e.message + '</div>';
   }
 }
 
@@ -356,21 +329,23 @@ function addCopyButtons(container) {
   });
 }
 
-function fixImagePaths(container, slug) {
+function fixImages(container, slug) {
   container.querySelectorAll('img').forEach(function(img) {
-    var src = img.getAttribute('src');
-    if (src && src.startsWith('./images/')) {
-      img.src = REPO_RAW + '/' + slug + '/images/' + src.replace('./images/', '');
+    var src = img.getAttribute('src') || '';
+    if (src.startsWith('./images/')) {
+      img.src = REPO_RAW + '/' + slug + '/images/' + src.replace('./images/','');
+    } else if (src.startsWith('images/')) {
+      img.src = REPO_RAW + '/' + slug + '/images/' + src.replace('images/','');
     }
   });
 }
 
 function showTab(name) {
-  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
-  document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+  document.querySelectorAll('.tab-content').forEach(function(c){c.classList.remove('active');});
   document.querySelector('.tab[data-tab="'+name+'"]').classList.add('active');
   document.getElementById('tab-'+name).classList.add('active');
-  history.replaceState(null, '', location.pathname + '#' + name);
+  history.replaceState(null,'',location.pathname+'#'+name);
 }
 
 function toggleAccordion(id) {

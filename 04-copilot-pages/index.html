@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Topic 01 Copilot Fundamentals | M365 Copilot Workshop</title>
+<title>Topic 04 Copilot Pages | M365 Copilot Workshop</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -103,12 +103,12 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
     <div class="nav-scroll">
       <div class="nav-section-label">Topics</div>
       <div class="nav-topic">
-        <div class="nav-topic-row active" onclick="toggleAccordion('01')">
+        <div class="nav-topic-row" onclick="toggleAccordion('01')">
           <span class="nav-num">01</span>
           <span class="nav-label">Copilot Fundamentals</span>
-          <span class="nav-chevron open" id="chev-01">&#9656;</span>
+          <span class="nav-chevron " id="chev-01">&#9656;</span>
         </div>
-        <div class="nav-subitems open" id="sub-01">
+        <div class="nav-subitems " id="sub-01">
           <a class="nav-subitem" href="../01-copilot-fundamentals/index.html#notes">Notes</a>
           <a class="nav-subitem prompts-link" href="../01-copilot-fundamentals/index.html#prompts">Prompts</a>
         </div>
@@ -136,12 +136,12 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
         </div>
       </div>
       <div class="nav-topic">
-        <div class="nav-topic-row" onclick="toggleAccordion('04')">
+        <div class="nav-topic-row active" onclick="toggleAccordion('04')">
           <span class="nav-num">04</span>
           <span class="nav-label">Copilot Pages</span>
-          <span class="nav-chevron " id="chev-04">&#9656;</span>
+          <span class="nav-chevron open" id="chev-04">&#9656;</span>
         </div>
-        <div class="nav-subitems " id="sub-04">
+        <div class="nav-subitems open" id="sub-04">
           <a class="nav-subitem" href="../04-copilot-pages/index.html#notes">Notes</a>
           <a class="nav-subitem prompts-link" href="../04-copilot-pages/index.html#prompts">Prompts</a>
         </div>
@@ -222,9 +222,9 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
     </div>
   </div>
 <div class="main">
-  <div class="breadcrumb"><a href="../index.html">Workshop Home</a> / <span>Topic 01 Copilot Fundamentals</span></div>
-  <div class="page-tag">Topic 01</div>
-  <h1 class="page-title" style="font-family:'Trebuchet MS',sans-serif;font-size:28px;font-weight:700;color:var(--navy);">Copilot Fundamentals</h1>
+  <div class="breadcrumb"><a href="../index.html">Workshop Home</a> / <span>Topic 04 Copilot Pages</span></div>
+  <div class="page-tag">Topic 04</div>
+  <h1 class="page-title" style="font-family:'Trebuchet MS',sans-serif;font-size:28px;font-weight:700;color:var(--navy);">Copilot Pages</h1>
   <div class="divider"></div>
   <div class="tabs">
     <div class="tab active" data-tab="notes" onclick="showTab('notes')">Notes</div>
@@ -236,10 +236,10 @@ body{font-family:'Georgia',serif;background:var(--bg-main);color:var(--text-dark
   <div class="tab-content" id="tab-prompts">
     <div id="prompts-content" class="loading">Loading prompts...</div>
   </div>
-  <div class="page-nav"><a href="#" class="disabled">&#8592; Previous</a><a href="../02-prompt-engineering/index.html">02 Prompt Engineering &#8594;</a></div>
+  <div class="page-nav"><a href="../03-copilot-chat/index.html">&#8592; 03 Copilot Chat</a><a href="../05-copilot-word/index.html">05 Copilot in Word &#8594;</a></div>
   <script>
-    loadMd('01-copilot-fundamentals', 'README.md', 'notes-content');
-    loadMd('01-copilot-fundamentals', 'prompts.md', 'prompts-content');
+    loadMd('04-copilot-pages', 'README.md', 'notes-content');
+    loadMd('04-copilot-pages', 'prompts.md', 'prompts-content');
   </script>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
