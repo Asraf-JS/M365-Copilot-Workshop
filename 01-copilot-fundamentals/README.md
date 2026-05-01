@@ -67,6 +67,78 @@ The unit of text that LLMs process. Roughly speaking, 1 token ≈ 0.75 words. Mo
 
 ---
 
+## Why Does the Same Prompt Give Different Answers?
+
+You will notice that if you send the exact same prompt twice, you rarely get the exact same response. This surprises a lot of people. Here is why.
+
+### Randomness is built in (Temperature)
+LLMs do not work like a calculator that always produces the same result. When generating a response, the model has a setting called **temperature** that controls how much randomness is introduced. A higher temperature means more creative and varied output. A lower temperature means more predictable, conservative output. Copilot uses a moderate temperature by default, which is why responses feel natural rather than robotic — but also why they vary.
+
+### The model picks from probabilities, not a fixed answer
+When Copilot generates the next word in a response, it is actually choosing from a probability distribution — many possible next words, each with a likelihood score. It does not always pick the single most likely word. This statistical variation means two runs of the same prompt can take different paths and arrive at different outputs.
+
+### Model differences
+When you switch between models (Auto, Opus, GPT), you are talking to a completely different AI system with different training, different style tendencies, and different strengths. A prompt asking for a formal summary will produce noticeably different results in Claude Opus versus GPT-4o.
+
+### Practical takeaway
+Do not assume Copilot's first response is the only possible response. If you do not like what you get, run the prompt again, or follow up with refinements. Iteration is normal — not a sign that something went wrong.
+
+---
+
+## Memory: What Does Copilot Remember?
+
+Understanding how Copilot handles memory helps you use it more effectively and avoid surprises.
+
+### Within a conversation (short-term memory)
+Within a single chat session, Copilot holds the entire conversation in its **context window** — the working memory it can see at any one time. This means:
+- You can refer back to earlier parts of the conversation: "use the tone from your first draft"
+- Copilot can build on what you discussed earlier without you repeating yourself
+- However, very long conversations can push older content out of the context window, causing Copilot to "forget" what was said early on
+
+### Across conversations (long-term memory)
+By default, Copilot Chat does **not** remember anything from previous sessions. Each new conversation starts fresh. If you start a new chat, Copilot has no memory of what you discussed yesterday.
+
+Some versions of Copilot are beginning to introduce optional memory features that allow it to retain preferences across sessions, but this depends on your organisation's settings and the version of Copilot your tenant is using.
+
+### Notebooks (Persistent context)
+Copilot Chat includes a **Notebooks** feature that lets you create a persistent context — a set of instructions or background information that Copilot always has available in that notebook, even across sessions. Think of it as giving Copilot a permanent briefing document for a specific project or topic.
+
+### What this means for you
+- If you want Copilot to maintain a particular tone or approach throughout a project, say so at the start of each session, or use Notebooks
+- Do not assume Copilot remembers previous conversations — it does not, unless you are in the same session or using a notebook
+- If a long conversation feels like Copilot is losing track of earlier context, start a fresh session and re-state the key background information
+
+---
+
+## Custom Personalisation
+
+You can shape how Copilot responds to you — both personally and at an organisational level.
+
+### Personal instructions (Your profile)
+In Copilot Chat, you can set personal instructions that influence every response. Access this via your profile settings. Examples of what you can tell it:
+- Your role and industry: "I am an HR manager at a manufacturing company in Malaysia"
+- Preferred language style: "Always write in British English, formal tone"
+- Default output format: "Summarise responses in bullet points unless I ask otherwise"
+- Constraints: "Do not use jargon — my audience is non-technical"
+
+These instructions persist across your sessions in Copilot Chat and act as a standing briefing for the AI.
+
+### Agents (Custom Copilots)
+In Copilot Chat, you can access pre-built or custom-built agents under the **Agents** panel. These are Copilot instances that have been given a specific role, a custom knowledge base, and a defined set of behaviours. For example, an HR agent that only answers questions using your company's HR policy documents.
+
+You can also build your own agents in Copilot Studio (covered in Topic 10).
+
+### Tenant-level customisation (IT and admin)
+Your IT or Microsoft 365 admin can configure Copilot at the organisation level:
+- Restricting which data sources Copilot can access
+- Setting up approved agents for the organisation
+- Configuring which AI models are available to users
+- Applying compliance and data governance rules
+
+This is important context for understanding why your Copilot experience might look different from someone at another company using the same tool.
+
+---
+
 ## Summary
 
 | Term | One-line meaning |
@@ -80,6 +152,9 @@ The unit of text that LLMs process. Roughly speaking, 1 token ≈ 0.75 words. Mo
 | Agentic AI | AI that takes actions, not just answers questions |
 | RAG | AI that retrieves from a specific knowledge source before responding |
 | Token | Unit of text processed by an LLM |
+| Temperature | The randomness setting that makes AI responses vary |
+| Context window | The working memory an LLM can see at one time |
+| Notebook | A persistent context you can give Copilot across sessions |
 
 ---
 
