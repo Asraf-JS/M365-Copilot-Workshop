@@ -1,117 +1,228 @@
-# 03 — Copilot Chat
+# 02 — Prompt Engineering
 
-Copilot Chat is your starting point for research, brainstorming, and exploration. This is where you'll begin the workshop's main project: building an AI Usage Guide for your department.
+The quality of what Copilot gives you depends almost entirely on what you give it. This topic covers how to write prompts that get useful, relevant, and accurate results.
 
----
-
-## What is Copilot Chat?
-
-Copilot Chat is the conversational interface in Microsoft 365 Copilot. You access it at copilot.microsoft.com or through the Copilot icon in Microsoft 365 apps. It can:
-
-- Search the web for current information
-- Reference your Microsoft 365 files, emails, and calendar (if you have M365 Copilot licence)
-- Use different AI models including GPT-4 and others
-- Generate text, summarise documents, and help you think through problems
+> **Prompts to try:** See [prompts.md](./prompts.md) for 8 sets of hands-on exercises covering GCSE building, iteration, format control, role prompting, and app-specific prompts.
 
 ---
 
-## Switching Models in Copilot Chat
+## The GCSE Framework
 
-One of the useful features in Copilot Chat is the ability to switch between AI models. You may see options like:
+A simple four-part framework for structuring effective prompts. You do not need all four elements every time, but the more relevant context you provide, the better the output.
 
-- **GPT-4o** — Microsoft's default, good for general tasks
-- **Claude (Anthropic)** — Strong for writing, analysis, and nuanced reasoning
-- **Gemini (Google)** — Alternative perspective, useful for comparison
+| Element | What it means | Example |
+|---------|--------------|---------|
+| **G — Goal** | What do you want Copilot to do? | "Write a summary..." |
+| **C — Context** | Who are you, what's the situation? | "...for a team of non-technical staff..." |
+| **S — Source** | What should it reference or use? | "...based on the attached report..." |
+| **E — Expectations** | Format, length, tone, style | "...in 3 bullet points, professional tone." |
 
-> **Tip for the workshop:** Try the same prompt in two different models and compare the outputs. This helps you understand that different models have different strengths.
+### Building a GCSE prompt step by step
+
+Here is how the same request improves as you add each element:
+
+**Goal only (weak):**
+```
+Write a summary.
+```
+
+**Goal + Context:**
+```
+Write a summary for a team of non-technical staff.
+```
+
+**Goal + Context + Source:**
+```
+Write a summary for a team of non-technical staff based on the attached AI Usage Guideline document.
+```
+
+**Goal + Context + Source + Expectations (strong):**
+```
+Write a summary of the attached AI Usage Guideline for a team of non-technical staff. 
+Cover the 3 most important rules they need to follow. Use plain language, 
+bullet points, and keep it under 150 words.
+```
+
+The content request did not change — only the structure around it. That structure is what makes Copilot's response actually usable.
 
 ---
 
-## Workshop Scenario: Research Phase
+## Weak Prompt vs. Strong Prompt
 
-Your task is to research and draft an **AI Usage Guide for your department**. This guide will help your team understand how to use AI tools responsibly and effectively at work.
+### Example 1 — Writing an email
 
-Use the prompts below to start your research in Copilot Chat.
-
----
-
-## Research Prompts
-
-### Understanding the topic
-
+**Weak:**
 ```
-What should a departmental AI usage guide cover? Give me a 
-structured outline with at least 6 sections. The guide is for 
-a Malaysian corporate environment with non-technical staff.
+Write me an email about the AI guideline.
 ```
 
+**Strong:**
 ```
-What are the most common risks organisations face when employees 
-start using AI tools without clear guidelines? List them with 
-a brief explanation of each.
-```
-
-```
-What are global best practices for responsible AI use in the 
-workplace? Summarise the key principles in plain language.
-```
-
----
-
-### Researching for your specific department
-
-Adapt this prompt to your own role:
-
-```
-I work in [your department, e.g. Human Resources / Finance / Operations] 
-at a mid-sized Malaysian company. What are the most relevant 
-AI use cases for my department? List 5 specific tasks where 
-AI tools like Microsoft Copilot could save time or improve quality.
-```
-
-```
-What are the most important dos and don'ts for using AI in 
-[your department]? Focus on data privacy, accuracy, and 
-professional ethics.
+Write a professional email to my department head requesting approval 
+for a new AI Usage Guideline. The guideline was developed by my team 
+over the past two weeks and covers responsible AI use, dos and don'ts, 
+and recommended tools. Keep it under 150 words and use a formal but 
+approachable tone.
 ```
 
 ---
 
-### Exploring different perspectives
+### Example 2 — Summarising a document
 
+**Weak:**
 ```
-Act as a cautious legal advisor. What clauses or warnings 
-should be included in a company AI usage policy to protect 
-the organisation from liability?
-```
-
-```
-Act as an enthusiastic AI advocate. Make the case for why 
-every department in a Malaysian company should adopt AI tools 
-in their daily workflow. Keep it persuasive and practical.
+Summarise this document.
 ```
 
----
-
-### Comparing model responses
-
-Try this prompt in GPT-4o, then switch to Claude and compare:
-
+**Strong:**
 ```
-Write a one-paragraph introduction for an AI Usage Guide 
-aimed at employees who are new to using AI at work. 
-Tone: professional but encouraging.
+Summarise this AI Usage Guideline in 5 key points. Focus on the 
+practical dos and don'ts. Write it so a team member with no AI 
+background can understand it quickly.
 ```
 
 ---
 
-## Tips for Research in Copilot Chat
+### Example 3 — Analysing data
 
-- Start broad, then narrow down. Get an overview first, then ask follow-up questions to go deeper on specific sections.
-- Use follow-up prompts like "expand on point 3" or "give me an example of that" rather than starting a new conversation each time.
-- If Copilot cites sources, check them. The web search feature pulls live results, but always verify before including in your guide.
-- Save useful responses by copying them into a Word doc or Copilot Pages as you go.
+**Weak:**
+```
+What does this data show?
+```
+
+**Strong:**
+```
+I have survey responses from 30 staff members about how they have been 
+using AI tools over the past month. Analyse this data and highlight the 
+top 3 trends, any concerns raised, and recommend one action based on 
+the findings.
+```
 
 ---
 
-*Next: [04 — Copilot Pages](../04-copilot-pages/)*
+### Example 4 — Preparing for a meeting
+
+**Weak:**
+```
+Help me prepare for my meeting.
+```
+
+**Strong:**
+```
+I have a 30-minute meeting tomorrow with my department head to present 
+the AI Usage Guideline for approval. Prepare 5 talking points I should 
+cover, 3 objections she might raise, and a suggested response for each 
+objection. My department head is detail-oriented and will focus on 
+compliance and risk.
+```
+
+---
+
+## Prompting Inside M365 Apps vs Copilot Chat
+
+Prompting works slightly differently depending on where you are. Understanding this helps you get better results in each context.
+
+| Where | How Copilot receives your prompt | Best for |
+|-------|----------------------------------|---------| 
+| **Copilot Chat** | Open conversation — you provide all context in the chat | Research, drafting from scratch, multi-turn tasks, comparing outputs |
+| **Copilot in Word** | Has access to the open document — reference it with `/` | Rewriting, summarising, reformatting existing content |
+| **Copilot in Outlook** | Sees the email thread you have open | Drafting replies, summarising threads, adjusting tone |
+| **Copilot in Excel** | Reads the active table or data range | Analysing data, creating charts, writing formulas |
+| **Copilot in PowerPoint** | Can reference a Word document via "Create from file" | Building slide decks from existing documents |
+
+**Key difference:** In Copilot Chat you need to provide all the context yourself. In M365 apps, Copilot already has the open document or data as context — so your prompt can be shorter and more direct.
+
+**Example — same task, different location:**
+
+In Copilot Chat:
+```
+I have an AI Usage Guideline document. It has 7 sections including an 
+introduction, approved tools, dos and don'ts, and a data privacy section. 
+Suggest 3 ways I could make the Dos and Don'ts section clearer for 
+non-technical readers.
+```
+
+In Copilot in Word (with the document already open):
+```
+Suggest 3 ways to make the Dos and Don'ts section clearer for 
+non-technical readers.
+```
+
+Same outcome — but in Word, Copilot already sees the document so you do not need to describe it.
+
+---
+
+## Iteration: Working With Copilot's First Response
+
+The first response is rarely the final response. Copilot holds the full conversation in context, so you can refine without starting over.
+
+### A typical iteration flow
+
+**Round 1 — Get a first draft:**
+```
+Draft an introduction for an AI Usage Guideline. Audience: non-technical 
+corporate staff. Tone: professional but approachable. Length: 2 short paragraphs.
+```
+
+**Round 2 — Adjust what is not right:**
+```
+Good, but the second paragraph sounds too formal. Rewrite it to be warmer 
+and more encouraging — staff should feel this is a helpful resource, 
+not a compliance document.
+```
+
+**Round 3 — Fine-tune:**
+```
+Shorten the whole thing to under 80 words without losing the key message.
+```
+
+**Round 4 — Sanity check:**
+```
+Does this introduction clearly tell the reader what the guideline is for 
+and why it matters? What is missing?
+```
+
+Each follow-up builds on what Copilot already produced. You are editing collaboratively, not starting from scratch each time.
+
+---
+
+## Common Mistakes to Avoid
+
+**Being too vague about the output format.**
+If you do not specify a format, Copilot will choose one — and it may not be what you wanted. Always state: table, bullet points, numbered list, paragraph, or a word count.
+
+**Giving Copilot too much to do in one prompt.**
+"Write a full proposal, including an executive summary, risk analysis, implementation plan, and budget" will produce shallow content across all sections. Break big tasks into separate prompts and refine each part.
+
+**Accepting the first response without reviewing.**
+Copilot can sound confident even when it is wrong. Read the output critically — especially any facts, figures, names, or dates it generated.
+
+**Not giving Copilot a role or perspective.**
+"Summarise this" and "Summarise this as a busy senior manager who wants only the most critical points" produce very different outputs. Giving Copilot a perspective sharpens the response.
+
+**Restarting instead of iterating.**
+If the response is 80% right, do not delete it and start again. Tell Copilot exactly what to fix: "Keep the structure but rewrite the third paragraph to be more concise."
+
+**Pasting sensitive data.**
+Never paste employee names, IC numbers, salary figures, client contracts, or personal details into a prompt — even in a work Copilot session. When in doubt, anonymise before pasting.
+
+---
+
+## Quick Reference — Useful Follow-up Prompts
+
+After any Copilot response, these follow-ups work in any context:
+
+| What you want | Follow-up prompt |
+|---------------|-----------------|
+| Go deeper | "Expand on point 3 with a practical example." |
+| Shorter | "Shorten this to under 100 words without losing the main message." |
+| Different tone | "Rewrite this to sound less formal and more conversational." |
+| Different format | "Convert this into a table." |
+| Check for gaps | "What did you leave out that might be relevant?" |
+| Challenge the output | "What are the weakest parts of this response?" |
+| Alternative version | "Give me a completely different approach to this." |
+| Explain reasoning | "Why did you structure it this way?" |
+
+---
+
+*Back to: [01 — Copilot Fundamentals](../01-copilot-fundamentals/) | Next: [03 — Copilot Chat](../03-copilot-chat/)*
