@@ -4,6 +4,10 @@ Copilot Pages is where your research starts becoming a document. Think of it as 
 
 ---
 
+> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
+
+---
+
 ## What is Copilot Pages?
 
 Copilot Pages is built on top of **Microsoft Loop**. When you generate content in Copilot Chat, you'll see an option to "Edit in Pages" or "Open in Pages." This creates a Loop page that:
