@@ -17,6 +17,7 @@ You access it at: **[m365.cloud.microsoft](https://m365.cloud.microsoft/)**
 ## The Copilot Chat Interface
 
 ![Copilot Chat interface](./images/interface.png)
+
 *The Microsoft 365 Copilot Chat home screen*
 
 | # | Area | What it does |
@@ -128,15 +129,31 @@ Within a single chat session, Copilot holds the entire conversation in its **con
 ### Across conversations (long-term memory)
 By default, Copilot Chat does **not** remember anything from previous sessions. Each new conversation starts fresh. If you start a new chat, Copilot has no memory of what you discussed yesterday.
 
-Some versions of Copilot are beginning to introduce optional memory features that allow it to retain preferences across sessions, but this depends on your organisation's settings and the version of Copilot your tenant is using.
+### Saved memories — and how to invoke them
+If your tenant has **Saved memories** enabled (visible in Chat settings → Personalisation), Copilot can retain specific facts about you across sessions. You invoke this simply by telling Copilot directly in plain language:
+
+> `Remember I prefer formal English in all my responses`
+> `Remember I am an HR manager at a logistics company`
+> `Remember my team works on shift schedules and we use Excel for tracking`
+
+When Copilot saves a memory, you will see a **"Memory updated"** confirmation appear, along with a summary of what was saved.
+
+![Saved memory confirmation](./images/memory.png)
+
+*Copilot confirms when a memory has been saved. Click "Manage memories" to review or delete saved memories.*
+
+Saved memories persist across all future sessions and silently inform Copilot's responses — you do not need to repeat the context each time. To review or delete what Copilot has stored, click **Manage memories** in the confirmation toast, or go to Chat settings → Personalisation → Saved memories.
+
+> **Note:** Saved memories depend on your organisation's settings. If you do not see the "Memory updated" confirmation after telling Copilot to remember something, this feature may not be enabled on your tenant. Check with your IT admin.
 
 ### Notebooks (Persistent context)
 Copilot Chat includes a **Notebooks** feature (item **③** in the interface above) that lets you create a persistent context — a set of instructions or background information that Copilot always has available in that notebook, even across sessions. Think of it as giving Copilot a permanent briefing document for a specific project or topic.
 
 ### What this means for you
-- If you want Copilot to maintain a particular tone or approach throughout a project, say so at the start of each session, or use Notebooks
-- Do not assume Copilot remembers previous conversations — it does not, unless you are in the same session or using a notebook
-- If a long conversation feels like Copilot is losing track of earlier context, start a fresh session and re-state the key background information
+- Use **Saved memories** for personal preferences that should apply everywhere: your role, tone, language style
+- Use **Notebooks** for project-specific context: background on a specific client, ongoing task, or topic
+- Use the **start of each session** for one-off context that only applies to that conversation
+- Do not assume Copilot remembers previous conversations by default — it does not unless Saved memories or Notebooks are in play
 
 ---
 
@@ -148,7 +165,6 @@ You can shape how Copilot responds to you — both personally and at an organisa
 Access this via your profile (item **⑤** in the interface above) → **Chat settings** → **Personalisation**.
 
 ![Chat settings — Personalisation](./images/personalisation.png)
-
 *The Personalisation panel in Chat settings*
 
 | Setting | What it does |
