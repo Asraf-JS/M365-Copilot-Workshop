@@ -10,6 +10,25 @@ Microsoft Copilot is an AI assistant built into Microsoft 365. It uses large lan
 
 Think of it as a smart assistant that understands natural language — you describe what you want, and it does the work.
 
+You access it at: **[m365.cloud.microsoft](https://m365.cloud.microsoft/)**
+
+---
+
+## The Copilot Chat Interface
+
+![Copilot Chat interface](./images/interface.png)
+*The Microsoft 365 Copilot Chat home screen*
+
+| # | Area | What it does |
+|---|------|-------------|
+| 1 | **Navigation** | New chat, Search, Library (past conversations), Create (agents/notebooks) |
+| 2 | **Agents** | Pre-built and custom agents — Copilot instances with a specific role and knowledge base. Includes Researcher, Analyst, M365 Admin, and any agents your organisation has built |
+| 3 | **Notebooks** | Persistent context you create for a project or topic. Unlike a regular chat, a Notebook remembers your background instructions across sessions |
+| 4 | **Chats** | Your recent conversation history. Each chat is independent — Copilot does not carry memory between chats by default |
+| 5 | **Your profile** | Your Microsoft 365 account. Click here to access personal instructions and settings |
+| 6 | **Work / Web toggle** | Switch between searching your Microsoft 365 data (Work) and the public internet (Web) |
+| 7 | **Message box** | Where you type your prompt. The `+` button lets you attach files, images, or reference M365 content |
+
 ---
 
 ## Licensing: What Are You Getting?
@@ -18,7 +37,7 @@ There are two main tiers you need to know about:
 
 ### Microsoft Copilot (Free / Default)
 - Available to anyone with a Microsoft account
-- Powered by the web version of Copilot at copilot.microsoft.com
+- Powered by the web version of Copilot at [copilot.microsoft.com](https://copilot.microsoft.com)
 - Can use the internet for research
 - Does NOT have deep integration with your Microsoft 365 data (emails, files, calendar, etc.)
 - Good for general tasks: summarising, writing, brainstorming
@@ -28,7 +47,7 @@ There are two main tiers you need to know about:
 - Deeply integrated with your Microsoft 365 data — it can read your emails, files on SharePoint/OneDrive, Teams messages, and calendar
 - Works inside Word, Excel, Outlook, PowerPoint, Teams, Forms, and more
 - Can reference your organisation's documents when generating responses
-- This is what we are using in this workshop
+- This is what we are using in this workshop — access it at [m365.cloud.microsoft](https://m365.cloud.microsoft/)
 
 > **Key point:** The free version is useful, but the paid version is where the real productivity gains happen because it knows your work context.
 
@@ -101,7 +120,7 @@ By default, Copilot Chat does **not** remember anything from previous sessions. 
 Some versions of Copilot are beginning to introduce optional memory features that allow it to retain preferences across sessions, but this depends on your organisation's settings and the version of Copilot your tenant is using.
 
 ### Notebooks (Persistent context)
-Copilot Chat includes a **Notebooks** feature that lets you create a persistent context — a set of instructions or background information that Copilot always has available in that notebook, even across sessions. Think of it as giving Copilot a permanent briefing document for a specific project or topic.
+Copilot Chat includes a **Notebooks** feature (item **③** in the interface above) that lets you create a persistent context — a set of instructions or background information that Copilot always has available in that notebook, even across sessions. Think of it as giving Copilot a permanent briefing document for a specific project or topic.
 
 ### What this means for you
 - If you want Copilot to maintain a particular tone or approach throughout a project, say so at the start of each session, or use Notebooks
@@ -115,16 +134,14 @@ Copilot Chat includes a **Notebooks** feature that lets you create a persistent 
 You can shape how Copilot responds to you — both personally and at an organisational level.
 
 ### Personal instructions (Your profile)
-In Copilot Chat, you can set personal instructions that influence every response. Access this via your profile settings. Examples of what you can tell it:
+In Copilot Chat, click your profile (item **⑤** in the interface above) to access personal instructions. These influence every response and persist across all your sessions. Examples of what you can tell it:
 - Your role and industry: "I am an HR manager at a manufacturing company in Malaysia"
 - Preferred language style: "Always write in British English, formal tone"
 - Default output format: "Summarise responses in bullet points unless I ask otherwise"
 - Constraints: "Do not use jargon — my audience is non-technical"
 
-These instructions persist across your sessions in Copilot Chat and act as a standing briefing for the AI.
-
 ### Agents (Custom Copilots)
-In Copilot Chat, you can access pre-built or custom-built agents under the **Agents** panel. These are Copilot instances that have been given a specific role, a custom knowledge base, and a defined set of behaviours. For example, an HR agent that only answers questions using your company's HR policy documents.
+In Copilot Chat, you can access pre-built or custom-built agents under the **Agents** panel (item **②** in the interface above). These are Copilot instances that have been given a specific role, a custom knowledge base, and a defined set of behaviours. For example, an HR agent that only answers questions using your company's HR policy documents.
 
 You can also build your own agents in Copilot Studio (covered in Topic 10).
 
