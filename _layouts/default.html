@@ -30,7 +30,7 @@
   --sidebar-w:240px;
 }
 
-/* ── AUTOMATIC DARK MODE ── */
+/* Automatic dark mode */
 @media (prefers-color-scheme: dark){
   :root{
     --navy:#DDE6FF;
@@ -66,7 +66,7 @@ body{
   line-height:1.6;
 }
 
-/* ── SIDEBAR ── */
+/* Sidebar */
 .sidebar{
   width:var(--sidebar-w);
   flex-shrink:0;
@@ -74,15 +74,22 @@ body{
   display:flex;
   flex-direction:column;
   position:fixed;
-  top:0;
-  left:0;
-  height:100vh;
+
+  top:24px;
+  left:24px;
+  height:calc(100vh - 48px);
+
   overflow-y:auto;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
 }
 
 @media (prefers-color-scheme: dark){
   .sidebar{
     background:linear-gradient(180deg,#111827 0%,#0B1020 100%);
+    border-color:#2A3344;
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
   }
 }
 
@@ -205,9 +212,9 @@ body{
   color:rgba(255,255,255,.8);
 }
 
-/* ── MAIN ── */
+/* Main layout */
 .main-wrap{
-  margin-left:var(--sidebar-w);
+  margin-left:calc(var(--sidebar-w) + 72px);
   flex:1;
   min-width:0;
   background:var(--bg);
@@ -225,7 +232,7 @@ body{
   padding:52px 60px 80px;
 }
 
-/* ── BREADCRUMB ── */
+/* Breadcrumb */
 .breadcrumb{
   font-size:12px;
   color:var(--text-muted);
@@ -248,7 +255,7 @@ body{
   color:var(--border);
 }
 
-/* ── CONTENT TYPOGRAPHY ── */
+/* Content typography */
 .main-inner h1{
   font-size:28px;
   font-weight:700;
@@ -329,7 +336,7 @@ body{
   margin:32px 0;
 }
 
-/* BLOCKQUOTE — note/tip style like MS Learn */
+/* Blockquote */
 .main-inner blockquote{
   background:var(--teal-light);
   border-left:3px solid var(--teal);
@@ -348,7 +355,7 @@ body{
   color:var(--teal);
 }
 
-/* TABLE */
+/* Table */
 .main-inner table{
   width:100%;
   border-collapse:separate;
@@ -386,7 +393,7 @@ body{
   border-bottom:none;
 }
 
-/* IMAGES */
+/* Images */
 .main-inner img{
   max-width:100%;
   border-radius:8px;
@@ -402,7 +409,7 @@ body{
   }
 }
 
-/* CODE */
+/* Code */
 .main-inner code{
   background:var(--code-bg);
   border:1px solid var(--border);
@@ -434,7 +441,7 @@ body{
   color:var(--text-dark);
 }
 
-/* COPY BUTTON FOR CODE BLOCKS */
+/* Copy button for code blocks */
 .copy-code-btn{
   position:absolute;
   top:10px;
@@ -482,7 +489,7 @@ body{
   }
 }
 
-/* HOME */
+/* Home */
 .home-scenario{
   background:var(--teal-light);
   border-left:3px solid var(--teal);
@@ -585,7 +592,25 @@ body{
   background:var(--teal-light);
 }
 
-/* ── MOBILE ── */
+/* Medium screens */
+@media(max-width:1100px){
+  .sidebar{
+    top:16px;
+    left:16px;
+    height:calc(100vh - 32px);
+  }
+
+  .main-wrap{
+    margin-left:calc(var(--sidebar-w) + 48px);
+  }
+
+  .main-inner{
+    max-width:900px;
+    padding:44px 36px 72px;
+  }
+}
+
+/* Mobile screens */
 @media(max-width:768px){
   .sidebar{
     display:none;
