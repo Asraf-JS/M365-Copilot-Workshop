@@ -1,12 +1,16 @@
 # 03 — Copilot Chat: Prompts
 
-Use these prompts to research your **AI Usage Guide** for your department. Run these in **Web** grounding mode so Copilot can pull current information from the internet.
+Use these prompts to research your **AI Usage Guide** for your department.
+
+> **How to use this file:** Parts 1 through 5 and Part 8 should all run in the **same chat session**. Start one research conversation and stay in it. Copilot builds on earlier context as you go, and the consolidation prompt in Part 8 summarises everything from that session. Parts 6 and 7 can be separate sessions.
 
 ---
 
 ## Part 1 — Broad overview
 
-Start here to get a high-level picture before going into department-specific detail. Run these in sequence within the same chat session.
+**Run in the same chat session as Parts 2, 3, 4, 5, and 8.**
+
+Start here to get a high-level picture before going into department-specific detail.
 
 ```
 What should a departmental AI usage guide cover? Give me a 
@@ -37,12 +41,14 @@ about it.
 
 ## Part 2 — Department-specific research
 
-Replace `[your department]` with your actual department before submitting. These prompts are intentionally specific — generic advice is less useful here.
+**Stay in the same chat session. Copilot will build on the context from Part 1.**
+
+Replace `[your department]` with your actual department before submitting.
 
 ```
 I work in [your department] at a mid-sized Malaysian company. 
 What are the 5 most relevant AI use cases for my department? 
-Be specific — not generic advice. For each use case, name the 
+Be specific, not generic advice. For each use case, name the 
 Microsoft 365 Copilot feature that would handle it.
 ```
 
@@ -69,7 +75,7 @@ the risk for each one if it is not checked.
 
 ## Part 3 — Regulatory and compliance angle
 
-These prompts focus on the legal and compliance dimension — important for any Malaysian corporate audience.
+**Stay in the same chat session.**
 
 ```
 What Malaysian laws or regulations are relevant when a company 
@@ -95,7 +101,9 @@ for its staff? Summarise the key requirements in plain language.
 
 ## Part 4 — Exploring different perspectives
 
-Use these to stress-test your research by hearing from different stakeholders.
+**Stay in the same chat session.**
+
+Run all three prompts and compare the responses. The employee perspective is often the most useful one for writing a guide that people will actually read.
 
 ```
 Act as a cautious IT security officer at a Malaysian company. 
@@ -107,7 +115,7 @@ and what would you want the AI usage guide to address?
 ```
 Act as an enthusiastic department head who wants their team to 
 adopt AI tools quickly. Make the case for why every department 
-in a Malaysian company should have an AI usage guide — and why 
+in a Malaysian company should have an AI usage guide, and why 
 having one actually accelerates adoption rather than slowing it down.
 ```
 
@@ -117,13 +125,13 @@ What questions would you want the AI usage guide to answer before
 you felt comfortable using Copilot for your daily tasks?
 ```
 
-Run all three and compare. The employee perspective is often the most useful one for writing a guide that people will actually read.
-
 ---
 
 ## Part 5 — Multi-model comparison
 
-Switch between models using the **Auto** dropdown at the top right. Run the same prompt in Opus and GPT and compare the outputs.
+**Stay in the same chat session. Switch models using the Auto dropdown at the top right.**
+
+Run the same prompt in Opus and GPT and compare the outputs.
 
 ```
 Write a one-paragraph introduction for an AI Usage Guide 
@@ -150,7 +158,9 @@ Notice whether the models differ more on creative writing tasks or analytical on
 
 ## Part 6 — Work mode: referencing your own documents
 
-Switch to **Work** grounding mode (briefcase icon) for these prompts. These only work if you have relevant documents in your OneDrive or SharePoint.
+**Start a new chat for this part. Switch to Work grounding mode (briefcase icon) before submitting.**
+
+These prompts only work if you have relevant documents in your OneDrive or SharePoint.
 
 ```
 Do we have any existing policies or guidelines related to data 
@@ -172,6 +182,8 @@ key themes.
 ---
 
 ## Part 7 — Fact-checking and pressure-testing
+
+**This can be done in any session, including the main research session or a new chat.**
 
 Once you have research notes, use these to verify and challenge what Copilot gave you.
 
@@ -197,7 +209,9 @@ usage guide for a Malaysian company should cover?
 
 ## Part 8 — Consolidation: preparing to move to Pages
 
-Run this at the end of your research session, still within the same chat. This turns everything you have gathered into a structured outline ready to take into Copilot Pages in Topic 04.
+**Run this at the end of your main research session (the same chat you used for Parts 1 through 5).**
+
+This turns everything you have gathered into a structured outline ready to take into Copilot Pages in Topic 04.
 
 ```
 Based on everything we have discussed in this conversation, 
@@ -208,7 +222,7 @@ the key ideas. Include a note on any areas where I still
 need to do more research.
 ```
 
-Once you have the outline, click the **Edit in Pages** button (pencil icon on the response) to open it as a Copilot Page — that is where Topic 04 begins.
+Once you have the outline, click the **Edit in Pages** button (pencil icon on the response) to open it as a Copilot Page. That is where Topic 04 begins.
 
 ---
 
