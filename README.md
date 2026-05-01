@@ -4,6 +4,12 @@ Prompts, reference notes, and sample datasets for the Microsoft 365 Copilot work
 
 ---
 
+## Program Flow
+
+![Microsoft Copilot Training Journey](./program-flow.png)
+
+---
+
 ## How to Use This Site
 
 Each topic has its own page with a README covering the concepts and a separate prompts file with copy-paste prompts you can use during and after the session.
