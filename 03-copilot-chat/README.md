@@ -91,13 +91,13 @@ After you submit a prompt and receive a response, two sets of controls appear.
 
 ![Output controls](./images/output-controls.png)
 
-*Controls on Copilot's response: copy, thumbs up, thumbs down, share*
+*Controls on Copilot's response: copy, thumbs up, thumbs down, and share*
 
 | # | Button | What it does |
 |---|--------|-------------|
 | 1 | **Copy** | Copy the full response to clipboard |
 | 2 | **Thumbs up** | Mark the response as helpful (improves suggestions) |
-| 3 | **Thumbs down** | Flag the response as unhelpful |
+| 3 | **Share** | Share the response with a colleague |
 
 ### Edit in Pages
 
