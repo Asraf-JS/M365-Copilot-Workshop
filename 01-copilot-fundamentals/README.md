@@ -97,10 +97,20 @@ LLMs do not work like a calculator that always produces the same result. When ge
 When Copilot generates the next word in a response, it is actually choosing from a probability distribution — many possible next words, each with a likelihood score. It does not always pick the single most likely word. This statistical variation means two runs of the same prompt can take different paths and arrive at different outputs.
 
 ### Model differences
-When you switch between models (Auto, Opus, GPT), you are talking to a completely different AI system with different training, different style tendencies, and different strengths. A prompt asking for a formal summary will produce noticeably different results in Claude Opus versus GPT-4o.
+When you switch between models, you are talking to a completely different AI system with different training, different style tendencies, and different strengths. A prompt asking for a formal summary will produce noticeably different results in Claude Opus versus GPT-4o.
+
+![Model switcher](./images/model-switcher.png)
+*Click the model selector (① top right) to switch between available AI models*
+
+| # | What it is |
+|---|-----------|
+| 1 | **Model selector button** — shows the currently active model. Click to open the switcher |
+| 2 | **Third-party models** — Opus (Claude by Anthropic) and the GPT family (Open AI), including specific versions like GPT 5.5 Think Deeper, GPT 5.4 Think Deeper, and GPT 5.2 |
+
+> **Workshop exercise:** Try the same prompt in Opus and GPT. Notice the difference in tone, structure, and depth. Which output would you edit less?
 
 ### Practical takeaway
-Do not assume Copilot's first response is the only possible response. If you do not like what you get, run the prompt again, or follow up with refinements. Iteration is normal — not a sign that something went wrong.
+Do not assume Copilot's first response is the only possible response. If you do not like what you get, run the prompt again, switch models, or follow up with refinements. Iteration is normal — not a sign that something went wrong.
 
 ---
 
