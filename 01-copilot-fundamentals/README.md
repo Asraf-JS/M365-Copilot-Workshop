@@ -147,6 +147,7 @@ You can shape how Copilot responds to you — both personally and at an organisa
 Access this via your profile (item **⑤** in the interface above) → **Chat settings** → **Personalisation**.
 
 ![Chat settings — Personalisation](./images/personalisation.png)
+
 *The Personalisation panel in Chat settings*
 
 | Setting | What it does |
