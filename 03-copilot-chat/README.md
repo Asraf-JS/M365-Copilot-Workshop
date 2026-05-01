@@ -2,7 +2,7 @@
 
 Copilot Chat is your starting point for research, brainstorming, and exploration. This is where you will begin the workshop's main project: building an AI Usage Guide for your department.
 
-> **Prompts to try:** See [prompts.md](./prompts.md) for research prompts, model comparison exercises, and a consolidation prompt to wrap up your notes.
+> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
 
 ---
 
