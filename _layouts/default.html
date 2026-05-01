@@ -9,13 +9,16 @@
 :root{
   --navy:#1E2761;--teal:#028090;--teal-light:#E0F4F7;
   --text-dark:#1A1A2E;--text-mid:#4A5568;--text-muted:#8A9BB0;
-  --bg:#FFFFFF;--bg-page:#F7F9FC;--bg-side:#F4F6F9;--border:#E2E6EA;
+  --bg:#FFFFFF;--bg-page:#EDEEF2;--bg-side:#F4F6F9;--border:#E2E6EA;
 }
-body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark);min-height:100vh;display:flex;flex-direction:column;}
+body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark);min-height:100vh;display:flex;justify-content:center;padding:32px 16px 64px;}
+
+/* ── OUTER CARD ── */
+.site-wrap{width:100%;max-width:1060px;display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.06);}
 
 /* ── TOP NAV ── */
-.topnav{background:var(--navy);position:sticky;top:0;z-index:100;flex-shrink:0;}
-.topnav-inner{max-width:none;padding:0 28px;display:flex;align-items:center;height:52px;gap:12px;}
+.topnav{background:var(--navy);flex-shrink:0;border-radius:12px 12px 0 0;}
+.topnav-inner{padding:0 24px;display:flex;align-items:center;height:52px;gap:12px;}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;}
 .nav-logo img{width:30px;height:30px;border-radius:7px;object-fit:cover;display:block;}
 .nav-logo-text{font-family:'Trebuchet MS',sans-serif;font-size:15px;font-weight:700;color:#fff;}
@@ -24,127 +27,123 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
 .nav-btn{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.65);text-decoration:none;padding:5px 12px;border:1px solid rgba(255,255,255,.18);border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
 .nav-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
 
-/* ── BODY BELOW NAV ── */
-.body-wrap{display:flex;flex:1;min-height:0;}
+/* ── BODY ROW ── */
+.body-row{display:flex;flex:1;min-height:600px;}
 
 /* ── SIDEBAR ── */
-.sidebar{width:210px;flex-shrink:0;background:var(--bg-side);border-right:1px solid var(--border);position:sticky;top:52px;height:calc(100vh - 52px);overflow-y:auto;display:flex;flex-direction:column;}
-.sidebar::-webkit-scrollbar{width:3px;}
-.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
-.sidebar-section{padding:16px 0 8px;}
-.sidebar-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;padding:0 16px;margin-bottom:6px;}
-.nav-item{display:flex;align-items:center;gap:8px;padding:6px 10px 6px 16px;text-decoration:none;border-radius:6px;margin:1px 6px;transition:background .12s;}
+.sidebar{width:200px;flex-shrink:0;background:var(--bg-side);border-right:1px solid var(--border);display:flex;flex-direction:column;}
+.sidebar-section{padding:16px 0 8px;flex:1;}
+.sidebar-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;padding:0 14px;margin-bottom:6px;}
+.nav-item{display:flex;align-items:center;gap:8px;padding:6px 10px 6px 14px;text-decoration:none;border-radius:6px;margin:1px 5px;transition:background .12s;}
 .nav-item:hover{background:#e8edf5;}
 .nav-item.active{background:var(--teal-light);}
 .nav-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);min-width:18px;flex-shrink:0;}
-.nav-name{font-family:'Trebuchet MS',sans-serif;font-size:12px;color:var(--text-mid);line-height:1.3;}
+.nav-name{font-family:'Trebuchet MS',sans-serif;font-size:11.5px;color:var(--text-mid);line-height:1.3;}
 .nav-item.active .nav-name{color:var(--navy);font-weight:700;}
-.sidebar-footer{padding:12px 16px;border-top:1px solid var(--border);margin-top:auto;}
+.sidebar-footer{padding:12px 14px;border-top:1px solid var(--border);}
 .sidebar-footer a{display:block;font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--teal);text-decoration:none;padding:3px 0;}
 .sidebar-footer a:hover{text-decoration:underline;}
 
-/* ── MAIN AREA ── */
-.main-area{flex:1;display:flex;justify-content:center;min-width:0;}
-.main-inner{width:100%;max-width:760px;padding:44px 48px 80px;}
+/* ── MAIN CONTENT ── */
+.main-area{flex:1;min-width:0;padding:40px 44px 60px;overflow:auto;}
 
 /* ── BREADCRUMB ── */
 .breadcrumb{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);margin-bottom:22px;}
 .breadcrumb a{color:var(--teal);text-decoration:none;}
 .breadcrumb a:hover{text-decoration:underline;}
-.breadcrumb span{color:var(--text-mid);}
 
-/* ── MARKDOWN CONTENT ── */
-.main-inner h1{font-family:'Trebuchet MS',sans-serif;font-size:26px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.2;}
-.main-inner h2{font-family:'Trebuchet MS',sans-serif;font-size:17px;font-weight:700;color:var(--navy);margin:30px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--border);}
-.main-inner h2:first-of-type{margin-top:0;}
-.main-inner h3{font-family:'Trebuchet MS',sans-serif;font-size:14px;font-weight:700;color:var(--text-mid);margin:18px 0 8px;}
-.main-inner p{font-size:14px;color:var(--text-dark);line-height:1.8;margin-bottom:14px;}
-.main-inner ul,.main-inner ol{font-size:14px;color:var(--text-dark);line-height:1.8;margin:0 0 14px 20px;}
-.main-inner li{margin-bottom:5px;}
-.main-inner a{color:var(--teal);text-decoration:none;}
-.main-inner a:hover{text-decoration:underline;}
-.main-inner strong{font-weight:700;}
-.main-inner em{font-style:italic;color:var(--text-mid);}
-.main-inner blockquote{background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;padding:12px 18px;margin:16px 0;}
-.main-inner blockquote p{font-size:13px;margin:0;}
-.main-inner table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
-.main-inner th{background:var(--navy);color:#fff;font-family:'Trebuchet MS',sans-serif;font-weight:700;padding:10px 14px;text-align:left;}
-.main-inner td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
-.main-inner tr:nth-child(even) td{background:#F7F9FC;}
-.main-inner img{max-width:100%;border-radius:8px;border:1px solid var(--border);margin:14px 0;display:block;}
-.main-inner hr{border:none;border-top:1px solid var(--border);margin:28px 0;}
-.main-inner code{background:#F7F9FC;border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
-.main-inner pre{background:#F7F9FC;border:1px solid var(--border);border-radius:6px;padding:16px;font-family:'Courier New',monospace;font-size:12.5px;line-height:1.65;overflow-x:auto;margin:10px 0 20px;}
-.main-inner pre code{background:none;border:none;padding:0;}
+/* ── MARKDOWN ── */
+.main-area h1{font-family:'Trebuchet MS',sans-serif;font-size:25px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.2;}
+.main-area h2{font-family:'Trebuchet MS',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin:28px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border);}
+.main-area h2:first-of-type{margin-top:0;}
+.main-area h3{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;color:var(--text-mid);margin:16px 0 7px;}
+.main-area p{font-size:13.5px;color:var(--text-dark);line-height:1.8;margin-bottom:13px;}
+.main-area ul,.main-area ol{font-size:13.5px;color:var(--text-dark);line-height:1.8;margin:0 0 13px 20px;}
+.main-area li{margin-bottom:4px;}
+.main-area a{color:var(--teal);text-decoration:none;}
+.main-area a:hover{text-decoration:underline;}
+.main-area strong{font-weight:700;}
+.main-area em{font-style:italic;color:var(--text-mid);}
+.main-area blockquote{background:var(--teal-light);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;padding:11px 16px;margin:14px 0;}
+.main-area blockquote p{font-size:13px;margin:0;}
+.main-area table{width:100%;border-collapse:collapse;margin:14px 0;font-size:12.5px;}
+.main-area th{background:var(--navy);color:#fff;font-family:'Trebuchet MS',sans-serif;font-weight:700;padding:9px 13px;text-align:left;}
+.main-area td{padding:8px 13px;border-bottom:1px solid var(--border);vertical-align:top;}
+.main-area tr:nth-child(even) td{background:#F7F9FC;}
+.main-area img{max-width:100%;border-radius:8px;border:1px solid var(--border);margin:12px 0;display:block;}
+.main-area hr{border:none;border-top:1px solid var(--border);margin:24px 0;}
+.main-area code{background:#F7F9FC;border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
+.main-area pre{background:#F7F9FC;border:1px solid var(--border);border-radius:6px;padding:14px 16px;font-family:'Courier New',monospace;font-size:12px;line-height:1.65;overflow-x:auto;margin:10px 0 18px;}
+.main-area pre code{background:none;border:none;padding:0;}
 
-/* ── HOME PAGE ── */
-.home-scenario{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;}
-.home-scenario p{font-size:13.5px;color:var(--text-dark);line-height:1.75;}
-.section-sublabel{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:12px;}
-.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.topic-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:border-color .15s,box-shadow .15s;display:block;}
-.topic-card:hover{border-color:var(--teal);box-shadow:0 2px 10px rgba(2,128,144,.08);}
-.tc-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px;}
-.tc-title{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
-.tc-desc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);line-height:1.4;margin-bottom:10px;}
+/* ── HOME ── */
+.home-scenario{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;padding:14px 18px;margin:0 0 28px;}
+.home-scenario p{font-size:13px;color:var(--text-dark);line-height:1.75;}
+.section-sublabel{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:10px;}
+.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.topic-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 16px;text-decoration:none;transition:border-color .15s,box-shadow .15s;display:block;}
+.topic-card:hover{border-color:var(--teal);box-shadow:0 2px 8px rgba(2,128,144,.08);}
+.tc-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px;}
+.tc-title{font-family:'Trebuchet MS',sans-serif;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.tc-desc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);line-height:1.4;margin-bottom:8px;}
 .tc-links{display:flex;gap:6px;}
-.tc-notes{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:#fff;background:var(--navy);padding:3px 9px;border-radius:4px;}
-.tc-prompts{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:var(--teal);border:1px solid var(--teal);padding:3px 9px;border-radius:4px;text-decoration:none;}
+.tc-notes{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:#fff;background:var(--navy);padding:2px 8px;border-radius:4px;}
+.tc-prompts{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:var(--teal);border:1px solid var(--teal);padding:2px 8px;border-radius:4px;text-decoration:none;}
 .tc-prompts:hover{background:var(--teal-light);}
 
-@media(max-width:768px){
+@media(max-width:700px){
+  body{padding:0;}
+  .site-wrap{border-radius:0;border:none;box-shadow:none;}
   .sidebar{display:none;}
-  .main-inner{padding:28px 20px 60px;}
-}
-@media(max-width:540px){
+  .main-area{padding:24px 20px 48px;}
   .home-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
 <body>
+<div class="site-wrap">
 
-<!-- TOP NAV -->
-<nav class="topnav">
-  <div class="topnav-inner">
-    <a class="nav-logo" href="/M365-Copilot-Workshop/">
-      <img src="/M365-Copilot-Workshop/logo.png" alt="Asraf">
-      <div>
-        <div class="nav-logo-text">Asraf</div>
-        <span class="nav-logo-sub">Copilot Workshop &nbsp;·&nbsp; May 2026</span>
+  <!-- TOP NAV -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a class="nav-logo" href="/M365-Copilot-Workshop/">
+        <img src="/M365-Copilot-Workshop/logo.png" alt="Asraf">
+        <div>
+          <div class="nav-logo-text">Asraf</div>
+          <span class="nav-logo-sub">Copilot Workshop &nbsp;·&nbsp; May 2026</span>
+        </div>
+      </a>
+      <div class="nav-right">
+        <a class="nav-btn" href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">GitHub</a>
+        <a class="nav-btn" href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Sample Data</a>
       </div>
-    </a>
-    <div class="nav-right">
-      <a class="nav-btn" href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">GitHub</a>
-      <a class="nav-btn" href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Sample Data</a>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- SIDEBAR + CONTENT -->
-<div class="body-wrap">
-  <div class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-label">Topics</div>
-      <a class="nav-item{% if page.url contains '01-copilot' %} active{% endif %}" href="/M365-Copilot-Workshop/01-copilot-fundamentals/"><span class="nav-num">01</span><span class="nav-name">Fundamentals</span></a>
-      <a class="nav-item{% if page.url contains '02-prompt' %} active{% endif %}" href="/M365-Copilot-Workshop/02-prompt-engineering/"><span class="nav-num">02</span><span class="nav-name">Prompt Engineering</span></a>
-      <a class="nav-item{% if page.url contains '03-copilot-chat' %} active{% endif %}" href="/M365-Copilot-Workshop/03-copilot-chat/"><span class="nav-num">03</span><span class="nav-name">Copilot Chat</span></a>
-      <a class="nav-item{% if page.url contains '04-copilot-pages' %} active{% endif %}" href="/M365-Copilot-Workshop/04-copilot-pages/"><span class="nav-num">04</span><span class="nav-name">Copilot Pages</span></a>
-      <a class="nav-item{% if page.url contains '05-copilot-word' %} active{% endif %}" href="/M365-Copilot-Workshop/05-copilot-word/"><span class="nav-num">05</span><span class="nav-name">Copilot in Word</span></a>
-      <a class="nav-item{% if page.url contains '06-copilot-outlook' %} active{% endif %}" href="/M365-Copilot-Workshop/06-copilot-outlook/"><span class="nav-num">06</span><span class="nav-name">Copilot in Outlook</span></a>
-      <a class="nav-item{% if page.url contains '07-copilot-powerpoint' %} active{% endif %}" href="/M365-Copilot-Workshop/07-copilot-powerpoint/"><span class="nav-num">07</span><span class="nav-name">Copilot in PowerPoint</span></a>
-      <a class="nav-item{% if page.url contains '08-copilot-forms' %} active{% endif %}" href="/M365-Copilot-Workshop/08-copilot-forms/"><span class="nav-num">08</span><span class="nav-name">Copilot in Forms</span></a>
-      <a class="nav-item{% if page.url contains '09-copilot-excel' %} active{% endif %}" href="/M365-Copilot-Workshop/09-copilot-excel/"><span class="nav-num">09</span><span class="nav-name">Copilot in Excel</span></a>
-      <a class="nav-item{% if page.url contains '10-copilot-studio' %} active{% endif %}" href="/M365-Copilot-Workshop/10-copilot-studio-intro/"><span class="nav-num">10</span><span class="nav-name">Copilot Studio</span></a>
+  <!-- SIDEBAR + CONTENT -->
+  <div class="body-row">
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Topics</div>
+        <a class="nav-item{% if page.url contains '01-copilot' %} active{% endif %}" href="/M365-Copilot-Workshop/01-copilot-fundamentals/"><span class="nav-num">01</span><span class="nav-name">Fundamentals</span></a>
+        <a class="nav-item{% if page.url contains '02-prompt' %} active{% endif %}" href="/M365-Copilot-Workshop/02-prompt-engineering/"><span class="nav-num">02</span><span class="nav-name">Prompt Engineering</span></a>
+        <a class="nav-item{% if page.url contains '03-copilot-chat' %} active{% endif %}" href="/M365-Copilot-Workshop/03-copilot-chat/"><span class="nav-num">03</span><span class="nav-name">Copilot Chat</span></a>
+        <a class="nav-item{% if page.url contains '04-copilot-pages' %} active{% endif %}" href="/M365-Copilot-Workshop/04-copilot-pages/"><span class="nav-num">04</span><span class="nav-name">Copilot Pages</span></a>
+        <a class="nav-item{% if page.url contains '05-copilot-word' %} active{% endif %}" href="/M365-Copilot-Workshop/05-copilot-word/"><span class="nav-num">05</span><span class="nav-name">Copilot in Word</span></a>
+        <a class="nav-item{% if page.url contains '06-copilot-outlook' %} active{% endif %}" href="/M365-Copilot-Workshop/06-copilot-outlook/"><span class="nav-num">06</span><span class="nav-name">Copilot in Outlook</span></a>
+        <a class="nav-item{% if page.url contains '07-copilot-powerpoint' %} active{% endif %}" href="/M365-Copilot-Workshop/07-copilot-powerpoint/"><span class="nav-num">07</span><span class="nav-name">Copilot in PowerPoint</span></a>
+        <a class="nav-item{% if page.url contains '08-copilot-forms' %} active{% endif %}" href="/M365-Copilot-Workshop/08-copilot-forms/"><span class="nav-num">08</span><span class="nav-name">Copilot in Forms</span></a>
+        <a class="nav-item{% if page.url contains '09-copilot-excel' %} active{% endif %}" href="/M365-Copilot-Workshop/09-copilot-excel/"><span class="nav-num">09</span><span class="nav-name">Copilot in Excel</span></a>
+        <a class="nav-item{% if page.url contains '10-copilot-studio' %} active{% endif %}" href="/M365-Copilot-Workshop/10-copilot-studio-intro/"><span class="nav-num">10</span><span class="nav-name">Copilot Studio</span></a>
+      </div>
+      <div class="sidebar-footer">
+        <a href="/M365-Copilot-Workshop/">Home</a>
+        <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">GitHub Repo</a>
+        <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Sample Data</a>
+      </div>
     </div>
-    <div class="sidebar-footer">
-      <a href="/M365-Copilot-Workshop/">Home</a>
-      <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">GitHub Repo</a>
-      <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Sample Data</a>
-    </div>
-  </div>
 
-  <div class="main-area">
-    <div class="main-inner">
+    <div class="main-area">
       {% unless page.url == "/" or page.url == "/M365-Copilot-Workshop/" %}
       <div class="breadcrumb">
         <a href="/M365-Copilot-Workshop/">Workshop Home</a>
@@ -155,7 +154,7 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
       {{ content }}
     </div>
   </div>
-</div>
 
+</div>
 </body>
 </html>
