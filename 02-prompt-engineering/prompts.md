@@ -1,245 +1,282 @@
-# 02 — Prompt Engineering
+# 02 — Prompt Engineering: Prompts
 
-The quality of what Copilot gives you depends almost entirely on what you give it. This topic covers how to write prompts that get useful, relevant, and accurate results.
-
-> **Prompts to try:** See [prompts.md](./prompts.md) for copy-paste prompts you can use during and after this session.
+Practice writing better prompts using the **GCSE framework** (Goal, Context, Source, Expectations).
 
 ---
 
-## The GCSE Framework
+## Part 1 — Building a GCSE prompt
 
-A simple four-part framework for structuring effective prompts. You do not need all four elements every time, but the more relevant context you provide, the better the output.
+Work through these in order. Each step adds one more element to the same prompt and you will see the output improve at each stage.
 
-| Element | What it means | Example |
-|---------|--------------|---------|
-| **G — Goal** | What do you want Copilot to do? | "Write a summary..." |
-| **C — Context** | Who are you, what's the situation? | "...for a team of non-technical staff..." |
-| **S — Source** | What should it reference or use? | "...based on the attached report..." |
-| **E — Expectations** | Format, length, tone, style | "...in 3 bullet points, professional tone." |
-
-### Building a GCSE prompt step by step
-
-Here is how the same request improves as you add each element:
-
-**Goal only (weak):**
+**Step 1 — Goal only. Submit this and note the response:**
 ```
 Write a summary.
 ```
 
-**Goal + Context:**
+**Step 2 — Add Context. Submit and compare:**
 ```
 Write a summary for a team of non-technical staff.
 ```
 
-**Goal + Context + Source:**
+**Step 3 — Add Source. Submit and compare:**
 ```
-Write a summary for a team of non-technical staff based on the attached AI Usage Guideline document.
-```
-
-**Goal + Context + Source + Expectations (strong):**
-```
-Write a summary of the attached AI Usage Guideline for a team of non-technical staff. 
-Cover the 3 most important rules they need to follow. Use plain language, 
-bullet points, and keep it under 150 words.
+Write a summary for a team of non-technical staff based on 
+the AI Usage Guideline we have been working on in this workshop.
 ```
 
-The content request did not change — only the structure around it. That structure is what makes Copilot's response actually usable.
+**Step 4 — Add Expectations. Submit and compare:**
+```
+Write a summary of our AI Usage Guideline for a team of non-technical staff. 
+Cover the 3 most important rules they need to follow. 
+Use plain language, bullet points, and keep it under 150 words.
+```
+
+After all four rounds, ask:
+```
+Compare the four summaries you just produced. Which one is most useful 
+and why? What specifically made the difference?
+```
 
 ---
 
-## Weak Prompt vs. Strong Prompt
+## Part 2 — Rewriting weak prompts
 
-### Example 1 — Writing an email
+Read each weak prompt, identify what is missing from GCSE, then rewrite it before submitting.
 
 **Weak:**
 ```
-Write me an email about the AI guideline.
+Write me something about AI.
 ```
-
-**Strong:**
-```
-Write a professional email to my department head requesting approval 
-for a new AI Usage Guideline. The guideline was developed by my team 
-over the past two weeks and covers responsible AI use, dos and don'ts, 
-and recommended tools. Keep it under 150 words and use a formal but 
-approachable tone.
-```
-
----
-
-### Example 2 — Summarising a document
 
 **Weak:**
 ```
-Summarise this document.
+Summarise this.
 ```
-
-**Strong:**
-```
-Summarise this AI Usage Guideline in 5 key points. Focus on the 
-practical dos and don'ts. Write it so a team member with no AI 
-background can understand it quickly.
-```
-
----
-
-### Example 3 — Analysing data
 
 **Weak:**
 ```
-What does this data show?
+Help me with my email.
 ```
-
-**Strong:**
-```
-I have survey responses from 30 staff members about how they have been 
-using AI tools over the past month. Analyse this data and highlight the 
-top 3 trends, any concerns raised, and recommend one action based on 
-the findings.
-```
-
----
-
-### Example 4 — Preparing for a meeting
 
 **Weak:**
 ```
-Help me prepare for my meeting.
+Give me ideas.
 ```
 
-**Strong:**
+**Weak:**
 ```
-I have a 30-minute meeting tomorrow with my department head to present 
-the AI Usage Guideline for approval. Prepare 5 talking points I should 
-cover, 3 objections she might raise, and a suggested response for each 
-objection. My department head is detail-oriented and will focus on 
-compliance and risk.
+Make this better.
+```
+
+After rewriting each one, submit both versions — the weak and your improved version — and compare the outputs side by side.
+
+---
+
+## Part 3 — GCSE framework practice
+
+These are fully built prompts using the GCSE framework. Submit them as-is first, then try modifying one element at a time to see how the output changes.
+
+```
+I am an HR manager at a 200-person Malaysian manufacturing company. 
+Write a short internal announcement (under 120 words) informing staff 
+that the company has adopted Microsoft 365 Copilot and will be rolling 
+out training next month. Tone: reassuring and positive.
+```
+
+```
+Act as a sceptical finance director reviewing a new AI Usage Guideline 
+for a Malaysian company. List 5 specific questions or concerns you would 
+raise before approving it. Focus on financial risk, data security, and 
+employee liability. Be practical, not theoretical.
+```
+
+```
+I need to explain to a non-technical colleague what "prompt engineering" 
+means. Write a 3-sentence explanation using an analogy from everyday 
+life in Malaysia. Avoid technical jargon entirely.
+```
+
+```
+I am preparing a 30-minute lunch-and-learn session on Microsoft 365 
+Copilot for a team of 15 people in a logistics company. They have 
+never used AI tools before. Write a session outline with 4 segments, 
+including a hands-on activity. Keep the tone light and practical.
 ```
 
 ---
 
-## Prompting Inside M365 Apps vs Copilot Chat
+## Part 4 — Iteration practice
 
-Prompting works slightly differently depending on where you are. Understanding this helps you get better results in each context.
-
-| Where | How Copilot receives your prompt | Best for |
-|-------|----------------------------------|---------|
-| **Copilot Chat** | Open conversation — you provide all context in the chat | Research, drafting from scratch, multi-turn tasks, comparing outputs |
-| **Copilot in Word** | Has access to the open document — reference it with `/` | Rewriting, summarising, reformatting existing content |
-| **Copilot in Outlook** | Sees the email thread you have open | Drafting replies, summarising threads, adjusting tone |
-| **Copilot in Excel** | Reads the active table or data range | Analysing data, creating charts, writing formulas |
-| **Copilot in PowerPoint** | Can reference a Word document via "Create from file" | Building slide decks from existing documents |
-
-**Key difference:** In Copilot Chat you need to provide all the context yourself. In M365 apps, Copilot already has the open document or data as context — so your prompt can be shorter and more direct.
-
-**Example — same task, different location:**
-
-In Copilot Chat:
-```
-I have an AI Usage Guideline document. It has 7 sections including an 
-introduction, approved tools, dos and don'ts, and a data privacy section. 
-Suggest 3 ways I could make the Dos and Don'ts section clearer for 
-non-technical readers.
-```
-
-In Copilot in Word (with the document already open):
-```
-Suggest 3 ways to make the Dos and Don'ts section clearer for 
-non-technical readers.
-```
-
-Same outcome — but in Word, Copilot already sees the document so you do not need to describe it.
-
----
-
-## Iteration: Working With Copilot's First Response
-
-The first response is rarely the final response. Copilot holds the full conversation in context, so you can refine without starting over.
-
-### A typical iteration flow
+This exercise runs as a single conversation. Do not start a new chat between rounds.
 
 **Round 1 — Get a first draft:**
 ```
-Draft an introduction for an AI Usage Guideline. Audience: non-technical 
-corporate staff. Tone: professional but approachable. Length: 2 short paragraphs.
+Write a short policy statement on the responsible use of AI at work. 
+Audience: all staff. Length: 3 short paragraphs.
 ```
 
-**Round 2 — Adjust what is not right:**
+**Round 2 — Localise it:**
 ```
-Good, but the second paragraph sounds too formal. Rewrite it to be warmer 
-and more encouraging — staff should feel this is a helpful resource, 
-not a compliance document.
-```
-
-**Round 3 — Fine-tune:**
-```
-Shorten the whole thing to under 80 words without losing the key message.
+Make it more specific to Malaysian workplace culture. 
+Add a reference to the PDPA (Personal Data Protection Act 2010).
 ```
 
-**Round 4 — Sanity check:**
+**Round 3 — Shorten it:**
 ```
-Does this introduction clearly tell the reader what the guideline is for 
-and why it matters? What is missing?
+Shorten it to under 80 words and make it suitable for a 
+company intranet homepage. Keep the PDPA reference.
 ```
 
-Each follow-up builds on what Copilot already produced. You are editing collaboratively, not starting from scratch each time.
+**Round 4 — Add a perspective:**
+```
+Now rewrite the same statement from the perspective of an employee 
+reading it for the first time. What might feel unclear or concerning? 
+Suggest 2 improvements based on that perspective.
+```
+
+**Round 5 — Final check:**
+```
+Review the final version of the policy statement. What is missing 
+that a complete AI usage policy should cover? List up to 3 gaps.
+```
 
 ---
 
-## Common Mistakes to Avoid
+## Part 5 — Format control
 
-**Being too vague about the output format.**
-If you do not specify a format, Copilot will choose one — and it may not be what you wanted. Always state: table, bullet points, numbered list, paragraph, or a word count.
+These exercises focus specifically on controlling output format. Submit each prompt and observe how specifying format changes what you get.
 
-**Giving Copilot too much to do in one prompt.**
-"Write a full proposal, including an executive summary, risk analysis, implementation plan, and budget" will produce shallow content across all sections. Break big tasks into separate prompts and refine each part.
+```
+List 5 benefits of using Copilot in Outlook. Give the output in 
+3 different formats:
+1. Bullet points only
+2. A numbered list with one-line explanations
+3. A table with "Benefit" and "Estimated Time Saved Per Week" columns
+```
 
-**Accepting the first response without reviewing.**
-Copilot can sound confident even when it is wrong. Read the output critically — especially any facts, figures, names, or dates it generated.
+```
+Explain how Microsoft 365 Copilot uses RAG (Retrieval-Augmented 
+Generation) to access company data. Give me 3 versions:
+1. A 2-sentence plain language summary for a non-technical employee
+2. A 5-bullet technical explanation for an IT team
+3. A one-line version suitable for a slide title
+```
 
-**Not giving Copilot a role or perspective.**
-"Summarise this" and "Summarise this as a busy senior manager who wants only the most critical points" produce very different outputs. Giving Copilot a perspective sharpens the response.
-
-**Restarting instead of iterating.**
-If the response is 80% right, do not delete it and start again. Tell Copilot exactly what to fix: "Keep the structure but rewrite the third paragraph to be more concise."
-
-**Pasting sensitive data.**
-Never paste employee names, IC numbers, salary figures, client contracts, or personal details into a prompt — even in a work Copilot session. When in doubt, anonymise before pasting.
+```
+Describe the difference between Copilot Chat and Copilot inside 
+Word. Format the response as a comparison table with 4 rows covering: 
+where you access it, what context it has, best use cases, and 
+one limitation.
+```
 
 ---
 
-## Practical Tips
+## Part 6 — Role and perspective
 
-**Be specific about the output format.** If you want a table, say "in a table". If you want bullet points, say so. If you want it short, give a word count.
+Using "Act as" shifts how Copilot frames its response. These exercises show how the same request produces different outputs depending on the perspective you give.
 
-**Tell Copilot who it's writing for.** "Write this for a non-technical audience" gives very different results from "write this for senior management."
+Submit this base prompt first:
+```
+Review this sentence from an AI Usage Guideline: "Staff may use any 
+AI tool of their choice for work tasks as long as it improves 
+productivity." What are the problems with this statement?
+```
 
-**Use "Act as" to shift perspective.** Tell Copilot to adopt a role: "Act as an HR manager reviewing this policy." This changes how it frames the response — useful for anticipating objections or getting feedback from a different angle.
+Then submit it again with each of these roles prepended, one at a time:
 
-**Ask Copilot to explain its reasoning.** If you want to understand why Copilot structured something a certain way, ask: "Why did you structure it this way?" or "What assumptions did you make?" This builds your understanding and helps you write better prompts next time.
+```
+Act as a cautious IT security officer. Review this sentence from an 
+AI Usage Guideline and flag any security risks: "Staff may use any 
+AI tool of their choice for work tasks as long as it improves 
+productivity."
+```
 
-**Use follow-up questions to go deeper.** After any response, try: "What did you leave out?", "What are the risks of this approach?", or "Give me an alternative version."
+```
+Act as a legal advisor specialising in Malaysian data protection law. 
+Review this sentence from an AI Usage Guideline and flag any 
+compliance risks: "Staff may use any AI tool of their choice for 
+work tasks as long as it improves productivity."
+```
+
+```
+Act as a pragmatic operations manager who wants to roll out AI tools 
+quickly. Review this sentence and explain why it is actually fine as 
+a starting point, with one suggested improvement.
+```
+
+Compare the three responses. Notice how the same sentence gets framed very differently depending on who Copilot is "acting as."
 
 ---
 
-## Prompts to Try Right Now
+## Part 7 — Prompting inside M365 apps
 
-```
-Explain the difference between Microsoft Copilot (free) and 
-Microsoft 365 Copilot (paid) in simple terms. Use a comparison 
-table with 4 key differences.
-```
+These prompts are designed for use inside specific M365 apps, not Copilot Chat. The context is shorter because the app already provides the document or data.
 
+**In Copilot in Word** (with a document open):
 ```
-I am a trainer delivering a 2-day Microsoft 365 Copilot workshop 
-to corporate employees in Malaysia. Suggest 5 real-world scenarios 
-where Copilot in Outlook would save significant time.
+Summarise this document in 5 bullet points for a senior manager 
+who has 2 minutes to read it.
 ```
 
 ```
-Act as a sceptical employee who is unsure about using AI at work. 
-List 5 concerns you might have, then provide a brief reassurance 
-for each one from an employer's perspective.
+Rewrite the introduction to be more engaging. The reader should 
+want to keep reading after the first paragraph.
+```
+
+```
+What sections of this document are unclear or could cause 
+confusion for a non-technical reader? List them with a 
+suggested fix for each.
+```
+
+**In Copilot in Outlook** (with an email thread open):
+```
+Summarise this thread. What has been agreed, what is still 
+unresolved, and what action is needed from me?
+```
+
+```
+Draft a reply acknowledging the feedback and confirming I will 
+make the requested changes by end of this week.
+```
+
+**In Copilot in Excel** (with a data table selected):
+```
+What are the top 3 insights from this data? 
+Highlight anything that stands out as unusual.
+```
+
+```
+Create a bar chart showing the distribution of responses 
+in the Productivity Rating column.
+```
+
+---
+
+## Part 8 — Stress testing your prompts
+
+Once you have a prompt that works, push it further. These follow-up questions help you get more out of any response.
+
+After any Copilot response, try:
+
+```
+What did you leave out that might be relevant?
+```
+
+```
+What assumptions did you make when writing this?
+```
+
+```
+Give me an alternative version with a completely different structure.
+```
+
+```
+What are the weakest parts of this response and how would you improve them?
+```
+
+```
+If a critical reader reviewed this, what objections might they raise?
 ```
 
 ---
