@@ -100,7 +100,6 @@ When Copilot generates the next word in a response, it is actually choosing from
 When you switch between models, you are talking to a completely different AI system with different training, different style tendencies, and different strengths. A prompt asking for a formal summary will produce noticeably different results in Claude Opus versus GPT-4o.
 
 ![Model switcher](./images/model-switcher.png)
-
 *Click the model selector (① top right) to switch between available AI models*
 
 | # | What it is |
@@ -145,11 +144,23 @@ Copilot Chat includes a **Notebooks** feature (item **③** in the interface abo
 You can shape how Copilot responds to you — both personally and at an organisational level.
 
 ### Personal instructions (Your profile)
-In Copilot Chat, click your profile (item **⑤** in the interface above) to access personal instructions. These influence every response and persist across all your sessions. Examples of what you can tell it:
-- Your role and industry: "I am an HR manager at a manufacturing company in Malaysia"
-- Preferred language style: "Always write in British English, formal tone"
-- Default output format: "Summarise responses in bullet points unless I ask otherwise"
-- Constraints: "Do not use jargon — my audience is non-technical"
+Access this via your profile (item **⑤** in the interface above) → **Chat settings** → **Personalisation**.
+
+![Chat settings — Personalisation](./images/personalisation.png)
+*The Personalisation panel in Chat settings*
+
+| Setting | What it does |
+|---------|-------------|
+| **Custom instructions** | Add details about your preferences so Copilot responds your way — your role, preferred tone, output format, and any constraints. Click **Edit instructions** to set yours |
+| **Work profile** | Copilot uses your Microsoft 365 work data (emails, calendar, files) for more relevant answers. Click **View work data** to see what it has access to |
+| **Saved memories** | Allows Copilot to remember details from your conversations to improve future responses over time |
+| **Chat history (Frontier)** | Lets Copilot use your past chats to personalise responses. Marked as Frontier — a preview feature that may not be available in all tenants |
+
+Examples of what to put in your Custom instructions:
+- `I am an HR manager at a manufacturing company in Malaysia`
+- `Always write in formal British English`
+- `Summarise responses in bullet points unless I ask otherwise`
+- `My audience is non-technical — avoid jargon`
 
 ### Agents (Custom Copilots)
 In Copilot Chat, you can access pre-built or custom-built agents under the **Agents** panel (item **②** in the interface above). These are Copilot instances that have been given a specific role, a custom knowledge base, and a defined set of behaviours. For example, an HR agent that only answers questions using your company's HR policy documents.
