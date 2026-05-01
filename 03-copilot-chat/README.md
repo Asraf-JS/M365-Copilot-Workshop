@@ -40,12 +40,44 @@ Before you start prompting, it helps to know what each control around the messag
 
 *The grounding toggle controls where Copilot searches*
 
+**Grounding** is the process of connecting an AI's response to a specific, trusted source of information rather than relying on its general training data alone. When Copilot is grounded, it retrieves real content from a defined source before generating a response — this is what makes its answers relevant to your actual work context rather than generic.
+
 | Mode | What it searches |
 |------|----------------|
-| **Work (briefcase icon)** | Your Microsoft 365 data — emails, files, calendar, Teams messages |
+| **Work (briefcase icon)** | Your Microsoft 365 data — emails, files, calendar, Teams messages, SharePoint |
 | **Web (globe icon)** | The public internet via Bing |
 
+**When to use Work mode:**
+- Finding information from your own company files or emails
+- Summarising a document stored in SharePoint or OneDrive
+- Asking about a meeting, a colleague, or a recent project
+- Drafting content that references your organisation's actual context
+
+**When to use Web mode:**
+- Researching external topics, industry best practices, or current events
+- Looking up regulations, guidelines, or public information
+- Comparing your approach against what other organisations do
+- Any task where you need information beyond what your company has
+
 For the research phase of this workshop, use **Web** mode to gather information about AI guidelines and best practices. Switch to **Work** mode when you want Copilot to reference your actual company documents.
+
+> **Important:** When in Work mode, Copilot only accesses data you already have permission to see. It respects your Microsoft 365 permissions — it cannot read files or emails that you do not have access to.
+
+---
+
+### Microsoft Graph — How Work Mode Knows Your Data
+
+When you switch to Work mode, Copilot does not search your files the way Google searches the web. Instead, it uses **Microsoft Graph** — a unified API layer that sits across all your Microsoft 365 services.
+
+Think of Microsoft Graph as a single connection point that links everything in your Microsoft 365 environment: your emails in Outlook, files in OneDrive and SharePoint, calendar events, Teams chats, contacts, and meeting transcripts. Rather than searching each service separately, Copilot queries Microsoft Graph once and gets a consolidated view of your work data.
+
+**What this means in practice:**
+- When you ask "what did we discuss in last Tuesday's meeting?", Copilot queries Graph for your calendar and any associated Teams meeting transcript
+- When you ask "find the Q1 report", Copilot queries Graph for files across OneDrive and SharePoint that you have access to
+- When you ask "what emails have I received from the finance team this week?", Copilot queries Graph for your Outlook data
+
+**Why it matters for your AI Usage Guide:**
+Your AI Usage Guide should acknowledge that Copilot in Work mode can see a broad range of company data — and staff should understand this so they are thoughtful about what they discuss and store in Microsoft 365. It is not a risk to be alarmed about, but it is context worth including in any responsible AI guideline.
 
 ### Quick filters — Files, Emails, People, Meetings
 
