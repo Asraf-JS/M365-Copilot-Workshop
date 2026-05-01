@@ -10,26 +10,31 @@
   --navy:#1E2761;--teal:#028090;--teal-light:#E0F4F7;
   --text-dark:#1A1A2E;--text-mid:#4A5568;--text-muted:#8A9BB0;
   --bg:#FFFFFF;--bg-page:#F7F9FC;--border:#E2E6EA;--green:#1D6F42;
-  --warn:#E07B39;
 }
 body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark);min-height:100vh;}
 
-/* ── TOP NAV ── */
+/* TOP NAV */
 .topnav{background:var(--navy);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.08);}
-.topnav-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:52px;gap:32px;}
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;}
-.nav-logo-icon{width:28px;height:28px;background:var(--teal);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:.02em;flex-shrink:0;}
-.nav-logo-text{font-family:'Trebuchet MS',sans-serif;font-size:13px;font-weight:700;color:#fff;line-height:1.2;}
-.nav-logo-sub{font-family:'Trebuchet MS',sans-serif;font-size:9px;color:rgba(255,255,255,.5);display:block;margin-top:1px;}
-.nav-links{display:flex;align-items:center;gap:4px;flex:1;}
-.nav-link{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.6);text-decoration:none;padding:5px 10px;border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
+.topnav-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:52px;gap:0;}
+
+/* LOGO — left */
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;margin-right:24px;}
+.nav-logo img{width:32px;height:32px;border-radius:7px;object-fit:cover;display:block;}
+.nav-logo-text{font-family:'Trebuchet MS',sans-serif;font-size:15px;font-weight:700;color:#fff;}
+.nav-logo-sub{font-family:'Trebuchet MS',sans-serif;font-size:9px;color:rgba(255,255,255,.45);display:block;margin-top:1px;letter-spacing:.02em;}
+
+/* NAV LINKS — immediately after logo */
+.nav-links{display:flex;align-items:center;gap:2px;flex:1;}
+.nav-link{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;padding:5px 9px;border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
 .nav-link:hover{background:rgba(255,255,255,.08);color:#fff;}
-.nav-link.active{color:#fff;background:rgba(255,255,255,.1);}
-.nav-right{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0;}
-.nav-btn{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.7);text-decoration:none;padding:5px 12px;border:1px solid rgba(255,255,255,.2);border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
+.nav-link.active{color:#fff;background:rgba(255,255,255,.12);}
+
+/* RIGHT BUTTONS */
+.nav-right{display:flex;align-items:center;gap:6px;margin-left:auto;flex-shrink:0;}
+.nav-btn{font-family:'Trebuchet MS',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.65);text-decoration:none;padding:5px 12px;border:1px solid rgba(255,255,255,.18);border-radius:5px;transition:background .12s,color .12s;white-space:nowrap;}
 .nav-btn:hover{background:rgba(255,255,255,.08);color:#fff;}
 
-/* ── BREADCRUMB ── */
+/* BREADCRUMB */
 .breadcrumb-bar{background:var(--bg);border-bottom:1px solid var(--border);}
 .breadcrumb-inner{max-width:1100px;margin:0 auto;padding:0 32px;height:36px;display:flex;align-items:center;gap:6px;}
 .bc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);text-decoration:none;}
@@ -37,12 +42,10 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
 .bc-sep{font-size:11px;color:var(--border);}
 .bc-current{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-mid);}
 
-/* ── PAGE LAYOUT ── */
-.page-outer{max-width:1100px;margin:0 auto;padding:48px 32px 80px;display:flex;gap:48px;align-items:flex-start;}
+/* PAGE LAYOUT */
+.page-outer{max-width:1100px;margin:0 auto;padding:48px 32px 80px;}
 
-/* ── MAIN CONTENT ── */
-.page-content{flex:1;min-width:0;}
-.page-tag{display:inline-block;font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--teal);padding:3px 10px;border-radius:4px;text-transform:uppercase;margin-bottom:12px;}
+/* CONTENT */
 .page-content h1{font-family:'Trebuchet MS',sans-serif;font-size:30px;font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:12px;}
 .page-content h2{font-family:'Trebuchet MS',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin:32px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--border);}
 .page-content h2:first-of-type{margin-top:0;}
@@ -58,27 +61,19 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
 .page-content blockquote p{font-size:13px;margin:0;color:var(--text-dark);}
 .page-content table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;}
 .page-content th{background:var(--navy);color:#fff;font-family:'Trebuchet MS',sans-serif;font-weight:700;padding:10px 14px;text-align:left;}
-.page-content td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-dark);}
+.page-content td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
 .page-content tr:nth-child(even) td{background:#F7F9FC;}
 .page-content img{max-width:100%;border-radius:8px;border:1px solid var(--border);margin:14px 0;display:block;}
 .page-content hr{border:none;border-top:1px solid var(--border);margin:28px 0;}
 .page-content code{background:#F7F9FC;border:1px solid var(--border);border-radius:3px;padding:1px 5px;font-size:12px;font-family:'Courier New',monospace;}
-.page-content pre{background:#F7F9FC;border:1px solid var(--border);border-radius:6px;padding:16px;font-family:'Courier New',monospace;font-size:12.5px;line-height:1.65;overflow-x:auto;margin:10px 0 20px;}
+.page-content pre{background:#F7F9FC;border:1px solid var(--border);border-radius:6px;padding:16px;font-family:'Courier New',monospace;font-size:12.5px;line-height:1.65;overflow-x:auto;margin:10px 0 20px;max-width:700px;}
 .page-content pre code{background:none;border:none;padding:0;}
 
-/* ── RIGHT SIDEBAR (meta panel) ── */
-.page-meta{width:200px;flex-shrink:0;position:sticky;top:72px;}
-.meta-section{margin-bottom:24px;}
-.meta-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:10px;}
-.meta-item{margin-bottom:10px;}
-.meta-item-label{font-family:'Trebuchet MS',sans-serif;font-size:10px;color:var(--text-muted);margin-bottom:2px;}
-.meta-item-value{font-family:'Trebuchet MS',sans-serif;font-size:12px;font-weight:600;color:var(--navy);}
-.meta-link{display:block;font-family:'Trebuchet MS',sans-serif;font-size:12px;color:var(--teal);text-decoration:none;padding:4px 0;border-bottom:1px solid var(--border);}
-.meta-link:last-child{border-bottom:none;}
-.meta-link:hover{color:var(--navy);}
-
 /* HOME */
-.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;}
+.home-scenario{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;}
+.home-scenario p{font-size:13.5px;color:var(--text-dark);line-height:1.75;}
+.section-sublabel{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:12px;}
+.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .topic-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:border-color .15s,box-shadow .15s;display:block;}
 .topic-card:hover{border-color:var(--teal);box-shadow:0 2px 10px rgba(2,128,144,.08);}
 .tc-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px;}
@@ -88,14 +83,8 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
 .tc-notes{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:#fff;background:var(--navy);padding:3px 9px;border-radius:4px;}
 .tc-prompts{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:var(--teal);border:1px solid var(--teal);padding:3px 9px;border-radius:4px;text-decoration:none;}
 .tc-prompts:hover{background:var(--teal-light);}
-.home-scenario{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;padding:16px 20px;margin:0 0 32px;}
-.home-scenario p{font-size:13.5px;color:var(--text-dark);line-height:1.75;}
-.section-sublabel{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:12px;}
 
-@media(max-width:900px){
-  .page-meta{display:none;}
-  .nav-links{display:none;}
-}
+@media(max-width:960px){.nav-links{display:none;}}
 @media(max-width:640px){
   .home-grid{grid-template-columns:1fr;}
   .page-outer{padding:28px 20px 60px;}
@@ -105,12 +94,12 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
 </head>
 <body>
 
-<!-- TOP NAV -->
 <nav class="topnav">
   <div class="topnav-inner">
     <a class="nav-logo" href="/M365-Copilot-Workshop/">
-      <div class="nav-logo-icon">M365</div>
-      <div class="nav-logo-text">Asraf Jaafar Sidik
+      <img src="/M365-Copilot-Workshop/logo.png" alt="Asraf logo">
+      <div>
+        <div class="nav-logo-text">Asraf</div>
         <span class="nav-logo-sub">Copilot Workshop &nbsp;·&nbsp; May 2026</span>
       </div>
     </a>
@@ -133,7 +122,6 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
 {% unless page.url == "/" or page.url == "/M365-Copilot-Workshop/" %}
 <div class="breadcrumb-bar">
   <div class="breadcrumb-inner">
@@ -144,34 +132,10 @@ body{font-family:'Georgia',serif;background:var(--bg-page);color:var(--text-dark
 </div>
 {% endunless %}
 
-<!-- PAGE BODY -->
 <div class="page-outer">
   <div class="page-content">
     {{ content }}
   </div>
-
-  {% if page.show_meta %}
-  <div class="page-meta">
-    <div class="meta-section">
-      <div class="meta-label">This topic</div>
-      <div class="meta-item">
-        <div class="meta-item-label">Notes</div>
-        <div class="meta-item-value">{{ page.title }}</div>
-      </div>
-      {% if page.prompts_url %}
-      <div class="meta-item">
-        <div class="meta-item-label">Prompts</div>
-        <a class="meta-link" href="{{ page.prompts_url }}">View prompts</a>
-      </div>
-      {% endif %}
-    </div>
-    <div class="meta-section">
-      <div class="meta-label">Navigation</div>
-      {% if page.prev_url %}<a class="meta-link" href="{{ page.prev_url }}">&#8592; {{ page.prev_title }}</a>{% endif %}
-      {% if page.next_url %}<a class="meta-link" href="{{ page.next_url }}">{{ page.next_title }} &#8594;</a>{% endif %}
-    </div>
-  </div>
-  {% endif %}
 </div>
 
 </body>
