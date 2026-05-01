@@ -100,6 +100,7 @@ When Copilot generates the next word in a response, it is actually choosing from
 When you switch between models, you are talking to a completely different AI system with different training, different style tendencies, and different strengths. A prompt asking for a formal summary will produce noticeably different results in Claude Opus versus GPT-4o.
 
 ![Model switcher](./images/model-switcher.png)
+
 *Click the model selector (① top right) to switch between available AI models*
 
 | # | What it is |
