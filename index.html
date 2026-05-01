@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M365 Copilot Workshop</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --navy:#1E2761;--teal:#028090;--teal-light:#E0F4F7;--accent:#02C39A;
+  --text-dark:#1A1A2E;--text-mid:#4A5568;--text-muted:#8A9BB0;
+  --bg:#F7F9FC;--white:#FFFFFF;--border:#E2E6EA;--ice:#CADCFC;
+  --green:#1D6F42;
+}
+body{font-family:'Georgia',serif;background:var(--bg);color:var(--text-dark);min-height:100vh;}
+
+/* HEADER */
+.header{background:var(--navy);padding:0;}
+.header-inner{max-width:900px;margin:0 auto;padding:28px 32px 24px;}
+.header-tag{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;margin-bottom:6px;}
+.header-title{font-family:'Trebuchet MS',sans-serif;font-size:30px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:8px;}
+.header-sub{font-size:14px;color:#CADCFC;font-style:italic;line-height:1.6;}
+
+/* MAIN */
+.main{max-width:900px;margin:0 auto;padding:40px 32px 80px;}
+
+/* SCENARIO */
+.scenario{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;padding:18px 22px;margin-bottom:36px;}
+.scenario-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--teal);text-transform:uppercase;margin-bottom:6px;}
+.scenario p{font-size:13.5px;color:var(--text-dark);line-height:1.75;}
+
+/* SECTION LABEL */
+.section-label{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:12px;}
+
+/* TOPIC GRID */
+.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.topic-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;transition:border-color .15s,box-shadow .15s;display:block;cursor:pointer;}
+.topic-card:hover{border-color:var(--teal);box-shadow:0 2px 8px rgba(2,128,144,.08);}
+.card-num{font-family:'Trebuchet MS',sans-serif;font-size:9px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px;}
+.card-title{font-family:'Trebuchet MS',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.card-desc{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);line-height:1.45;margin-bottom:10px;}
+.card-links{display:flex;gap:8px;align-items:center;}
+.card-link-notes{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:var(--white);background:var(--navy);padding:3px 10px;border-radius:4px;}
+.card-link-prompts{font-family:'Trebuchet MS',sans-serif;font-size:10px;font-weight:600;color:var(--teal);border:1px solid var(--teal);padding:3px 10px;border-radius:4px;text-decoration:none;}
+.card-link-prompts:hover{background:var(--teal-light);}
+
+/* FOOTER */
+.footer{max-width:900px;margin:0 auto;padding:0 32px 40px;}
+.footer-divider{height:1px;background:var(--border);margin-bottom:18px;}
+.footer-text{font-family:'Trebuchet MS',sans-serif;font-size:11px;color:var(--text-muted);}
+.footer-text a{color:var(--teal);text-decoration:none;}
+.footer-text a:hover{text-decoration:underline;}
+
+@media(max-width:640px){
+  .topic-grid{grid-template-columns:1fr;}
+  .header-title{font-size:24px;}
+  .main{padding:24px 20px 60px;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="header-tag">M365 Copilot Workshop</div>
+    <h1 class="header-title">Microsoft 365 Copilot Training</h1>
+    <p class="header-sub">Prompts, reference notes, and sample datasets. Each topic has a Notes page and a Prompts page.</p>
+  </div>
+</div>
+
+<div class="main">
+  <div class="scenario">
+    <div class="scenario-label">Workshop Scenario</div>
+    <p>You are creating an <strong>AI Usage Guide for your department</strong>. You will research it in Copilot Chat, draft it in Pages, refine it as a proposal in Word, email it for approval in Outlook, present it in PowerPoint, collect feedback with Forms, analyse results in Excel, and finish with a hands-on Copilot Studio agent.</p>
+  </div>
+
+  <div class="section-label">Topics</div>
+  <div class="topic-grid">
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/01-copilot-fundamentals/">
+        <div class="card-num">Topic 01</div>
+        <div class="card-title">Copilot Fundamentals</div>
+        <div class="card-desc">What Copilot is, licensing, AI terminology, memory, personalisation</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/01-copilot-fundamentals/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/02-prompt-engineering/">
+        <div class="card-num">Topic 02</div>
+        <div class="card-title">Prompt Engineering</div>
+        <div class="card-desc">GCSE framework, weak vs strong prompts, iteration, common mistakes</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/02-prompt-engineering/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/03-copilot-chat/">
+        <div class="card-num">Topic 03</div>
+        <div class="card-title">Copilot Chat</div>
+        <div class="card-desc">Interface walkthrough, grounding, Microsoft Graph, model switcher</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/03-copilot-chat/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/04-copilot-pages/">
+        <div class="card-num">Topic 04</div>
+        <div class="card-title">Copilot Pages</div>
+        <div class="card-desc">Collaborative drafting, Mermaid diagrams, exporting to Word</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/04-copilot-pages/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/05-copilot-word/">
+        <div class="card-num">Topic 05</div>
+        <div class="card-title">Copilot in Word</div>
+        <div class="card-desc">Turning your draft into a formal management proposal</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/05-copilot-word/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/06-copilot-outlook/">
+        <div class="card-num">Topic 06</div>
+        <div class="card-title">Copilot in Outlook</div>
+        <div class="card-desc">Submitting the proposal and managing email conversations</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/06-copilot-outlook/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/07-copilot-powerpoint/">
+        <div class="card-num">Topic 07</div>
+        <div class="card-title">Copilot in PowerPoint</div>
+        <div class="card-desc">Building a team presentation from your approved document</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/07-copilot-powerpoint/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/08-copilot-forms/">
+        <div class="card-num">Topic 08</div>
+        <div class="card-title">Copilot in Forms</div>
+        <div class="card-desc">Creating a feedback survey for your team</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/08-copilot-forms/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/09-copilot-excel/">
+        <div class="card-num">Topic 09</div>
+        <div class="card-title">Copilot in Excel</div>
+        <div class="card-desc">Analysing survey responses with sample data included</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/09-copilot-excel/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+      <a class="topic-card" href="https://asraf-js.github.io/M365-Copilot-Workshop/10-copilot-studio-intro/">
+        <div class="card-num">Topic 10</div>
+        <div class="card-title">Copilot Studio Intro</div>
+        <div class="card-desc">What agents are, building your first agent, where to go next</div>
+        <div class="card-links">
+          <span class="card-link-notes">Notes</span>
+          <a class="card-link-prompts" href="https://asraf-js.github.io/M365-Copilot-Workshop/10-copilot-studio-intro/prompts" onclick="event.stopPropagation()">Prompts</a>
+        </div>
+      </a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-divider"></div>
+  <p class="footer-text">Last updated: May 2026 &nbsp;|&nbsp; Trainer: Asraf &nbsp;|&nbsp; <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop" target="_blank">View on GitHub</a> &nbsp;|&nbsp; <a href="https://github.com/Asraf-JS/M365-Copilot-Workshop/raw/main/09-copilot-excel/AI_Guideline_Survey_Responses.xlsx">Download Sample Data</a></p>
+</div>
+
+</body>
+</html>
