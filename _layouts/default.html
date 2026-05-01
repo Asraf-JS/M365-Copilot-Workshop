@@ -417,7 +417,7 @@ body{
   background:var(--code-bg);
   border:1px solid var(--border);
   border-radius:12px;
-  padding:18px 20px;
+  padding:42px 20px 18px;
   font-family:'Cascadia Code','Fira Code','Courier New',monospace;
   font-size:12.5px;
   line-height:1.7;
@@ -432,6 +432,54 @@ body{
   border:none;
   padding:0;
   color:var(--text-dark);
+}
+
+/* COPY BUTTON FOR CODE BLOCKS */
+.copy-code-btn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  border:1px solid var(--border);
+  background:var(--bg);
+  color:var(--teal);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  padding:4px 8px;
+  border-radius:6px;
+  cursor:pointer;
+  opacity:.75;
+  transition:opacity .15s, background .15s, color .15s, border-color .15s;
+}
+
+.copy-code-btn:hover{
+  opacity:1;
+  background:var(--teal-light);
+}
+
+.copy-code-btn.copied{
+  color:#fff;
+  background:var(--teal);
+  border-color:var(--teal);
+}
+
+@media (prefers-color-scheme: dark){
+  .copy-code-btn{
+    background:#111827;
+    color:var(--teal);
+    border-color:var(--border);
+  }
+
+  .copy-code-btn:hover{
+    background:#12343A;
+  }
+
+  .copy-code-btn.copied{
+    color:#0B1020;
+    background:var(--teal);
+    border-color:var(--teal);
+  }
 }
 
 /* HOME */
@@ -603,6 +651,49 @@ body{
     {{ content }}
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const codeBlocks = document.querySelectorAll(".main-inner pre");
+
+  codeBlocks.forEach(function (pre) {
+    const code = pre.querySelector("code");
+
+    if (!code) return;
+
+    if (pre.querySelector(".copy-code-btn")) return;
+
+    const button = document.createElement("button");
+    button.className = "copy-code-btn";
+    button.type = "button";
+    button.textContent = "Copy";
+
+    button.addEventListener("click", async function () {
+      const text = code.innerText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+
+        button.textContent = "Copied";
+        button.classList.add("copied");
+
+        setTimeout(function () {
+          button.textContent = "Copy";
+          button.classList.remove("copied");
+        }, 1500);
+      } catch (err) {
+        button.textContent = "Failed";
+
+        setTimeout(function () {
+          button.textContent = "Copy";
+        }, 1500);
+      }
+    });
+
+    pre.appendChild(button);
+  });
+});
+</script>
 
 </body>
 </html>
