@@ -1,297 +1,215 @@
-# 02 — Prompt Engineering: Prompts
+# 03 — Copilot Chat: Prompts
 
-Practice writing better prompts using the **GCSE framework** (Goal, Context, Source, Expectations).
+Use these prompts to research your **AI Usage Guide** for your department. Run these in **Web** grounding mode so Copilot can pull current information from the internet.
 
 ---
 
-## Part 1 — Building a GCSE prompt
+## Part 1 — Broad overview
 
-Work through these in order **within the same chat session**. Each step adds one more element to the same prompt and you will see the output improve at each stage.
+Start here to get a high-level picture before going into department-specific detail. Run these in sequence within the same chat session.
 
-**Step 1 — Goal only. Submit this and note the response:**
 ```
-Write a summary.
-```
-
-**Step 2 — Add Context. Submit and compare:**
-```
-Write a summary for a team of non-technical staff.
+What should a departmental AI usage guide cover? Give me a 
+structured outline with at least 6 sections. The guide is for 
+a Malaysian corporate environment with non-technical staff.
 ```
 
-**Step 3 — Add Source. Submit and compare:**
-
-First, paste this paragraph into the chat so Copilot has something to work from:
-
-> *Our AI Usage Guideline covers 7 areas: purpose and scope, approved AI tools, prohibited uses, data privacy rules under PDPA, how to verify AI outputs, how to report issues, and a review schedule. It applies to all staff in our department.*
-
-Then submit:
 ```
-Write a summary for a team of non-technical staff based on the 
-AI Usage Guideline information I just shared above.
+What are the most common risks organisations face when employees 
+use AI tools without clear guidelines? List them with a brief 
+explanation of each.
 ```
 
-**Step 4 — Add Expectations. Submit and compare:**
 ```
-Write a summary of the AI Usage Guideline information I shared earlier 
-for a team of non-technical staff. Cover the 3 most important rules 
-they need to follow. Use plain language, bullet points, and keep it 
-under 150 words.
+What are global best practices for responsible AI use in the 
+workplace? Summarise the key principles in plain language, 
+with one example of how each applies in an office setting.
 ```
 
-After all four rounds, ask:
+Then go deeper on anything that stands out:
 ```
-Compare the four summaries you just produced in this conversation. 
-Which one is most useful and why? What specifically made the difference?
+Expand on [paste the point you want to explore]. Give me 2 real-world 
+examples of how this has affected organisations, and what they did 
+about it.
 ```
 
 ---
 
-## Part 2 — Rewriting weak prompts
+## Part 2 — Department-specific research
 
-Read each weak prompt, identify which GCSE elements are missing, rewrite it, then submit both versions to compare outputs.
-
-**Weak:**
-```
-Write me something about AI.
-```
-
-**Weak:**
-```
-Summarise this.
-```
-
-**Weak:**
-```
-Help me with my email.
-```
-
-**Weak:**
-```
-Give me ideas.
-```
-
-**Weak:**
-```
-Make this better.
-```
-
-For each one, ask yourself before rewriting: what is the Goal, who is the Context, what is the Source, and what are the Expectations? You do not need all four every time, but identifying what is missing tells you exactly what to add.
-
----
-
-## Part 3 — GCSE framework practice
-
-These are fully built prompts using the GCSE framework. Submit them as-is first, then try modifying one element at a time to see how the output changes.
+Replace `[your department]` with your actual department before submitting. These prompts are intentionally specific — generic advice is less useful here.
 
 ```
-I am an HR manager at a 200-person Malaysian manufacturing company. 
-Write a short internal announcement (under 120 words) informing staff 
-that the company has adopted Microsoft 365 Copilot and will be rolling 
-out training next month. Tone: reassuring and positive.
+I work in [your department] at a mid-sized Malaysian company. 
+What are the 5 most relevant AI use cases for my department? 
+Be specific — not generic advice. For each use case, name the 
+Microsoft 365 Copilot feature that would handle it.
 ```
 
 ```
-Act as a sceptical finance director reviewing a new AI Usage Guideline 
-for a Malaysian company. List 5 specific questions or concerns you would 
-raise before approving it. Focus on financial risk, data security, and 
-employee liability. Be practical, not theoretical.
+What are the most important dos and don'ts for using AI in 
+[your department]? Focus on data privacy, accuracy, and 
+professional ethics. Give me a table with two columns: 
+Do and Don't.
 ```
 
 ```
-I need to explain to a non-technical colleague what "prompt engineering" 
-means. Write a 3-sentence explanation using an analogy from everyday 
-life in Malaysia. Avoid technical jargon entirely.
+What data or information from [your department] should never 
+be shared with an external AI tool? Give me a list with the 
+reason for each item. Reference PDPA where relevant.
 ```
 
 ```
-I am preparing a 30-minute lunch-and-learn session on Microsoft 365 
-Copilot for a team of 15 people in a logistics company. They have 
-never used AI tools before. Write a session outline with 4 segments, 
-including a hands-on activity. Keep the tone light and practical.
-```
-
-**Modification exercise:** Pick any prompt above and change just one element. For example, change the audience, the word count, or the tone. Submit the modified version and compare it to the original output. Notice how a single change can significantly shift the response.
-
----
-
-## Part 4 — Iteration practice
-
-This exercise runs as a **single conversation**. Do not start a new chat between rounds — Copilot needs to remember what it produced in earlier rounds.
-
-**Round 1 — Get a first draft:**
-```
-Write a short policy statement on the responsible use of AI at work. 
-Audience: all staff. Length: 3 short paragraphs.
-```
-
-**Round 2 — Localise it:**
-```
-Make it more specific to Malaysian workplace culture. 
-Add a reference to the PDPA (Personal Data Protection Act 2010).
-```
-
-**Round 3 — Shorten it:**
-```
-Shorten it to under 80 words and make it suitable for a 
-company intranet homepage. Keep the PDPA reference.
-```
-
-**Round 4 — Add a perspective:**
-```
-Now rewrite the same statement from the perspective of an employee 
-reading it for the first time. What might feel unclear or concerning? 
-Suggest 2 improvements based on that perspective.
-```
-
-**Round 5 — Final check:**
-```
-Review the final version of the policy statement. What is missing 
-that a complete AI usage policy should cover? List up to 3 gaps.
+What are 3 tasks in [your department] where AI output must 
+always be verified by a human before being used? Explain 
+the risk for each one if it is not checked.
 ```
 
 ---
 
-## Part 5 — Format control
+## Part 3 — Regulatory and compliance angle
 
-These exercises focus on controlling output format. Submit each prompt and observe how specifying format changes what you get.
-
-```
-List 5 benefits of using Copilot in Outlook. Give the output in 
-3 different formats:
-1. Bullet points only
-2. A numbered list with one-line explanations
-3. A table with "Benefit" and "Estimated Time Saved Per Week" columns
-```
+These prompts focus on the legal and compliance dimension — important for any Malaysian corporate audience.
 
 ```
-Explain how Microsoft 365 Copilot uses RAG (Retrieval-Augmented 
-Generation) to access company data. Give me 3 versions:
-1. A 2-sentence plain language summary for a non-technical employee
-2. A 5-bullet technical explanation for an IT team
-3. A one-line version suitable for a slide title
+What Malaysian laws or regulations are relevant when a company 
+introduces AI tools in the workplace? Include PDPA 2010, any 
+labour regulations, and sector-specific rules if applicable 
+(e.g. banking under BNM guidelines, healthcare under MOH).
 ```
 
 ```
-Describe the difference between Copilot Chat and Copilot inside 
-Word. Format the response as a comparison table with 4 rows covering: 
-where you access it, what context it has, best use cases, and 
-one limitation.
+Act as a cautious legal advisor. What clauses or warnings 
+should be included in a company AI usage policy to protect 
+the organisation from liability? List them with a one-sentence 
+explanation of each.
+```
+
+```
+How does Malaysia's National Guidelines on AI Governance and 
+Ethics (AIGE) apply to a company deploying Microsoft 365 Copilot 
+for its staff? Summarise the key requirements in plain language.
 ```
 
 ---
 
-## Part 6 — Role and perspective
+## Part 4 — Exploring different perspectives
 
-Using "Act as" shifts how Copilot frames its response. This exercise shows how the same sentence gets reviewed very differently depending on the role you assign.
-
-Submit the base prompt first with no role:
-```
-Review this sentence from an AI Usage Guideline: "Staff may use any 
-AI tool of their choice for work tasks as long as it improves 
-productivity." What are the problems with this statement?
-```
-
-Then submit it again with each role below, one at a time:
+Use these to stress-test your research by hearing from different stakeholders.
 
 ```
-Act as a cautious IT security officer. Review this sentence from an 
-AI Usage Guideline and flag any security risks: "Staff may use any 
-AI tool of their choice for work tasks as long as it improves 
-productivity."
+Act as a cautious IT security officer at a Malaysian company. 
+Review a situation where staff are starting to use Microsoft 365 
+Copilot without formal guidelines. What are your top 5 concerns 
+and what would you want the AI usage guide to address?
 ```
 
 ```
-Act as a legal advisor specialising in Malaysian data protection law. 
-Review this sentence from an AI Usage Guideline and flag any 
-compliance risks under PDPA: "Staff may use any AI tool of their 
-choice for work tasks as long as it improves productivity."
+Act as an enthusiastic department head who wants their team to 
+adopt AI tools quickly. Make the case for why every department 
+in a Malaysian company should have an AI usage guide — and why 
+having one actually accelerates adoption rather than slowing it down.
 ```
 
 ```
-Act as a pragmatic operations manager who wants to roll out AI tools 
-quickly. Review this sentence and explain why it is actually a 
-reasonable starting point, with one suggested improvement.
+Act as a frontline employee who is nervous about using AI at work. 
+What questions would you want the AI usage guide to answer before 
+you felt comfortable using Copilot for your daily tasks?
 ```
 
-Compare the four responses. Notice how the same sentence gets framed completely differently depending on who Copilot is "acting as." This is useful for anticipating how different stakeholders will react to something you have written.
+Run all three and compare. The employee perspective is often the most useful one for writing a guide that people will actually read.
 
 ---
 
-## Part 7 — Prompting inside M365 apps
+## Part 5 — Multi-model comparison
 
-These prompts are designed for use **inside specific M365 apps**, not Copilot Chat. They are intentionally short because the app already provides the document or data as context.
-
-> **Before using these:** Make sure you have the relevant content open in the app first. These prompts will not work as intended if submitted in Copilot Chat without providing the source content.
-
-**In Copilot in Word** (open any document first):
-```
-Summarise this document in 5 bullet points for a senior manager 
-who has 2 minutes to read it.
-```
+Switch between models using the **Auto** dropdown at the top right. Run the same prompt in Opus and GPT and compare the outputs.
 
 ```
-Rewrite the introduction to be more engaging. The reader should 
-want to keep reading after the first paragraph.
+Write a one-paragraph introduction for an AI Usage Guide 
+aimed at employees who are new to using AI at work. 
+Tone: professional but encouraging. Max 80 words.
 ```
 
-```
-What sections of this document are unclear or could cause 
-confusion for a non-technical reader? List them with a 
-suggested fix for each.
-```
+After comparing, ask yourself:
+- Which version is more suitable for your workplace culture?
+- Which is clearer and easier to read?
+- Which would you edit less before using?
 
-**In Copilot in Outlook** (open an email thread first):
-```
-Summarise this thread. What has been agreed, what is still 
-unresolved, and what action is needed from me?
-```
+Then try the same comparison with a more analytical prompt:
 
 ```
-Draft a reply acknowledging the feedback and confirming I will 
-make the requested changes by end of this week.
+What are the 3 most important things a Malaysian company must 
+address in an AI usage policy? Rank them by business risk, 
+highest first. Give a one-paragraph justification for each.
 ```
 
-**In Copilot in Excel** (select a data table first):
+Notice whether the models differ more on creative writing tasks or analytical ones.
+
+---
+
+## Part 6 — Work mode: referencing your own documents
+
+Switch to **Work** grounding mode (briefcase icon) for these prompts. These only work if you have relevant documents in your OneDrive or SharePoint.
+
 ```
-What are the top 3 insights from this data? 
-Highlight anything that stands out as unusual.
+Do we have any existing policies or guidelines related to data 
+privacy or IT security? Summarise what they say about acceptable 
+use of third-party tools.
 ```
 
 ```
-Create a bar chart showing the distribution of responses 
-in the Productivity Rating column.
+Based on our existing IT policy, what gaps would need to be 
+addressed if we introduced Microsoft 365 Copilot for all staff?
+```
+
+```
+Find any recent emails or documents related to AI tools or 
+digital transformation in our organisation. Summarise the 
+key themes.
 ```
 
 ---
 
-## Part 8 — Stress testing your prompts
+## Part 7 — Fact-checking and pressure-testing
 
-Once you have a response you are mostly happy with, push it further. These follow-up prompts work after any response, in any context.
-
-```
-What did you leave out that might be relevant?
-```
+Once you have research notes, use these to verify and challenge what Copilot gave you.
 
 ```
-What assumptions did you make when writing this?
+You told me earlier that [paste a specific claim]. What is 
+the source for this? How confident are you in this information 
+and what should I verify independently?
 ```
 
 ```
-Give me an alternative version with a completely different structure.
+Review the research notes we have built in this conversation. 
+Which points are likely to be accurate and stable, and which 
+ones should I verify with a current source before including 
+them in a formal document?
 ```
 
 ```
-What are the weakest parts of this response and how would you improve them?
-```
-
-```
-If a critical reader reviewed this, what objections might they raise?
-```
-
-```
-Rewrite this for a completely different audience: [describe the new audience].
+What did you leave out of this research that a thorough AI 
+usage guide for a Malaysian company should cover?
 ```
 
 ---
 
-*Back to: [01 — Copilot Fundamentals](../01-copilot-fundamentals/) | Next: [03 — Copilot Chat](../03-copilot-chat/)*
+## Part 8 — Consolidation: preparing to move to Pages
+
+Run this at the end of your research session, still within the same chat. This turns everything you have gathered into a structured outline ready to take into Copilot Pages in Topic 04.
+
+```
+Based on everything we have discussed in this conversation, 
+give me a structured set of notes I can use to write an AI 
+Usage Guide for my department. Organise by section with a 
+heading for each. Under each heading, use bullet points for 
+the key ideas. Include a note on any areas where I still 
+need to do more research.
+```
+
+Once you have the outline, click the **Edit in Pages** button (pencil icon on the response) to open it as a Copilot Page — that is where Topic 04 begins.
+
+---
+
+*Back to: [02 — Prompt Engineering](../02-prompt-engineering/) | Next: [04 — Copilot Pages](../04-copilot-pages/)*
