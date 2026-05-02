@@ -2,7 +2,7 @@
 
 Copilot Pages is where your research becomes a document. Think of it as a collaborative canvas — you pull content from Copilot Chat into a live page, edit it, refine it with Copilot, and share it with your team in real time.
 
-> **Prompts to Try:** Open the [copy-paste prompt exercises](https://github.com/Asraf-JS/M365-Copilot-Workshop/blob/main/04-copilot-pages/prompts.md) for this topic.
+> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
 
 ---
 
