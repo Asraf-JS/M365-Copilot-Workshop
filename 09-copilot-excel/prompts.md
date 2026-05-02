@@ -2,8 +2,6 @@
 
 Use these prompts to analyse, transform, and visualise your AI Usage Guide quiz response data.
 
-> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
-
 > **Session guide:** All exercises use the same workbook. Open `AI_Guideline_Survey_Responses.xlsx` in Excel desktop, enable **Allow editing** in the Copilot panel, and work through Exercises 1 to 4 in order. Switch to Claude Opus for best results on analytical tasks.
 
 > **Before you start:** Click on the Quiz Responses sheet and make sure the data is formatted as an Excel Table. If it is not, select any cell in the data and press Ctrl+T to convert it.
