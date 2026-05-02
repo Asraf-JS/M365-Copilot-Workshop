@@ -1,164 +1,118 @@
 # 09 — Copilot in Excel
 
-You've collected feedback from your team through the survey. Now it's time to analyse the results. Copilot in Excel helps you spot patterns, generate charts, and draw conclusions from your data — without needing to write complex formulas yourself.
+You have quiz response data from Topic 08. Now you will use Copilot in Excel to analyse it, clean it, spot patterns, and even run Python code — all through natural language prompts.
+
+> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
 
 ---
 
-## Sample Dataset
+## Continuing from Topic 08
 
-The file `AI_Guideline_Survey_Responses.xlsx` in this folder contains 30 simulated survey responses from employees across different departments. Use this file for the workshop exercises so you don't need to wait for real responses.
+At the end of Topic 08 you exported your Forms responses as an Excel file saved to OneDrive. Open that file now in Microsoft Excel (desktop app, not browser) to get full Copilot functionality.
 
-The workbook has two sheets:
-- **Survey Responses** — all 30 individual responses
-- **Summary** — basic summary stats calculated with Excel formulas
+**If you do not have real response data:** download the sample file below and open it in Excel. It contains 100 simulated quiz responses across 8 departments with realistic Malaysian names and varied correct/incorrect answer patterns.
+
+> **Sample data:** [AI_Guideline_Survey_Responses.xlsx](./AI_Guideline_Survey_Responses.xlsx)
+
+The workbook has 4 sheets:
+- **Quiz Responses:** 100 rows of quiz answers. Green cells are correct, red cells are incorrect.
+- **Answer Key:** the correct answer for each of the 20 questions.
+- **Summary:** pre-built stats by department and question accuracy.
+- **Trainer Notes:** guidance on using the file for each exercise.
 
 ---
 
 ## What Copilot Can Do in Excel
 
 - Analyse data and surface key insights in plain language
-- Create PivotTables and charts from natural language descriptions
+- Create PivotTables and charts from a natural language description
 - Write and explain formulas
+- Add new columns with calculated values
 - Highlight patterns, outliers, and trends
-- Answer questions about your data directly in the chat panel
+- Generate a full summary report in a new sheet
+- Run Python code for advanced analysis and visualisation
 
 ---
 
-## Getting Started
+## Opening Copilot in Excel
 
-1. Open `AI_Guideline_Survey_Responses.xlsx`
-2. Click anywhere in the data table
-3. Open Copilot from the ribbon: **Home > Copilot**
-4. The Copilot panel opens on the right side
+![Excel with Quiz Responses data open](./images/location-copilot-excel-web.png)
 
-> Make sure your data is formatted as an Excel Table (Ctrl+T) before using Copilot. This gives Copilot a clear boundary for the dataset.
+*The AI_Guideline_Survey_Responses workbook open in Excel. The Quiz Responses sheet shows 100 rows with green (correct) and red (incorrect) answer colour coding across 20 question columns.*
 
----
-
-## Analysis Prompts
-
-### Getting a quick overview
-
-```
-Give me a summary of this survey data. What are the 
-key findings about how employees are using AI tools 
-and how they feel about the AI Usage Guideline?
-```
-
-```
-What are the top 3 insights from this dataset that 
-I should highlight to management?
-```
+Open Copilot from the **Home** tab in the ribbon. The Copilot panel opens on the right side of the screen.
 
 ---
 
-### Analysing specific columns
+## Allow Editing vs Chat Only
 
-```
-Show me the distribution of responses for the 
-productivity rating column. How many people gave 
-each rating from 1 to 5?
-```
+When the Copilot panel opens, you will see two modes at the top.
 
-```
-Which departments gave the highest average 
-productivity ratings? Rank them from highest to lowest.
-```
+![Allow editing vs Chat only](./images/allowediting-vs-chatonly.png)
 
-```
-How does AI tool usage frequency compare across 
-different departments? Show this as a chart.
-```
+*Allow editing lets Copilot make changes directly to your workbook. Chat only keeps Copilot responses in the panel without touching the spreadsheet. The panel also shows suggested starter prompts.*
+
+| Mode | What it does | Use when |
+|------|-------------|---------|
+| **Allow editing** | Copilot can add columns, create sheets, insert charts, and write formulas directly into the workbook | You want Copilot to do the work for you |
+| **Chat only** | Copilot responds in the panel but does not change the workbook | You want to ask questions or get explanations without modifying anything |
+
+For most exercises in this topic, use **Allow editing**.
 
 ---
 
-### Creating charts
+## Sources: Web, Work, and Python Tool
 
-```
-Create a bar chart showing how often employees 
-refer to the AI Usage Guideline, broken down by frequency 
-(Never, Rarely, Sometimes, Often, Always).
-```
+Click the sources icon in the Copilot panel to see what Copilot can access.
 
-```
-Create a pie chart showing which Copilot app 
-is most frequently used across all respondents.
-```
+![Select sources panel](./images/select-sources.png)
 
-```
-Create a chart comparing average productivity rating 
-versus average confidence rating by department.
-```
+*The sources panel shows three toggles: Web (search the internet), Work (your Microsoft 365 data), and Python Tool (run Python code directly in Excel). Make sure Python Tool is enabled for Exercise 4.*
 
 ---
 
-### Finding patterns and outliers
+## Switching Models
 
-```
-Are there any departments that seem significantly 
-less confident about using AI compared to others? 
-Highlight the differences.
-```
+Click the model name at the top of the Copilot panel to switch models.
 
-```
-Is there a correlation between how often employees 
-refer to the guideline and how confident they feel 
-about using AI responsibly?
-```
+![Model selector in Excel](./images/model-selector.png)
 
-```
-Which respondents gave the lowest NPS scores? 
-What do they have in common — same department, 
-same usage frequency, or similar concerns?
-```
+*Claude Opus 4.6 is selected here. For data analysis and insight generation, Opus tends to produce more thorough and better-reasoned analysis than the default Auto model.*
 
 ---
 
-### Formula help
+## Workshop Exercises
 
-```
-Write a formula to calculate the percentage of 
-respondents who said the guideline has changed 
-how they approach AI (answered "Yes" or "Somewhat").
-```
+This topic has four exercises. Each builds on the previous one. Work through them in order.
 
-```
-Write a COUNTIF formula to count how many people 
-use Copilot in Outlook as their most-used app.
-```
+**Exercise 1:** Generate insights and an insights dashboard from the quiz data.
+**Exercise 2:** Transform and clean the data by adding calculated columns.
+**Exercise 3:** Identify patterns and weak areas across departments and questions.
+**Exercise 4:** Use Python in Excel to generate a score distribution chart.
 
-```
-Create a new column that categorises NPS scores 
-as Detractor (0-6), Passive (7-8), or Promoter (9-10). 
-Write the formula for this.
-```
+See [prompts.md](./prompts.md) for the detailed prompts for each exercise.
 
 ---
 
-### Generating a narrative summary
+## What a Completed Insights Dashboard Looks Like
 
-```
-Based on this survey data, write a short paragraph 
-(100-150 words) summarising the overall impact of 
-the AI Usage Guideline on employee workflow. 
-Write it in a tone suitable for a management report.
-```
+![Sample insights dashboard created by Copilot](./images/sample-report-created.png)
 
-```
-What action would you recommend based on this data? 
-Suggest 3 specific improvements to the AI Usage 
-Guideline based on the feedback patterns you can see.
-```
+*A completed Insights Dashboard sheet generated by Copilot in Excel. It includes overall pass rate and average score KPIs, a department performance table with colour-coded pass rates, a question accuracy table identifying weak areas, and a bar chart comparing departments. The Copilot panel on the right shows the prompt used and the model response.*
+
+This is the target output for Exercise 1. Your dashboard may look slightly different depending on your data and the model you use.
 
 ---
 
 ## Tips for Copilot in Excel
 
-- Copilot works best when your data is in a proper Excel Table format with clear column headers.
-- If Copilot creates a PivotTable or chart you don't like, ask it to adjust: "Change this to a stacked bar chart" or "Sort this by highest to lowest."
-- You can ask Copilot to explain any formula it generates: "Explain what this formula does in plain language."
-- Use the **Analyse** button in the Copilot panel for automatic insight suggestions based on your data.
+- Make sure your data is formatted as an **Excel Table** (Ctrl+T) before using Copilot. Copilot works best with structured tables.
+- If Copilot asks for clarification about which data to use, click on the relevant table or sheet first to give it context.
+- Use **Allow editing** for building outputs and **Chat only** for asking questions without changing the workbook.
+- For complex analysis tasks, switch to **Claude Opus** for more thorough reasoning.
+- The Python Tool toggle must be enabled in Sources before you can run Python code exercises.
+- Save your workbook regularly. Copilot edits cannot always be undone with Ctrl+Z.
 
 ---
 
-*Next: [10 — Copilot Studio Intro](../10-copilot-studio-intro/)*
+*Back to: [08 — Copilot in Forms](../08-copilot-forms/) | Next: [10 — Copilot Studio Intro](../10-copilot-studio-intro/)*
