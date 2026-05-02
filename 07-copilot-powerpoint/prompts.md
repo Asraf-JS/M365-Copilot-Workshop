@@ -2,8 +2,6 @@
 
 Use these prompts to build your team presentation from the approved AI Usage Guide.
 
-> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
-
 > **Session guide:** All prompts in this topic are used inside PowerPoint. Use the **Copilot panel** (bottom right button or Home tab) for generating and editing the presentation. Attach your Word document from Topic 05 as the source before submitting Part 1.
 
 ---
