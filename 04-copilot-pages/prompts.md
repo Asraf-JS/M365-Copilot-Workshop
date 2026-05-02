@@ -60,7 +60,7 @@ Include these sections:
 
 Write each section with real content based on the research above.
 Keep the language clear and suitable for non-technical staff.
-Aim for 600 to 800 words total.
+Aim for 600 to 800 words total. Use pages for this task.
 ```
 
 **Option B — If you are starting from scratch:**
