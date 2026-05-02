@@ -1,79 +1,177 @@
 # 08 — Copilot in Forms: Prompts
 
-Use these to build your feedback survey in Microsoft Forms.
+Use these prompts to build a knowledge quiz and feedback survey from your AI Usage Guide.
+
+> **Session guide:** All prompts in this topic are used inside Microsoft Forms at [forms.cloud.microsoft](https://forms.cloud.microsoft/). Attach your AI Usage Guide document before submitting any prompt. Parts 1 to 4 build the knowledge quiz. Parts 5 to 7 build the feedback survey. These are two separate forms.
+
+> **Before you start:** Make sure your AI Usage Guide is saved to OneDrive so Copilot in Forms can find it. If it is only on your desktop, upload it to OneDrive first.
 
 ---
 
-## Generating the survey
+## Part 1 — Generate the knowledge quiz
 
-In Microsoft Forms, click **Draft with Copilot**:
+**Click New Quiz on the Forms home screen, then click Draft with Copilot. Attach your AI Usage Guide using the paperclip icon, then submit this prompt.**
 
 ```
-Create a survey to measure how a new AI Usage Guideline has impacted employee workflow after one month of use.
+Using the attached AI Usage Guide, create a knowledge quiz 
+to test whether employees have understood the key rules.
 
 Include:
-- How often employees reference the guideline
-- Which tasks AI has helped with most
-- A 1-5 rating scale for overall productivity improvement
-- A 1-5 rating scale for confidence in using AI responsibly
-- A Net Promoter Score question (0-10: how likely to recommend Copilot to a colleague)
-- At least 2 open-ended questions for honest feedback
+- 8 to 10 multiple choice questions
+- Questions covering: approved tools, dos and don'ts, 
+  data privacy and PDPA, human review requirements, 
+  and how to report issues
+- 4 answer options per question with only one correct answer
+- A mix of straightforward recall questions and 
+  scenario-based questions where the employee must 
+  decide what to do
 
-Target audience: non-technical corporate staff in Malaysia.
-10-12 questions total. Mix question types.
+Keep the language clear and suitable for non-technical staff.
+```
+
+If you want to regenerate with a different focus:
+
+```
+Regenerate the quiz with more scenario-based questions. 
+Each question should describe a real workplace situation 
+and ask the employee what the correct action is according 
+to the AI Usage Guide.
 ```
 
 ---
 
-## Adding specific question types
+## Part 2 — Refine the quiz questions
+
+**Use the refinement bar at the bottom of the draft to fine-tune before keeping.**
 
 ```
-Suggest 3 frequency questions about how often employees use AI tools. Use this scale: Never / Rarely / Sometimes / Often / Always.
-```
-
-```
-Write 2 open-ended questions that invite honest feedback without leading the respondent toward a positive or negative answer.
-```
-
-```
-Create a question that asks employees which Microsoft 365 app they use Copilot in most often. Include all the main apps as options plus an "Other" field.
-```
-
----
-
-## Improving question quality
-
-```
-Review this survey question and suggest a clearer, less biased version: "Don't you think Copilot has saved you time this month?"
+The questions are too straightforward. Make 3 of them 
+harder by adding plausible wrong answers that employees 
+might genuinely be unsure about.
 ```
 
 ```
-This question uses a 1-10 scale and the next question uses a 1-5 scale. Rewrite one of them so the scales are consistent across the whole survey.
+Simplify the language on questions 4, 6, and 8. 
+Some employees have no technical background and may 
+not understand terms like PDPA or data classification 
+without a short explanation in the question itself.
+```
+
+```
+Add an introductory description to the quiz explaining 
+its purpose. Keep it under 50 words. The tone should 
+be encouraging, not threatening.
 ```
 
 ---
 
-## After building the form
+## Part 3 — Set correct answers and scoring
 
-Before sending:
-- Preview the form on mobile to check it reads well on phones
-- Set responses to **Anonymous** for more honest answers
-- Add a short intro at the top: one sentence explaining the purpose and how long it takes
+After keeping the draft, review each question and mark the correct answer:
+
+1. Click any question to expand it
+2. Click **Answer key** at the bottom of the question
+3. Select the correct answer
+4. Assign a point value (suggested: 1 point per question)
+5. Optionally add a feedback message for correct and incorrect answers
 
 ```
-Write a 2-sentence introduction for this survey that explains its purpose and reassures respondents that responses are anonymous and will be used to improve support for the team.
+For each question, suggest a one-sentence feedback message 
+that explains why the correct answer is right. Write it 
+in a way that reinforces the key rule from the guideline 
+rather than just saying "correct" or "incorrect".
 ```
 
 ---
 
-## Exporting to Excel
+## Part 4 — Configure and distribute the quiz
 
-Once you have responses (or use the sample data in folder 09):
-1. Open your form in Microsoft Forms
-2. Click the **Responses** tab
-3. Click **Open in Excel**
+Once the quiz is ready:
 
-This creates the file you'll use in the next topic.
+1. Click **Collect responses** in the top bar
+2. Set access to **Only people in your organisation** and enable **Record name**
+3. Enable **One response per person** to prevent duplicate submissions
+4. Copy the link or download the QR code to share with your team
+
+> **Tip:** Display the QR code on your presentation slide at the end of your team session so participants can complete the quiz on their phones immediately after.
+
+---
+
+## Part 5 — Generate the feedback survey
+
+**Go back to the Forms home screen, click New Form, then Draft with Copilot. Attach your AI Usage Guide again and submit this prompt.**
+
+```
+Using the attached AI Usage Guide, create a feedback survey 
+to find out how useful and practical employees find the guideline.
+
+Include:
+- A 1 to 5 rating scale for overall clarity of the guideline
+- A 1 to 5 rating scale for how confident employees feel 
+  using AI tools after reading it
+- A Net Promoter Score question (0 to 10): 
+  "How likely are you to recommend this guideline to a 
+  colleague in another department?"
+- A question asking which section was most useful
+- A question asking which section was hardest to understand
+- Two open-ended questions asking for specific improvement 
+  suggestions
+- A question about how often they expect to reference 
+  the guideline
+
+10 to 12 questions total. Mix of question types.
+```
+
+---
+
+## Part 6 — Add a survey introduction
+
+```
+Write a short introduction for this survey. Include:
+- What the survey is for
+- How long it takes (estimate 3 to 5 minutes)
+- That responses are anonymous
+- Who will see the results and how they will be used
+
+Keep it under 60 words. Friendly and encouraging tone.
+```
+
+---
+
+## Part 7 — Improve specific questions
+
+```
+The open-ended questions are too vague. Rewrite them to 
+be more specific so employees give actionable feedback 
+rather than general comments.
+
+For example, instead of "What could be improved?", 
+ask something like "If you could change one thing about 
+the Dos and Don'ts section, what would it be and why?"
+```
+
+```
+Add a question asking which Microsoft 365 Copilot app 
+the employee uses most often for their daily work. 
+Use a multiple choice format with: Word, Excel, Outlook, 
+PowerPoint, Teams, Copilot Chat, and Other as options.
+Allow multiple selections.
+```
+
+---
+
+## Part 8 — Export responses to Excel
+
+After the survey has collected responses:
+
+1. Click **View responses** in the top bar
+2. In the Insights panel on the right, click **Open results in Excel**
+3. The Excel file saves automatically to your **OneDrive > Documents** folder
+4. The file is named after your form title
+
+> **Find it later:** Go to OneDrive, open the Documents folder, and look for the `.xlsx` file matching your form name. This file updates automatically as new responses come in — you do not need to re-export.
+
+> **For the workshop:** If you do not have real responses, use `AI_Guideline_Survey_Responses.xlsx` from the `09-copilot-excel` folder in the workshop GitHub repo. It has 30 pre-populated responses ready for analysis in Topic 09.
 
 ---
 
