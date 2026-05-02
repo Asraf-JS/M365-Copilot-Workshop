@@ -129,7 +129,45 @@ this presentation? Give me the top 5 with suggested answers.
 
 ---
 
-## Part 9 — Final check
+## Part 9 — Generate images for your slides using Create
+
+**Use the Create section in Copilot Chat (left sidebar at m365.cloud.microsoft), not inside PowerPoint.**
+
+> **Note:** Image generation uses OpenAI's GPT-Image-1.5 model, which is separate from the chat models. Switching to Claude Opus or GPT in the chat panel does not affect image generation. Set the image shape to **Wide** (16:9) before generating so it matches your slide dimensions.
+
+```
+A professional office team collaborating around a laptop, 
+modern Malaysian corporate setting, natural lighting, 
+photorealistic style.
+```
+
+```
+A simple illustration showing a shield icon representing 
+data privacy, blue and teal colour scheme, clean minimal 
+style, suitable for a corporate presentation slide.
+```
+
+```
+A split image showing two scenarios side by side: on the 
+left, a stressed employee surrounded by paper and looking 
+overwhelmed; on the right, the same employee relaxed at a 
+clean desk using a laptop with AI assistance. Corporate 
+illustration style.
+```
+
+```
+An abstract illustration representing human oversight of AI: 
+a human hand guiding a robot hand, professional corporate 
+style, teal and navy colour scheme, no text.
+```
+
+Once generated, save the image from Library and insert it into your PowerPoint slide using Insert > Pictures > This Device.
+
+---
+
+## Part 10 — Final check
+
+
 
 ```
 Review this entire presentation as if you are a 
