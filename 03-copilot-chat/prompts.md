@@ -2,13 +2,17 @@
 
 Use these prompts to research your **AI Usage Guide** for your department.
 
-> **How to use this file:** Parts 1 through 5 and Part 8 should all run in the **same chat session**. Start one research conversation and stay in it. Copilot builds on earlier context as you go, and the consolidation prompt in Part 8 summarises everything from that session. Parts 6 and 7 can be separate sessions.
+> **Grounding modes explained:**
+> - **Web mode (globe icon):** Copilot searches the public internet. Use this for Parts 1 to 5 to research best practices, regulations, and external information.
+> - **Work mode (briefcase icon):** Copilot searches your Microsoft 365 data (OneDrive, SharePoint, emails, Teams). Use this for Part 6 only, after uploading the sample policy document.
+>
+> **Session guide:** Parts 1 through 5 and Part 8 run in the **same chat session** using Web mode. Part 6 is a new chat in Work mode. Part 7 is flexible.
 
 ---
 
 ## Part 1 — Broad overview
 
-**Run in the same chat session as Parts 2, 3, 4, 5, and 8.**
+**Session: same chat | Grounding: Web mode**
 
 Start here to get a high-level picture before going into department-specific detail.
 
@@ -41,7 +45,7 @@ about it.
 
 ## Part 2 — Department-specific research
 
-**Stay in the same chat session. Copilot will build on the context from Part 1.**
+**Session: same chat | Grounding: Web mode**
 
 Replace `[your department]` with your actual department before submitting.
 
@@ -75,7 +79,7 @@ the risk for each one if it is not checked.
 
 ## Part 3 — Regulatory and compliance angle
 
-**Stay in the same chat session.**
+**Session: same chat | Grounding: Web mode**
 
 ```
 What Malaysian laws or regulations are relevant when a company 
@@ -101,7 +105,7 @@ for its staff? Summarise the key requirements in plain language.
 
 ## Part 4 — Exploring different perspectives
 
-**Stay in the same chat session.**
+**Session: same chat | Grounding: Web mode**
 
 Run all three prompts and compare the responses. The employee perspective is often the most useful one for writing a guide that people will actually read.
 
@@ -129,7 +133,7 @@ you felt comfortable using Copilot for your daily tasks?
 
 ## Part 5 — Multi-model comparison
 
-**Stay in the same chat session. Switch models using the Auto dropdown at the top right.**
+**Session: same chat | Grounding: Web mode | Switch models using the Auto dropdown**
 
 Run the same prompt in Opus and GPT and compare the outputs.
 
@@ -158,32 +162,48 @@ Notice whether the models differ more on creative writing tasks or analytical on
 
 ## Part 6 — Work mode: referencing your own documents
 
-**Start a new chat for this part. Switch to Work grounding mode (briefcase icon) before submitting.**
+**Session: new chat | Grounding: Work mode (briefcase icon)**
 
-These prompts only work if you have relevant documents in your OneDrive or SharePoint.
+> **Before you start this part:**
+> 1. Download the file **Data_Privacy_AI_Acceptable_Use_Policy.pdf** from the workshop GitHub repo
+> 2. Upload it to your **OneDrive** (drag and drop into any folder)
+> 3. Wait about 30 seconds for Microsoft Graph to index it
+> 4. Open a new Copilot Chat and switch to **Work mode** (click the briefcase icon)
+> 5. You are now ready to submit the prompts below
+
+Copilot will search your Microsoft 365 data including the document you just uploaded. This simulates how you would use Work mode to reference your own company policies.
 
 ```
 Do we have any existing policies or guidelines related to data 
-privacy or IT security? Summarise what they say about acceptable 
-use of third-party tools.
+privacy or acceptable use of AI tools? Summarise the key points.
 ```
 
 ```
-Based on our existing IT policy, what gaps would need to be 
-addressed if we introduced Microsoft 365 Copilot for all staff?
+Based on our existing data privacy and AI policy, what gaps would 
+need to be addressed before we could safely roll out Microsoft 365 
+Copilot to all staff? List the gaps and suggest how each could 
+be addressed.
 ```
 
 ```
-Find any recent emails or documents related to AI tools or 
-digital transformation in our organisation. Summarise the 
-key themes.
+Our policy references PDPA 2010 and the AIGE guidelines. 
+Summarise what each of these requires from us as an employer, 
+based on what you can find in our policy document.
 ```
+
+```
+Which sections of our existing policy cover employee 
+responsibilities when using AI tools? Quote the key obligations 
+in plain language that a non-technical employee would understand.
+```
+
+> **If Copilot cannot find the document:** make sure you are in Work mode (briefcase icon active, not the globe). If it still cannot find it, wait another minute and try again. Microsoft Graph indexing can take a few minutes for new files.
 
 ---
 
 ## Part 7 — Fact-checking and pressure-testing
 
-**This can be done in any session, including the main research session or a new chat.**
+**Session: any session | Grounding: Web mode**
 
 Once you have research notes, use these to verify and challenge what Copilot gave you.
 
@@ -209,7 +229,7 @@ usage guide for a Malaysian company should cover?
 
 ## Part 8 — Consolidation: preparing to move to Pages
 
-**Run this at the end of your main research session (the same chat you used for Parts 1 through 5).**
+**Session: same chat as Parts 1 through 5 | Grounding: Web mode**
 
 This turns everything you have gathered into a structured outline ready to take into Copilot Pages in Topic 04.
 
