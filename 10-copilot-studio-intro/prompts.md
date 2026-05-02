@@ -2,8 +2,6 @@
 
 Use these when building your first agent in Microsoft Copilot Studio at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/).
 
-> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
-
 > **Session guide:** Parts 1 and 2 are used inside Copilot Studio to build and configure your agent. Parts 3 and 4 are used in the Copilot Studio test panel to check how the agent responds. Part 5 is used in Copilot Chat to brainstorm future agent ideas.
 
 ---
