@@ -1,137 +1,112 @@
 # 04 — Copilot Pages
 
-Copilot Pages is where your research starts becoming a document. Think of it as a collaborative canvas — you can pull content from Copilot Chat into a live page, edit it, add diagrams, and share it with your team in real time.
+Copilot Pages is where your research becomes a document. Think of it as a collaborative canvas — you pull content from Copilot Chat into a live page, edit it, refine it with Copilot, and share it with your team in real time.
+
+> **Prompts to try:** See [prompts.md](./prompts.md) for the full set of drafting, refining, and Mermaid diagram exercises.
 
 ---
 
-> **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
+## Continuing from Topic 03
+
+At the end of Topic 03 you ran the consolidation prompt (Part 8) which produced a structured outline of your research. That outline is your starting point here.
+
+**If you are still in the same Copilot Chat session:**
+Click the **Edit in Pages** button (pencil icon) on the consolidation response. This opens your outline as a live Copilot Page. You are ready to start Topic 04.
+
+**If you closed the session or started a new chat:**
+1. Open a new Copilot Chat
+2. Paste your research outline into the message box
+3. Submit the Part 2 draft prompt from [prompts.md](./prompts.md)
+4. Click **Edit in Pages** on the response
+
+**If you did not complete Topic 03:**
+Go to [prompts.md](./prompts.md) Part 2 and submit the draft prompt directly in Copilot Chat. It will generate a draft from scratch. Click **Edit in Pages** on the response and continue from there.
+
+> **Important:** Once you are in Copilot Pages, do all your refining work there. Do not start a new Copilot Chat session for each prompt — use the Copilot panel inside the Page so all your edits stay in one document.
 
 ---
 
 ## What is Copilot Pages?
 
-Copilot Pages is built on top of **Microsoft Loop**. When you generate content in Copilot Chat, you'll see an option to "Edit in Pages" or "Open in Pages." This creates a Loop page that:
+Copilot Pages is built on **Microsoft Loop**. When you generate content in Copilot Chat, clicking **Edit in Pages** creates a Loop page that:
 
-- Stays live and editable (you and teammates can edit simultaneously)
-- Syncs across Microsoft 365 — if you share it in Teams, people can edit it right there
-- Can be exported to Word or PDF when you're done
-- Connects to your Microsoft 365 account so changes are saved automatically
+- Stays live and editable — you and teammates can edit simultaneously
+- Syncs across Microsoft 365 — share it in Teams and people can edit it right there
+- Can be exported to Word or PDF when you are done
+- Saves automatically to your Microsoft 365 account
 
 ---
 
-## Pages vs. Word: What's the Difference?
+## Pages vs Word
 
-| | Copilot Pages (Loop) | Microsoft Word |
-|--|---------------------|---------------|
-| Best for | Collaborative drafting, live editing | Final polished documents |
-| Real-time co-editing | Yes | Yes (but less fluid) |
-| Copilot integration | Built-in | Built-in |
-| Export options | PDF, Word, copy to clipboard | PDF, various formats |
+| | Copilot Pages | Microsoft Word |
+|--|---------------|----------------|
+| Best for | Collaborative drafting and live editing | Final polished documents |
+| Real-time co-editing | Yes | Yes, but less fluid |
+| Copilot integration | Built-in panel | Built-in panel |
+| Export options | Word, PDF, copy to clipboard | PDF and various formats |
 | Feels like | A wiki or Notion page | A traditional document |
 
-Use Pages to build and refine your draft. Use Word for the final version you'll send to your supervisor.
+Use Pages to build and refine your draft. Use Word for the final version you will submit for approval.
 
 ---
 
-## Workshop Scenario: Building Your AI Guide Draft
+## Workshop Scenario
 
-After your research in Copilot Chat, use Pages to start building the actual structure of your AI Usage Guide.
-
----
-
-## Prompts for Copilot Pages
-
-### Starting your draft
-
-In Copilot Chat, generate your initial structure and click **Edit in Pages**:
-
-```
-Based on my research, create a structured first draft of an 
-AI Usage Guide for my department. Include these sections:
-1. Introduction and Purpose
-2. Scope (who this applies to)
-3. Approved AI Tools
-4. Dos and Don'ts
-5. Data Privacy Rules
-6. How to Report Issues
-7. Review and Update Schedule
-
-Write each section with placeholder content I can edit. 
-Keep the language clear and suitable for non-technical staff.
-```
-
----
-
-### Refining content in Pages
-
-Once your draft is in Pages, use Copilot within the page to refine sections:
-
-```
-Rewrite the Introduction section to be more engaging. 
-Start with a brief story or scenario that shows why 
-having an AI guideline matters.
-```
-
-```
-The Dos and Don'ts section feels too generic. 
-Make it more specific to [your department] and 
-include at least 2 examples for each point.
-```
-
-```
-Add a short FAQ section at the end of the document 
-with 5 common questions employees might have about 
-using AI at work.
-```
+Your research from Topic 03 is now in Copilot Pages as a structured outline. Your goal in this topic is to turn that outline into a proper first draft of the AI Usage Guide, refine it section by section using Copilot, add a visual decision flowchart using Mermaid, and export it to Word ready for Topic 05.
 
 ---
 
 ## Creating a Mermaid Diagram in Pages
 
-Pages supports Mermaid syntax for creating flowcharts and diagrams. This is useful for visualising processes like your AI decision-making workflow.
+Copilot Pages supports Mermaid syntax for creating flowcharts and diagrams directly inside your document. This is useful for visualising your AI decision-making workflow without needing any drawing tools.
 
 ### What is Mermaid?
 
-Mermaid is a text-based diagramming tool. You write simple text instructions and it renders a visual diagram. No drawing required.
+Mermaid is a text-based diagramming tool. You write simple instructions and it renders a visual diagram automatically. No drawing required.
 
-### Example: AI Tool Decision Flowchart
+### How to insert a Mermaid diagram in Pages
 
-Copy this into a code block in Pages (use the `/` menu and select **Code block**, then choose **Mermaid**):
+1. Place your cursor where you want the diagram
+2. Type `/` to open the insert menu
+3. Select **Code block**
+4. In the language selector at the top right of the code block, change it to **Mermaid**
+
+![Mermaid diagram in Copilot Pages](./images/mermaid-diagram.png)
+
+*The language selector (top right, highlighted in red) is where you switch to Mermaid. Use the Preview toggle to switch between code view and the rendered diagram.*
+
+> **Common mistake:** When Copilot generates a Mermaid code block, it sometimes sets the language to "code" or leaves it blank. Always check the top right of the code block and change it to **Mermaid** if it is not already set. Otherwise the diagram will not render.
+
+### Example diagram
 
 ```
 flowchart TD
-    A[Need to complete a task] --> B{Does it involve confidential data?}
-    B -- Yes --> C[Do NOT use external AI tools]
-    B -- No --> D{Is it a routine task?}
-    D -- Yes --> E[Use Copilot in M365 apps]
-    D -- No --> F{Does it need human judgement?}
-    F -- Yes --> G[Use AI to assist, review output carefully]
-    F -- No --> E
-    C --> H[Use approved internal tools only]
-```
-
-### Prompt to generate your own flowchart
-
-```
-Create a Mermaid flowchart that shows the decision process 
-an employee should follow when deciding whether to use AI 
-for a task. Include checks for data sensitivity, approval 
-requirements, and output verification. Give me the raw 
-Mermaid code I can paste into a code block.
+    A[Start: New Work Task] --> B{Does the task involve confidential or personal data?}
+    B -- Yes --> Z1[Do NOT use AI. Use standard processes.]
+    B -- No --> C{Is the AI tool approved by the organisation?}
+    C -- No --> Z2[Do NOT use AI. Ask HR or IT for an approved tool.]
+    C -- Yes --> D{Is manager approval required for this use?}
+    D -- Yes --> D1[Get manager approval first]
+    D1 --> E{Is the task suitable for AI?}
+    D -- No --> E
+    E -- No --> Z3[Do NOT use AI. Complete the task manually.]
+    E -- Yes --> F[Use AI to support the task]
+    F --> G[Review and verify the output before using it]
 ```
 
 ---
 
 ## Exporting from Pages
 
-When your draft is ready, export it:
+When your draft is ready to move to Word:
 
 1. Click the **...** menu at the top right of your Page
 2. Select **Export**
-3. Choose **Word document (.docx)** or **PDF**
+3. Choose **Word document (.docx)**
 
-You'll use the Word export in the next topic to continue working in Copilot in Word.
+You will use this Word document in Topic 05 to reformat it as a formal management proposal.
 
 ---
 
-*Next: [05 — Copilot in Word](../05-copilot-word/)*
+*Back to: [03 — Copilot Chat](../03-copilot-chat/) | Next: [05 — Copilot in Word](../05-copilot-word/)*
