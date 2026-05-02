@@ -94,6 +94,64 @@ You are turning the approved AI Usage Guide into a presentation for your departm
 
 ---
 
+## Create and Library in Copilot Chat
+
+Alongside the presentation itself, Copilot Chat has two features worth knowing when building visual content for your slides: **Create** and **Library**.
+
+### Create — AI image generation
+
+![Create in Copilot Chat](./images/create-in-copilotchat.png)
+
+*Callout 1: the Create section in the left sidebar of Copilot Chat. Callout 2: the image description prompt box. Tabs along the top let you switch between creating an image, a PowerPoint, a Word document, Excel spreadsheet, video, infographic, and more.*
+
+**Create** is accessed from the left sidebar in Copilot Chat at [m365.cloud.microsoft](https://m365.cloud.microsoft/). It lets you generate images from a text description, which you can then insert into your PowerPoint slides.
+
+**Important — image generation uses a different model than chat.** When you are chatting with Copilot, you can switch between Claude Opus, GPT, and other models. Image generation does not use those models. It uses OpenAI's **GPT-Image-1.5**, which is a dedicated image generation model separate from the chat models. Switching your chat model to Opus does not affect how images are generated.
+
+**Example prompts for image generation:**
+
+```
+A professional office team collaborating around a laptop, 
+modern Malaysian corporate setting, natural lighting, 
+photorealistic style.
+```
+
+```
+A simple infographic-style illustration showing a shield 
+icon representing data privacy, blue and teal colour scheme, 
+clean minimal style, no text.
+```
+
+```
+A split image showing two scenarios side by side: on the 
+left, a stressed employee with piles of paper; on the right, 
+the same employee relaxed at a clean desk using a laptop. 
+Corporate illustration style.
+```
+
+```
+A flowchart diagram showing an AI decision process with 
+diamond decision nodes and rectangular action nodes, 
+teal and navy colour scheme, white background.
+```
+
+> **Tip for presentations:** Generate images in **Wide** format (16:9) to match standard PowerPoint slide dimensions. Use the Shape and Size options at the bottom of the Create panel to set this before generating.
+
+### Library — your saved images and prompts
+
+![Library in Copilot Chat](./images/library-in-copilotchat.png)
+
+*Callout 1: the Library section in the left sidebar. Your generated images and saved prompts are stored here and accessible across sessions.*
+
+**Library** stores all images you have generated through Create, as well as any prompts you have saved from Copilot Chat. It is accessible from the left sidebar at any time. Images are stored for 18 months before being automatically deleted.
+
+Use Library to:
+- Find images you generated in a previous session without regenerating them
+- Access saved prompts from Topic 02 exercises
+- Reuse visuals across multiple presentations or documents
+
+---
+
 ## Tips for Copilot in PowerPoint
 
 - The better your Word document, the better the generated presentation. Clean headings and clear sections in Word translate directly into well-structured slides.
