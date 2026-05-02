@@ -1,8 +1,3 @@
----
-layout: default
-title: Home
----
-
 # Microsoft 365 Copilot Workshop
 
 Prompts, reference notes, and sample datasets for the 2-day Microsoft 365 Copilot workshop.
