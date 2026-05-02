@@ -165,7 +165,7 @@ Notice whether the models differ more on creative writing tasks or analytical on
 **Session: new chat | Grounding: Work mode (briefcase icon)**
 
 > **Before you start this part:**
-> 1. Download the file **Data_Privacy_AI_Acceptable_Use_Policy.pdf** from the workshop GitHub repo
+> 1. Download the file: [Data_Privacy_AI_Acceptable_Use_Policy.pdf](./Data_Privacy_AI_Acceptable_Use_Policy.pdf)
 > 2. Upload it to your **OneDrive** (drag and drop into any folder)
 > 3. Wait about 30 seconds for Microsoft Graph to index it
 > 4. Open a new Copilot Chat and switch to **Work mode** (click the briefcase icon)
