@@ -152,6 +152,18 @@ Use Library to:
 
 ---
 
+## Why Copilot-generated slides don't work with templates
+
+When Copilot builds a presentation, it places content using text boxes rather than PowerPoint's built-in layouts and placeholders. The slides look fine on screen, but when you apply a corporate template, nothing snaps into place. Fonts, colours, and positioning all have to be fixed manually because the slide structure doesn't match what the template expects.
+
+The way around this is to use PowerPoint VBA to build the presentation instead. VBA can create slides using proper layouts, fill real placeholders, insert native charts and tables, and respect the active theme. The result is a presentation that works correctly with any template from the start.
+
+The prompt in Part 5 walks you through this with a step-by-step workflow: you describe your presentation to an AI assistant, it produces a slide-by-slide blueprint for you to review, and only after you approve the outline does it generate the VBA code. You then paste that code into PowerPoint and run it.
+
+> **Note:** This approach works in PowerPoint 365 desktop. You will need to enable the Developer tab to access the VBA editor. Go to File > Options > Customise Ribbon and check the Developer box.
+
+---
+
 ## Tips for Copilot in PowerPoint
 
 - The better your Word document, the better the generated presentation. Clean headings and clear sections in Word translate directly into well-structured slides.
