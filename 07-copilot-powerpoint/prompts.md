@@ -66,7 +66,179 @@ short and clear for a non-technical audience.
 
 ---
 
-## Part 5 — Improve speaker notes
+## Part 5 — Build a template-ready presentation using VBA
+
+**Session: new chat in your preferred AI assistant (Copilot, Claude, or ChatGPT) | No grounding needed**
+
+Copilot in PowerPoint generates slides using text boxes, which means corporate templates won't apply cleanly. This exercise uses a structured master prompt to get an AI assistant to design your presentation first, then generate PowerPoint VBA code that builds the slides using real layouts and placeholders.
+
+**How to use this prompt:**
+
+1. Open a new chat in any AI assistant
+2. Paste the short opening prompt, followed by the master prompt below it
+3. The assistant will ask you for a presentation brief before doing anything else
+4. Answer its questions, review the slide blueprint it produces, approve or adjust it, then wait for the VBA code
+5. In PowerPoint, press `Alt + F11` to open the VBA editor
+6. Go to Insert > Module, paste the code, then press `F5` or click Run
+
+**Short opening prompt — paste this first, then paste the master prompt directly below it:**
+
+```
+Use the workflow below to help me build a PowerPoint 365 
+presentation using VBA, layouts, placeholders, and native 
+PowerPoint charts. Do not generate the VBA until you have 
+created the outline and I have approved it.
+```
+
+**Master prompt — paste this immediately after the opening prompt above:**
+
+```
+# Role
+You are a PowerPoint 365 presentation architect and VBA 
+automation specialist.
+
+# Goal
+Help me create a PowerPoint presentation from a prompt, 
+but do not directly generate a .pptx file. Instead, help 
+me design the presentation first, then generate PowerPoint 
+VBA code that builds the slides using PowerPoint layouts, 
+placeholders, native charts, native tables, and the active 
+presentation theme.
+
+# Important Principle
+Do not create slides by randomly placing text boxes unless 
+there is no suitable placeholder or layout available. 
+Prioritise:
+1. Slide Master
+2. Custom Layouts
+3. Placeholders
+4. Native PowerPoint charts
+5. Native PowerPoint tables
+6. Manual shapes only as a fallback
+
+# Workflow
+
+## Step 1: Ask me for the presentation brief
+Before doing anything else, ask me for the following:
+- Presentation topic
+- Target audience
+- Purpose of the presentation
+- Duration or number of slides
+- Tone and style
+- Key message
+- Whether I need charts, tables, diagrams, or speaker notes
+- Whether I have any data to include
+
+Do not proceed until I provide the brief.
+
+## Step 2: Ask whether I want to use default layouts or a custom template
+Ask me:
+"Do you want to use:
+1. Default PowerPoint layouts, or
+2. A custom PowerPoint template?"
+
+If I choose default layouts, proceed using common PowerPoint 
+layouts such as:
+- Title Slide
+- Title and Content
+- Section Header
+- Two Content
+- Comparison
+- Title Only
+- Blank
+
+If I choose custom template, ask me to upload the .pptx 
+template.
+
+## Step 3: If I upload a template, analyse it first
+When I upload a .pptx template, inspect the Slide Master, 
+Custom Layouts, and placeholders. Extract and show me a 
+template map with:
+- Layout number
+- Layout name
+- Suggested use case
+- Placeholder index
+- Placeholder type
+- Placeholder name, if available
+- Placeholder position and size
+- Notes on whether the layout is suitable for title slides, 
+  content slides, chart slides, comparison slides, section 
+  dividers, or summary slides
+
+Also tell me if the template uses real placeholders or normal 
+text boxes that only look like placeholders.
+
+## Step 4: Create a presentation blueprint
+Before generating VBA, produce a slide-by-slide outline 
+using this table format:
+
+| Slide | Slide Title | Purpose | Key Message | Recommended Layout | Placeholder Usage | Visual / Chart Recommendation |
+
+For each slide:
+- Choose the most suitable layout
+- Explain the intended use of each placeholder
+- Recommend charts only when they support the message
+- Use native PowerPoint charts where charts are needed
+- Recommend suitable chart types based on the analytical purpose
+
+Chart selection rules:
+- Use column or bar charts for category comparison
+- Use line charts for trends over time
+- Use stacked charts for composition
+- Use scatter charts for relationships
+- Use tables for precise values
+- Use process diagrams for workflows
+- Use timelines for roadmaps
+- Avoid pie charts unless there are very few categories and 
+  the purpose is part-to-whole comparison
+
+## Step 5: Wait for my approval
+After showing the presentation blueprint, ask me whether 
+I want to:
+1. Approve the outline
+2. Modify the slide flow
+3. Change the layout choices
+4. Add or remove slides
+5. Change the chart recommendations
+
+Do not generate VBA code until I approve the outline.
+
+## Step 6: Generate PowerPoint VBA code
+After I approve the outline, generate complete PowerPoint 
+VBA code that I can paste into the PowerPoint VBA editor.
+
+The VBA code must:
+- Use the active PowerPoint presentation
+- Add slides using the selected layouts
+- Fill placeholders with the planned content
+- Use native PowerPoint charts where needed
+- Use native PowerPoint tables where needed
+- Add speaker notes if requested
+- Respect the active theme, fonts, and colours
+- Avoid excessive manual positioning
+- Include comments explaining each major section
+- Include basic error handling
+- Include helper functions where useful
+
+The VBA should be designed for PowerPoint 365 desktop.
+
+## Step 7: Explain how to run the macro
+After the VBA code, provide brief instructions:
+- Open PowerPoint
+- Open the template or target presentation
+- Press Alt + F11
+- Insert a new module
+- Paste the code
+- Run the main macro
+
+# Output Rule
+Do not skip the planning stages. Start by asking me for 
+the presentation brief.
+```
+
+---
+
+## Part 6 — Improve speaker notes
 
 ```
 Rewrite the speaker notes for the Dos and Don'ts slide. 
@@ -90,7 +262,7 @@ for each one.
 
 ---
 
-## Part 6 — Adjust tone and slide titles
+## Part 7 — Adjust tone and slide titles
 
 ```
 The slide titles feel too formal and policy-like. 
@@ -102,7 +274,7 @@ compliance document.
 
 ---
 
-## Part 7 — Suggest a visual theme
+## Part 8 — Suggest a visual theme
 
 ```
 Suggest a colour theme for this presentation that feels 
@@ -113,7 +285,7 @@ rationale for choosing them.
 
 ---
 
-## Part 8 — Summarise before presenting
+## Part 9 — Summarise before presenting
 
 Open your completed presentation and run this in the Copilot panel before your session:
 
@@ -129,7 +301,7 @@ this presentation? Give me the top 5 with suggested answers.
 
 ---
 
-## Part 9 — Generate images for your slides using Create
+## Part 10 — Generate images for your slides using Create
 
 **Use the Create section in Copilot Chat (left sidebar at m365.cloud.microsoft), not inside PowerPoint.**
 
@@ -165,9 +337,7 @@ Once generated, save the image from Library and insert it into your PowerPoint s
 
 ---
 
-## Part 10 — Final check
-
-
+## Part 11 — Final check
 
 ```
 Review this entire presentation as if you are a 
