@@ -285,4 +285,4 @@ Run it first in **Quick Response** mode, then switch to **Think Deeper** and run
 
 ---
 
-*Back to: [Workshop Home](../README.md) | Next: [02 - Prompt Engineering](../02-prompt-engineering/)*
+Back to: [Workshop Home](../README.md) | Next: [02 - Prompt Engineering](../02-prompt-engineering/)
