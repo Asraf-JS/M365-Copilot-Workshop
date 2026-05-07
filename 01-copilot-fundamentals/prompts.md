@@ -20,7 +20,7 @@ What does it mean when people say Copilot is "grounded in your Microsoft 365 dat
 
 ---
 
-## Key terms — plain language
+## Key terms - plain language
 
 ```
 Explain what a "hallucination" is in the context of AI. Give me one example of how it might happen in a workplace setting, and one way to catch it.
