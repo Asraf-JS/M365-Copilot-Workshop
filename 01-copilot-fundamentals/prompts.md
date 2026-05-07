@@ -1,4 +1,4 @@
-# 01 — Copilot Fundamentals: Prompts
+# 01 - Copilot Fundamentals: Prompts
 
 Use these in **Copilot Chat** to explore the fundamentals before diving into the workshop scenario.
 
