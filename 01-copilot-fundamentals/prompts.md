@@ -105,7 +105,7 @@ Before every workshop or major project, paste your personalisation prompt into C
 
 Below is a detailed example. Read through it to understand the structure, then adapt the template below it to write your own.
 
-### Example — trainer context
+### Example - trainer context
 
 ```
 # ROLE
@@ -149,7 +149,7 @@ The user frequently designs:
 - Do not use em dashes
 ```
 
-### Template — adapt this for yourself
+### Template - adapt this for yourself
 
 Copy the template below, fill in the brackets, and paste it as your first message in any new Copilot Chat session.
 
