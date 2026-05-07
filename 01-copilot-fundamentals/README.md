@@ -1,4 +1,4 @@
-# 01 — Copilot Fundamentals
+# 01 - Copilot Fundamentals
 
 Before we start using Copilot, it helps to understand what it actually is, what you're paying for, and the key terms you'll keep hearing.
 
