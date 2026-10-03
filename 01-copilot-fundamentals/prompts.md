@@ -122,7 +122,7 @@ After comparing, ask yourself:
 - Which one sounds more natural for your workplace?
 - Which would you edit less before sending?
 
-> **Note:** To switch models, click the model name at the top of the Copilot panel and select from the list. Each model runs in its own response - you do not need to start a new chat to switch.
+> **Note:** To switch models, click the model selector (it shows **Auto** by default) in the top bar and pick from the list. Start a new chat for each run so the earlier answer doesn't influence the next one. Claude Opus is Premium only; Basic users can compare Quick response and Think deeper instead.
 
 ---
 
@@ -282,6 +282,95 @@ per week.
 Run it first in **Quick Response** mode, then switch to **Think Deeper** and run the same prompt again. Compare the depth, structure, and specificity of each response.
 
 > **Note:** Think Deeper takes longer to respond but reasons through the problem more carefully before answering. Use it when you need a more considered output, not for quick lookups.
+
+---
+
+## Exercise 8 - Your first prompt and checking sources
+
+**Where:** Start a new chat
+**Grounding:** Work IQ on if you have Premium, otherwise web
+**Model:** Auto
+
+```
+EV adoption in Malaysia
+```
+
+When the answer comes back, find a grey source label at the end of a sentence, hover over it, and open at least one source. Does the source actually say what Copilot claims? Compare your answer with your neighbour's and note what differs.
+
+---
+
+## Exercise 9 - Bare prompt vs GCSE prompt
+
+**Where:** Start a new chat for each prompt
+**Grounding:** Web
+**Model:** Auto
+
+Run the bare prompt first:
+
+```
+Create a report on EV adoption in Malaysia
+```
+
+Then run the full GCSE version of the AI guideline prompt:
+
+```
+Goal: Create an AI usage guideline manual for our workplace.
+
+Context: Our organisation is introducing Microsoft 365 Copilot
+across departments and needs a clear, practical policy so staff
+use AI responsibly. Employees have mixed levels of AI experience,
+and leadership wants to protect confidential data while
+encouraging adoption.
+
+Scope: Cover acceptable and unacceptable uses, data privacy and
+confidentiality, human review of AI output, the responsible-AI
+principles the organisation commits to, roles and
+responsibilities, and practical do's and don'ts for everyday
+tasks. Include examples relevant to our work and a short FAQ.
+
+Expectation: Produce a clear, professional manual written for
+non-technical staff, organised with headings and short sections,
+in plain language, with a one-page summary at the front that
+people can read in two minutes.
+```
+
+Once you are happy with the GCSE answer, hover over the prompt, click **Save prompt** (the bookmark icon), and title it *AI Guideline*. Then open a new chat, click the ellipsis (**…**) under the message box, choose **Prompt Lab**, and find it under **Your saved prompts**.
+
+---
+
+## Exercise 10 - Work IQ on vs off
+
+**Where:** Start a new chat for each run
+**Grounding:** Work IQ on, then off
+**Model:** Auto
+
+Run your saved *AI Guideline* prompt from Prompt Lab with Work IQ on, then again with it switched off (the button shows struck through). Compare the sources each answer cites.
+
+> **Note:** Work IQ is Premium only. Basic users can skip to Exercise 11, which grounds Copilot by uploading a file instead.
+
+---
+
+## Exercise 11 - Ground Copilot in a file you upload
+
+**Where:** Start a new chat
+**Grounding:** Uploaded file
+**Model:** Auto
+
+Click **+**, choose **Upload images and files**, and upload [Data_Privacy_AI_Acceptable_Use_Policy.pdf](../03-copilot-chat/Data_Privacy_AI_Acceptable_Use_Policy.pdf) (or your own sample guideline). Then ask:
+
+```
+Summarise the key principles in this guideline and list
+what end users must do.
+```
+
+Next, start another new chat, type `/` followed by part of the file name, select the file from the picker, and ask:
+
+```
+What does this policy say about entering customer data
+into AI tools? Quote the relevant section.
+```
+
+> **Tip:** before uploading the same file again, check the **Microsoft Copilot Chat Files** folder in OneDrive. If it is already there, use **Attach cloud files** instead.
 
 ---
 
