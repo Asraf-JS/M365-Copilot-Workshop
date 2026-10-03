@@ -48,7 +48,7 @@ This guide will explain how your team should use AI tools responsibly and effect
 
 | # | Topic | Notes | What you will do |
 |---|-------|-------|-----------------|
-| 01 | [Copilot Fundamentals](./01-copilot-fundamentals/) | [Prompts](./01-copilot-fundamentals/prompts) | Understand what Copilot is, how licensing works, key AI terms, memory, and how to personalise your experience |
+| 01 | [Copilot Fundamentals](./01-copilot-fundamentals/) | [Prompts](./01-copilot-fundamentals/prompts) | Check your license, tour the interface, run your first prompt, personalise Copilot, verify sources, compare models, save prompts, and ground answers in your own files |
 | 02 | [Prompt Engineering](./02-prompt-engineering/) | [Prompts](./02-prompt-engineering/prompts) | Learn the GCSE framework, practice writing better prompts, and understand how to iterate on responses |
 | 03 | [Copilot Chat](./03-copilot-chat/) | [Prompts](./03-copilot-chat/prompts) | Research AI best practices and Malaysian regulations using Web grounding, then switch to Work mode to reference your own documents |
 | 04 | [Copilot Pages](./04-copilot-pages/) | [Prompts](./04-copilot-pages/prompts) | Turn your research into a structured first draft, refine it section by section, and add a Mermaid decision flowchart |
