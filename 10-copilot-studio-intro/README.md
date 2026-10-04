@@ -150,6 +150,6 @@ This introduction covered the basics. A full Copilot Studio workshop would go in
 
 ---
 
-*You have completed the workshop. Well done.*
+*You have completed the core workshop. Well done. Topic 11 covers Copilot in Teams.*
 
-*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Return to: [Workshop Home](../)*
+*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot in Teams](../11-copilot-teams/)*

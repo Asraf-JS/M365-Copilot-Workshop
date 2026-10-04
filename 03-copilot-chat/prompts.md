@@ -246,4 +246,36 @@ Once you have the outline, click **...** under the response → **Edit in Pages*
 
 ---
 
+## Part 9 — Optional: gather your research in a Notebook
+
+**Session: a new Copilot Notebook | Needs: Notebooks in your sidebar (see the notes)**
+
+Create a notebook called *AI Usage Guide research*. Move your research chat from Parts 1 to 8 into it (chat **…** menu → **Move to notebook**) and add the [Data_Privacy_AI_Acceptable_Use_Policy.pdf](./Data_Privacy_AI_Acceptable_Use_Policy.pdf) as a reference.
+
+Then select **Add Copilot Instructions** and paste:
+
+```
+I am writing an AI Usage Guide for my department. My readers
+are non-technical staff. Use plain language, keep answers
+short, and always say which reference you used.
+```
+
+Now ask questions across everything in the notebook:
+
+```
+Compare my research notes with the attached Data Privacy and
+AI Acceptable Use Policy. Where does the policy already cover
+something my guide needs, and where are the gaps?
+```
+
+```
+Using everything in this notebook, list the 5 rules every
+employee must follow when using AI tools, and the reference
+each rule comes from.
+```
+
+> **Tip:** come back to this notebook in Topics 04 and 05. Because the references stay attached, you can ask Copilot about your research at any point without re-uploading anything.
+
+---
+
 *Back to: [02 — Prompt Engineering](../02-prompt-engineering/) | Next: [04 — Copilot Pages](../04-copilot-pages/)*
