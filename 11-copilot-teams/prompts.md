@@ -18,7 +18,7 @@ time for questions, and agreeing next steps. Keep each item to
 one line.
 ```
 
-Copy the agenda into the **Add an agenda others can edit** Loop component in your meeting invitation, then turn on **Facilitator** under **Options > Copilot and other AI**.
+Copy the agenda into the Loop agenda in your meeting invitation (turn on **Teams meeting**, then select **Add an agenda** at the bottom of the form), then turn on **Facilitator** with the **Turn on** link next to the Teams meeting toggle, or under **Options > Copilot and other AI**.
 
 ---
 

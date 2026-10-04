@@ -230,30 +230,40 @@ A single chat is fine for one sitting, but research for a guide like this happen
 
 ### Create a notebook
 
-1. In the Copilot sidebar, select **Notebooks**, then **All notebooks**.
-2. Select **New notebook** and give it a name, for example *AI Usage Guide research*.
-3. Under **Add content to References**, add the material you want Copilot to work from. Copilot suggests files, meetings and emails it thinks are relevant, and you can filter the suggestions by **Files**, **Meetings**, **Emails** or **Sites**.
+1. In the Copilot sidebar, select **Notebooks**. The Notebooks page opens, with your existing notebooks under **Jump back in**.
+2. Select **New notebook** (top right) or the **Create new** card, give the notebook a name, for example *AI Usage Guide research*, and select **Next**.
 
-<!-- SCREENSHOT: images/notebooks-new.png | Notebooks in the sidebar expanded, with All notebooks and New notebook highlighted -->
-<!-- SCREENSHOT: images/notebooks-references.png | A new notebook's "Add content to References" area, with the suggested references and the filter tabs highlighted -->
+![The Notebooks page](./images/notebooks-new.png)
+
+*Select Notebooks in the sidebar, then New notebook or Create new.*
+
+3. In the **Add to** dialog, stay on the **References** tab and tick the material you want Copilot to work from. Copilot lists your recent files, and you can filter by **Files**, **Meetings**, **Emails**, **Sites** or **Teams Chats**. Select **Create** when you are done.
+
+![Adding references to a new notebook](./images/notebooks-references.png)
+
+*The References tab, with the filter tabs, the Upload files, Link and OneDrive files buttons, and the workshop files selected.*
+
+You can add more references later with **Add references** in the notebook's **Content** pane on the right.
 
 ### Ways to add references
 
 | Method | How |
 |--------|-----|
-| **Suggestions** | Pick from the files, meetings and emails Copilot suggests |
-| **Upload** | Select **Upload** and choose a file from your computer |
-| **OneDrive** | Select the OneDrive icon, find the file, then select **Add** |
-| **Drag and drop** | Drop a file into the references area |
-| **Move a chat** | From the sidebar, open a chat's **…** menu and choose **Move to notebook** |
+| **Suggestions** | Tick files, meetings, emails, sites or Teams chats from the list Copilot shows |
+| **Upload files** | Select the upload icon and choose a file from your computer |
+| **OneDrive files** | Select the cloud icon, find the file, then add it |
+| **Link** | Select the link icon and paste a link to a file or page |
+| **Move a chat** | From the sidebar, open a chat's **…** menu and choose **Move to notebook**, or use the **Copilot Chats** tab when adding content |
 
 Notebooks accept Word, PowerPoint, Excel and PDF files, Loop components, Copilot Pages and OneNote pages, as well as Outlook emails.
 
 ### Give the notebook instructions
 
-Select **Add Copilot Instructions** to tell Copilot how to behave in this notebook only, for example the audience you are writing for, or a format to follow. This works like the custom instructions you set in Topic 01, but only for this project.
+Open the notebook's **…** menu (top right) and select **Instructions** to tell Copilot how to behave in this notebook only, for example the audience you are writing for, or a format to follow. Type them into **Tell Copilot how to respond** and select **Save**. This works like the custom instructions you set in Topic 01, but only for this project, and the instructions apply to everyone you share the notebook with.
 
-<!-- SCREENSHOT: images/notebooks-instructions.png | A notebook with the Add Copilot Instructions option highlighted and sample instructions entered -->
+![Adding instructions to a notebook](./images/notebooks-instructions.png)
+
+*The notebook's … menu, then Instructions, with sample instructions entered.*
 
 > **License note:** Copilot Notebooks need a Microsoft 365 Copilot (Premium) license, and Microsoft is rolling them out to Copilot Chat (Basic) users through 2026. If you do not see Notebooks in your sidebar yet, keep working in a single chat for this topic.
 

@@ -37,17 +37,25 @@ At the end of Topic 07 you had a team briefing deck for the AI Usage Guide. In t
 
 Facilitator works best when the meeting has an agenda. It looks for one in the meeting description and in the meeting's Loop notes.
 
-1. In Teams, select **Calendar**, then **New meeting**.
+1. In Teams, select **Calendar**, then **New** (top right).
 2. Give it a title, for example *AI Usage Guide launch*, and invite your team (or your partner).
-3. Scroll to the bottom of the invitation and select **Add an agenda others can edit**. A Loop component appears with sections for agenda items, meeting notes and follow-up tasks.
-4. Type your agenda items into the Loop component. Part 1 of the prompts shows how to get Copilot to write them for you.
-5. Open **Options**, then **Copilot and other AI**, and turn on **Facilitator**.
-6. Check how Copilot is allowed to run (see the table below), then send the invitation.
+3. Turn on the **Teams meeting** toggle. A line appears next to it saying whether Facilitator is on, with a **Turn on** link, and an **Options** button appears on the right.
+4. Scroll to the bottom of the invitation and select **Add an agenda**. A Loop component appears with an **Agenda** list. Type your agenda items into it, one per line. Part 1 of the prompts shows how to get Copilot to write them for you (the **Draft an agenda for me** button above the description can also do this).
 
-<!-- SCREENSHOT: images/new-meeting-agenda.png | New meeting form with "Add an agenda others can edit" highlighted -->
-<!-- SCREENSHOT: images/copilot-ai-options.png | Meeting Options > Copilot and other AI, with the Facilitator toggle and the "Allow Copilot" setting highlighted -->
+![The new meeting form with an agenda](./images/new-meeting-agenda.png)
+
+*Callout 1: the Teams meeting toggle. Callout 2: Facilitator status, with Turn on. Callout 3: Options. Callout 4: the Loop agenda added with Add an agenda.*
+
+5. Select **Turn on** next to the Facilitator line, or open **Options**, choose **Copilot and other AI**, turn on **Facilitator** and select **Apply**.
+6. Check how Copilot is allowed to run (see the table below), then select **Save** (or **Send** if you invited people).
+
+![Meeting options, Copilot and other AI](./images/copilot-ai-options.png)
+
+*Callout 1: Allow Copilot and Facilitator. A padlock means your organisation has fixed this setting. Callout 2: the Facilitator toggle. When Facilitator is on, you can also set the spoken language of the meeting.*
 
 ### Choosing how Copilot runs
+
+The **Allow Copilot and Facilitator** setting has these choices. If you see a padlock next to it, your organisation has set it for you and you cannot change it.
 
 | Setting | What it means | Use it when |
 |---------|--------------|-------------|
@@ -60,28 +68,39 @@ Facilitator works best when the meeting has an agenda. It looks for one in the m
 ## During the Meeting
 
 1. Start the meeting and present your deck.
-2. Select **Copilot** in the meeting controls. If transcription is not on yet, Copilot asks you to start it.
-3. Ask Copilot questions as the discussion goes on. Part 2 of the prompts has questions that work well.
+2. Select **Copilot** in the meeting controls. If transcription is not on yet, Copilot asks you to start it. (Some organisations start transcription automatically, and everyone sees a "Transcription has started" notice.)
+3. Ask Copilot questions as the discussion goes on, or pick a suggestion such as **Recap the meeting so far**. Part 2 of the prompts has questions that work well.
 
-<!-- SCREENSHOT: images/copilot-in-meeting.png | Meeting controls with the Copilot button highlighted, and the Copilot pane open on the right -->
+![Copilot in a Teams meeting](./images/copilot-in-meeting.png)
+
+*Select Copilot in the meeting controls to open the Copilot pane on the right.*
 
 Only you see your Copilot questions and answers. Other people in the meeting cannot see what you ask.
 
 ### Facilitator in the meeting
 
-If Facilitator is on, it works for the whole meeting, not just for you:
+If Facilitator is on, it joins the meeting as a participant and works for everyone, not just for you:
 
-- It reminds everyone of the agenda and the time left on each item
-- It takes notes in the shared Loop meeting notes as people talk
-- It records decisions and action items, with owners where it can tell who agreed to what
+- It shows the agenda in a bar across the top of the meeting, with a timer for each item, and ticks items off as you cover them
+- It takes notes in the shared Loop meeting notes as people talk (select **Notes** in the meeting controls to see them)
+- It records decisions and follow-up tasks, with owners where it can tell who agreed to what
 
-<!-- SCREENSHOT: images/facilitator-notes.png | Facilitator's live notes in the meeting, showing an agenda item, a decision and an action item -->
+![Facilitator's notes](./images/facilitator-notes.png)
 
-### Turning Meeting AI off mid-meeting
+*Facilitator's notes, shown here on the Notes tab of the Recap after a meeting: the agenda with each item ticked off, and meeting notes grouped by topic.*
 
-Organisers and presenters can turn **Meeting AI** (Copilot, Facilitator and recap) off and on again during a live meeting. Use it when the conversation moves to something that should not be summarised, such as a personal matter or a confidential deal.
+### Turning the AI off mid-meeting
 
-<!-- SCREENSHOT: images/meeting-ai-toggle.png | The Meeting AI toggle in the meeting controls -->
+Organisers can stop the AI during a live meeting when the conversation moves to something that should not be summarised, such as a personal matter or a confidential deal:
+
+- **More → Record and transcribe → Stop transcription** stops the transcript, so Copilot and the recap stop capturing what is said
+- **More → Turn off Facilitator** removes Facilitator from the meeting
+
+You can turn both back on from the same menu. Some organisations also show a single **Meeting AI** switch that does both.
+
+![Stopping transcription and Facilitator during a meeting](./images/meeting-ai-controls.png)
+
+*In the meeting controls, select More. Stop transcription is under Record and transcribe, and Turn off Facilitator is in the main menu.*
 
 > **Key point:** everyone in the meeting is told when transcription starts. Copilot in a meeting follows the same rule as the Enterprise Data Protection you met in Topic 01: it is secure, but it is not private from your organisation.
 
@@ -91,12 +110,15 @@ Organisers and presenters can turn **Meeting AI** (Copilot, Facilitator and reca
 
 When the meeting ends, open the meeting chat and select **Recap** at the top. You will find:
 
-- **AI notes**: a summary of the discussion, grouped by topic
-- **Follow-up tasks**: action items with suggested owners
-- **Your Copilot chat**: the questions you asked during the meeting, so you can carry on asking (if Copilot ran during and after the meeting)
-- **Audio recap**: a short spoken summary you can listen to, useful for anyone who missed the meeting
+- **AI summary**: **Meeting notes** grouped by topic, with timestamps that jump to that point in the recording, and **Follow-up tasks** with suggested owners
+- **Notes**: Facilitator's Loop notes, if Facilitator was on
+- **Custom summary**, **Mentions** and **Transcript** tabs
+- **Copilot** (top right): keep asking questions about the meeting (if Copilot ran during and after the meeting)
+- **Video recap** and **Audio recap**: a short summary you can watch or listen to, useful for anyone who missed the meeting
 
-<!-- SCREENSHOT: images/meeting-recap.png | The Recap tab in the meeting chat, with AI notes and follow-up tasks highlighted -->
+![The Recap tab in the meeting chat](./images/meeting-recap.png)
+
+*The Recap tab, with Video recap and Audio recap, the AI summary tab, Meeting notes, and Follow-up tasks highlighted.*
 
 > **Good habit:** read the action items before you share them. Copilot is good at spotting who agreed to something, but it can attach an action to the wrong person if two people spoke at once.
 
@@ -107,10 +129,12 @@ When the meeting ends, open the meeting chat and select **Recap** at the top. Yo
 Copilot also works in ordinary Teams chats and channels, not just meetings.
 
 1. Open a chat or channel.
-2. Select **Copilot** at the top right of the conversation.
-3. Ask it to summarise, for example *What were the main questions about the AI Usage Guide this week?*
+2. Select the **Copilot** icon (**Open Copilot**) at the top right of the conversation.
+3. Pick a suggestion or ask it to summarise, for example *What were the main questions about the AI Usage Guide this week?*
 
-<!-- SCREENSHOT: images/copilot-in-chat.png | Copilot opened from the top right of a Teams chat, with a summary in the side pane -->
+![Copilot in a Teams chat](./images/copilot-in-chat.png)
+
+*The Copilot icon at the top right of a chat opens Copilot in a side pane, here summarising the highlights of a meeting chat.*
 
 By default Copilot looks at the last 30 days of the conversation. You can ask for a shorter or longer window, such as *the last 7 days*.
 
