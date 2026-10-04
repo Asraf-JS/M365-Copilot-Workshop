@@ -29,37 +29,39 @@ Before you start prompting, it helps to know what each control around the messag
 
 | Option | What it does |
 |--------|-------------|
-| **Add work content** | Search and reference your M365 files, emails, meetings, or people directly in your prompt |
+| **Add content** | Search and reference your M365 files, emails, meetings, or people directly in your prompt |
 | **Upload images and files** | Attach a local file (PDF, Word, image) for Copilot to read and reference |
 | **Attach cloud files** | Link a file from OneDrive or SharePoint |
-| **Researcher / Analyst / Compose** | Switch to a specialist agent with a specific focus area |
+| **Research a topic / Analyse data** | Hand the task to the Researcher or Analyst agent for deeper, specialist work |
+| **More** | Further tools and agents available in your tenant |
+| **Change data sources** | Choose which sources Copilot can use to ground its answer |
 
-### Grounding — Work vs Web
+### Grounding — Work IQ on vs off
 
 ![Grounding toggle](./images/grounding.png)
 
-*The grounding toggle controls where Copilot searches*
+*The Work IQ toggle (top left) controls where Copilot searches. When it is off, the label is struck through*
 
 **Grounding** is the process of connecting an AI's response to a specific, trusted source of information rather than relying on its general training data alone. When Copilot is grounded, it retrieves real content from a defined source before generating a response — this is what makes its answers relevant to your actual work context rather than generic.
 
 | Mode | What it searches |
 |------|----------------|
-| **Work (briefcase icon)** | Your Microsoft 365 data — emails, files, calendar, Teams messages, SharePoint |
-| **Web (globe icon)** | The public internet via Bing |
+| **Work IQ on** | Your Microsoft 365 data — emails, files, calendar, Teams messages, SharePoint — as well as the web |
+| **Work IQ off** | The public internet only, via Bing |
 
-**When to use Work mode:**
+**When to keep Work IQ on (Work mode):**
 - Finding information from your own company files or emails
 - Summarising a document stored in SharePoint or OneDrive
 - Asking about a meeting, a colleague, or a recent project
 - Drafting content that references your organisation's actual context
 
-**When to use Web mode:**
+**When to turn Work IQ off (Web mode):**
 - Researching external topics, industry best practices, or current events
 - Looking up regulations, guidelines, or public information
 - Comparing your approach against what other organisations do
 - Any task where you need information beyond what your company has
 
-For the research phase of this workshop, use **Web** mode to gather information about AI guidelines and best practices. Switch to **Work** mode when you want Copilot to reference your actual company documents.
+For the research phase of this workshop, turn **Work IQ off** (Web mode) to gather information about AI guidelines and best practices. Turn it back **on** (Work mode) when you want Copilot to reference your actual company documents.
 
 > **Important:** When in Work mode, Copilot only accesses data you already have permission to see. It respects your Microsoft 365 permissions — it cannot read files or emails that you do not have access to.
 
@@ -67,7 +69,7 @@ For the research phase of this workshop, use **Web** mode to gather information 
 
 ### Microsoft Graph — How Work Mode Knows Your Data
 
-When you switch to Work mode, Copilot does not search your files the way Google searches the web. Instead, it uses **Microsoft Graph** — a unified API layer that sits across all your Microsoft 365 services.
+When Work IQ is on (Work mode), Copilot does not search your files the way Google searches the web. Instead, it uses **Microsoft Graph** — a unified API layer that sits across all your Microsoft 365 services.
 
 Think of Microsoft Graph as a single connection point that links everything in your Microsoft 365 environment: your emails in Outlook, files in OneDrive and SharePoint, calendar events, Teams chats, contacts, and meeting transcripts. Rather than searching each service separately, Copilot queries Microsoft Graph once and gets a consolidated view of your work data.
 
@@ -79,13 +81,13 @@ Think of Microsoft Graph as a single connection point that links everything in y
 **Why it matters for your AI Usage Guide:**
 Your AI Usage Guide should acknowledge that Copilot in Work mode can see a broad range of company data — and staff should understand this so they are thoughtful about what they discuss and store in Microsoft 365. It is not a risk to be alarmed about, but it is context worth including in any responsible AI guideline.
 
-### Quick filters — Files, Emails, People, Meetings
+### Suggestion chips and the Prompt Lab
 
-![Quick filters](./images/prompt-gallery-2.png)
+![Suggestion chips](./images/prompt-gallery-2.png)
 
-*Shortcut buttons to search specific M365 data types*
+*Suggestion chips below the message box. The ... button opens the Prompt Lab*
 
-These buttons below the message box let you quickly scope your question to a specific data type without writing a full prompt. Click **Files** to find a document, **Emails** to search your inbox, **People** to look up a colleague, or **Meetings** to reference a recent meeting.
+The chips below the message box give you ready-made starting points. With Work IQ on you will see work tasks such as **Catch up**, **Manage projects**, **Meeting prep**, and **People search**; with Work IQ off they switch to general tasks such as **Learn**, **Find**, **Summarise**, and **Suggest**. Click **...** to open the full Prompt Lab.
 
 ### Voice input
 
@@ -109,35 +111,36 @@ After you submit a prompt and receive a response, two sets of controls appear.
 
 ![Prompt controls](./images/prompt-controls.png)
 
-*Controls on your submitted prompt: edit, copy, history, save, share*
+*Hover over your submitted prompt to see: edit, copy, schedule, and save*
 
 | # | Button | What it does |
 |---|--------|-------------|
 | 1 | **Edit** | Edit your prompt and resubmit without retyping |
 | 2 | **Copy** | Copy your prompt text |
-| 3 | **History** | View previous versions of this prompt |
-| 4 | **Save** | Save the prompt to your Prompt Gallery |
-| 5 | **Share** | Share the prompt with a colleague |
+| 3 | **Schedule this prompt** | Run the prompt automatically on a schedule (for example, every Monday morning) |
+| 4 | **Save prompt** | Save the prompt to *Your saved prompts* in the Prompt Lab |
 
 ### Output controls (on Copilot's response)
 
 ![Output controls](./images/output-controls.png)
 
-*Controls on Copilot's response: copy, thumbs up, thumbs down, and share*
+*Controls on Copilot's response: copy, thumbs up, thumbs down, more options, and sources*
 
 | # | Button | What it does |
 |---|--------|-------------|
 | 1 | **Copy** | Copy the full response to clipboard |
 | 2 | **Thumbs up** | Mark the response as helpful (improves suggestions) |
-| 3 | **Share** | Share the response with a colleague |
+| 3 | **Thumbs down** | Flag a response that missed the mark and say why |
+| 4 | **More options (...)** | Share response, Edit in Pages, Export to Word, Read aloud, and Schedule this prompt |
+| 5 | **Sources** | See the web pages or work files Copilot used to ground the answer |
 
 ### Edit in Pages
 
 ![Edit in pages](./images/edit-in-pages.png)
 
-*The pencil icon sends the response directly to a new Copilot Page*
+*More options (...) → Edit in Pages → Add to new page (or Add to recent page)*
 
-The **Edit in Pages** button (pencil icon, far right of the output controls) opens the response as an editable Copilot Page — a live collaborative document you can continue working on. This is how you move from research in Copilot Chat into the drafting phase in Topic 04.
+**Edit in Pages** (in the **...** menu under a response) opens the response as an editable Copilot Page — a live collaborative document you can continue working on. Choose **Add to new page** to start a fresh page, or **Add to recent page** to append to one you already have. This is how you move from research in Copilot Chat into the drafting phase in Topic 04.
 
 ---
 
@@ -149,55 +152,56 @@ The **Edit in Pages** button (pencil icon, far right of the output controls) ope
 
 *Temporary chat — this conversation will not be saved to your history*
 
-Click the dropdown arrow next to the new chat icon and select **Temporary chat** to start a session that is not saved to your chat history. Useful when you want to experiment or discuss something sensitive without it appearing in your recent chats.
+Click the **Temporary chat** icon (speech bubble, top right) to start a session that is not saved to your chat history and does not create memories. Useful when you want to experiment without it appearing in your recent chats. It still follows your organisation's retention policy.
 
 ### Privacy and compliance indicator
 
 ![EDP indicator](./images/edp.png)
 
-*The shield icon confirms this chat is covered by your organisation's compliance policies*
+*Hover over the green shield to see "Enterprise data protection applies to this chat"*
 
-The shield icon in the top bar indicates that your conversation is protected under your organisation's Microsoft 365 compliance and data governance policies — it is not used to train Microsoft's AI models.
+The green shield icon in the top bar indicates that your conversation is protected under your organisation's Microsoft 365 compliance and data governance policies — it is not used to train Microsoft's AI models.
 
 ### Recent pages
 
 ![Recent pages](./images/recent-pages.png)
 
-*Access your recent Copilot Pages and settings from the ... menu*
+*Access your recent Copilot Pages from the ... menu (top right)*
 
-The **...** menu (top right) gives you access to Recent pages, Settings, Scheduled Prompts, and Quick Help.
+The **...** menu (top right) gives you access to Recent pages, Scheduled prompts, Settings, Download apps, Help and tips, and Send feedback.
 
-### Create — export a response as a document
+### Export to — save a response as a Word document
 
 ![Create document](./images/create-in-pages.png)
 
-*Export the current conversation or response as a Word document or PDF*
+*More options (...) → Export to → Word*
 
-The **Create** button (top right, visible when a response is open) lets you export content directly as a Word document or PDF — useful when you want to take your research notes out of Copilot Chat.
+**Export to** (in the **...** menu under a response) saves the response directly as a Word document — useful when you want to take your research notes out of Copilot Chat.
 
 ---
 
-## The Prompt Gallery
+## The Prompt Lab
 
-![Prompt Gallery](./images/prompt-gallery-1.png)
+![Prompt Lab](./images/prompt-gallery-1.png)
 
-*The Copilot Prompt Gallery — browse, search, and save prompts by task and job type*
+*The Copilot Prompt Lab — your saved prompts, prompt topics, a Job type filter, and Microsoft-suggested prompts*
 
-The Prompt Gallery is a built-in library of Microsoft-suggested prompts, organised by task and job type. You can also save your own prompts here using the bookmark icon on any prompt you submit. Access it via the **+** button or by clicking the book icon in the left sidebar.
+The Prompt Lab (formerly the Prompt Gallery) is a built-in library of Microsoft-suggested prompts, organised by topic and job type. You can also save your own prompts here using the **Save prompt** (bookmark) icon on any prompt you submit — they appear under **Your saved prompts**. Open it with the **...** button next to the suggestion chips below the message box.
 
 ---
 
 ## Switching Models in Copilot Chat
 
-Click the **Auto** button at the top right to switch between AI models.
+Click the **Auto** button at the top left (next to Work IQ) to switch between AI models.
 
 | Model | Best for |
 |-------|---------|
 | **Auto** | General use — Copilot decides the best approach based on your prompt |
-| **Quick Response** | Fast, concise answers when you do not need deep analysis |
-| **Think Deeper** | Complex reasoning, longer analysis, nuanced tasks |
-| **Opus (Claude)** | Writing, analysis, and nuanced reasoning — by Anthropic |
-| **GPT** | General tasks — by Open AI. Expand to choose specific versions (GPT 5.5, 5.4, 5.2) |
+| **Quick response** | Fast, concise answers when you do not need deep analysis |
+| **Think deeper** | Complex reasoning, longer analysis, nuanced tasks |
+| **Advanced reasoning (Experimental)** | The most complex, multi-step tasks |
+| **Claude** | Writing, analysis, and nuanced reasoning — by Anthropic. Choose Sonnet or Opus |
+| **GPT** | General tasks — by OpenAI. Expand to choose a specific version |
 
 > **Workshop exercise:** Try the same research prompt in both Opus and GPT. Compare tone, depth, and structure. Which output would you use as a starting point for your AI Usage Guide?
 
@@ -207,7 +211,7 @@ Click the **Auto** button at the top right to switch between AI models.
 
 Your task is to research and draft an **AI Usage Guide for your department**. This guide will help your team understand how to use AI tools responsibly and effectively at work.
 
-Use **Web** grounding mode for this phase so Copilot can pull current information from the internet. Switch to **Work** mode later when you want to reference your own company documents.
+Turn **Work IQ off** (Web mode) for this phase so Copilot can pull current information from the internet. Turn it back on later when you want to reference your own company documents.
 
 See [prompts.md](./prompts.md) for the full set of research prompts to use in this phase.
 
@@ -217,9 +221,9 @@ See [prompts.md](./prompts.md) for the full set of research prompts to use in th
 
 Once you have useful research in Copilot Chat, you have two ways to move it into a document:
 
-**Option 1 — Edit in Pages:** Click the pencil icon on any response to open it as a live Copilot Page for collaborative editing.
+**Option 1 — Edit in Pages:** Click **...** under any response → **Edit in Pages** → **Add to new page** to open it as a live Copilot Page for collaborative editing.
 
-**Option 2 — Create:** Use the Create button to export the conversation as a Word document or PDF.
+**Option 2 — Export to Word:** Click **...** under the response → **Export to** → **Word**.
 
 ![Pages interface](./images/pages-interface.png)
 

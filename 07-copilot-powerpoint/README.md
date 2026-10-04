@@ -40,13 +40,13 @@ If you prefer to start from OneDrive, you can create a new PowerPoint presentati
 
 ![Create new PowerPoint from OneDrive](./images/create-new-ppt-from-onedrive.png)
 
-*In OneDrive, click "Create or upload" (callout 1) then select "PowerPoint presentation" (callout 2). The new file opens in PowerPoint online with Copilot available.*
+*In OneDrive, click the **+** (Create or upload) button (callout 1) then select "PowerPoint presentation" (callout 2). The new file opens in PowerPoint for the web with Copilot available.*
 
 ---
 
 ## Creating a Presentation from Your Word Document
 
-Once PowerPoint is open, look for the Copilot button. On a blank presentation it appears in the bottom right corner of the screen.
+Once PowerPoint is open, look for the round Copilot button. On a blank presentation it floats in the bottom right corner of the screen.
 
 ![Copilot button on blank presentation](./images/copilotbutton-in-ppt.png)
 
@@ -54,11 +54,11 @@ Once PowerPoint is open, look for the Copilot button. On a blank presentation it
 
 ### Attaching your Word document
 
-When the Copilot panel opens, click the **+** button to attach your Word document as the source.
+When the Copilot panel opens, click the **+** button and choose **Add work content** to attach your Word document as the source.
 
 ![Create from file panel](./images/create-from-file.png)
 
-*Click the + button (callout 1) to open the file picker. Your recently opened files appear automatically. Select your AI Usage Guide Word document (callout 2).*
+*Click + → Add work content (callout 1) to open the file picker. Recent files appear automatically, or type in the search box to find yours. Select your AI Usage Guide Word document (callout 2). The + menu also offers Upload images and files, Designer, Select brand, Choose skills, and Change data sources.*
 
 ### Switching models before generating
 
@@ -66,9 +66,9 @@ Before you submit, you can switch the AI model using the model selector at the t
 
 ![Change model to Claude Opus](./images/change-model-opus-preview-feature.png)
 
-*Click Auto (callout 1) to open the model switcher. Claude Opus 4.7 (callout 2) is recommended for presentation generation as it produces more structured and well-reasoned slide content.*
+*Click Auto (callout 1) to open the model switcher, expand **Claude**, and pick **Claude Opus 5.5** (callout 2). Opus is recommended for presentation generation as it produces more structured and well-reasoned slide content. The menu also lists GPT models and an Image generation option.*
 
-> **Note:** Claude Opus is a preview feature in PowerPoint Copilot and may not be available on all tenants. If you do not see it, use Auto.
+> **Note:** The Claude models may not be available on all tenants. If you do not see them, use Auto.
 
 ### Submitting and generating
 
@@ -76,15 +76,21 @@ After attaching your document and selecting your model, click the arrow button t
 
 ![Submit to generate](./images/submit-chat.png)
 
-*The Word document appears as an attachment in the panel. Click the arrow button to start generating the presentation.*
+*The Word document appears as an attachment in the panel, and the model button now shows Opus 5.5. Click the arrow button to start generating the presentation.*
 
-Copilot will read your entire Word document and build a structured slide deck. This usually takes 15 to 30 seconds.
+Copilot reads your entire Word document and first asks **how the presentation should look and feel**. Pick one of the suggested styles (or your organisation's templates, or type your own) and click **Confirm** — or click **Skip all** to let Copilot decide.
+
+![Choose a look and feel](./images/style-options.png)
+
+*Callout 1: suggested looks, with your organisation's templates recommended first. Callout 2: Confirm your choice.*
+
+Copilot then builds a structured slide deck. This usually takes 2 to 4 minutes.
 
 ### The completed presentation
 
 ![Completed AI Usage Guide presentation](./images/completed-presentation.png)
 
-*A completed 7-slide presentation generated from the AI Usage Guide Word document. The Copilot panel on the right shows the model response and suggests next steps like tightening wording or adding a closing slide.*
+*A completed 9-slide presentation generated from the AI Usage Guide Word document in the Navy & Teal style. The Copilot panel on the right shows the style you chose and a summary of what Copilot built.*
 
 ---
 
@@ -102,9 +108,9 @@ Alongside the presentation itself, Copilot Chat has two features worth knowing w
 
 ![Create in Copilot Chat](./images/create-in-copilotchat.png)
 
-*Callout 1: the Create section in the left sidebar of Copilot Chat. Callout 2: the image description prompt box. Tabs along the top let you switch between creating an image, a PowerPoint, a Word document, Excel spreadsheet, video, infographic, and more.*
+*Callout 1: Create, opened from the apps grid (the dotted square next to the Copilot logo). Callout 2: the format tabs and the image description prompt box. The tabs let you switch between creating an image, a Word document, an Excel spreadsheet, a video, and more (under More...).*
 
-**Create** is accessed from the left sidebar in Copilot Chat at [m365.cloud.microsoft](https://m365.cloud.microsoft/). It lets you generate images from a text description, which you can then insert into your PowerPoint slides.
+**Create** is opened from the apps grid at the top of the sidebar in Copilot Chat at [m365.cloud.microsoft](https://m365.cloud.microsoft/), or from the **+ Create** button in Library. It lets you generate images from a text description, which you can then insert into your PowerPoint slides.
 
 **Important — image generation uses a different model than chat.** When you are chatting with Copilot, you can switch between Claude Opus, GPT, and other models. Image generation does not use those models. It uses OpenAI's **GPT-Image-1.5**, which is a dedicated image generation model separate from the chat models. Switching your chat model to Opus does not affect how images are generated.
 
@@ -135,13 +141,13 @@ diamond decision nodes and rectangular action nodes,
 teal and navy colour scheme, white background.
 ```
 
-> **Tip for presentations:** Generate images in **Wide** format (16:9) to match standard PowerPoint slide dimensions. Use the Shape and Size options at the bottom of the Create panel to set this before generating.
+> **Tip for presentations:** Generate images in a wide (16:9) format to match standard PowerPoint slide dimensions. Use the **Size** option below the prompt box to set this before generating.
 
 ### Library — your saved images and prompts
 
 ![Library in Copilot Chat](./images/library-in-copilotchat.png)
 
-*Callout 1: the Library section in the left sidebar. Your generated images and saved prompts are stored here and accessible across sessions.*
+*Callout 1: Library in the left sidebar. Callout 2: filter by All, Files, Images, or Pages. Callout 3: the + Create button. Your generated images, files, and Pages are stored here and accessible across sessions.*
 
 **Library** stores all images you have generated through Create, as well as any prompts you have saved from Copilot Chat. It is accessible from the left sidebar at any time. Images are stored for 18 months before being automatically deleted.
 

@@ -13,14 +13,14 @@ At the end of Topic 04 you exported your draft from Copilot Pages as a Word docu
 **If you have not exported from Pages yet:**
 1. Open your Copilot Page from Topic 04
 2. Click the **...** menu at the top right of the page
-3. Select **Export** then **Word document (.docx)**
+3. Select **Export** then **Document**
 4. Save the file to your OneDrive or desktop
 5. Open it in Microsoft Word
 
 **If you cannot find your Pages document:**
 Go to [m365.cloud.microsoft](https://m365.cloud.microsoft/), click the **...** menu at the top right, and select **Recent pages**. Your Topic 04 document should be listed there.
 
-> Once the Word document is open, make sure you are connected to Microsoft 365 (signed in with your work account) so Copilot in Word is available. Look for the Copilot icon in the **Home** tab on the ribbon.
+> Once the Word document is open, make sure you are connected to Microsoft 365 (signed in with your work account) so Copilot in Word is available. Look for the round **Copilot** button floating at the bottom right of the document.
 
 ---
 
@@ -41,11 +41,11 @@ This is where participants often get confused. There are three separate Copilot 
 
 ### 1. Copilot Chat panel (side panel)
 
-Click the **Copilot** button in the **Home** tab on the ribbon to open the full Copilot Chat panel on the right side of the screen.
+Click the round **Copilot** button that floats at the bottom right of the document to open the full Copilot panel on the right side of the screen. (It may already be open when you first open a document.) The panel starts with **Allow editing** selected, so Copilot can make changes to the document directly, plus suggested prompts such as *Catch me up on this document*.
 
 ![Copilot Chat panel in Word](./images/copilot-in-word.png)
 
-*Callout 1: the Copilot Chat panel opens on the right side. Callout 2: the document summary bar appears at the top of the document when the panel is open.*
+*Callout 1: the Copilot panel ("Let's edit your document") opens on the right side. Callout 2: the Summary bar appears at the top of the document — click View more to expand it.*
 
 Use the Chat panel for:
 
@@ -74,11 +74,11 @@ Use this for:
 
 This is the most precise entry point since it only acts on exactly what you have selected.
 
-### 3. Copilot icon in the margin
+### 3. Adding new content in a specific place
 
-When you click at the start of a blank line or paragraph, a small Copilot icon appears in the left margin. Clicking it lets you generate new content at that position. Use this for inserting new sections or adding content between existing paragraphs.
+Word for the web no longer shows a Copilot icon in the margin on blank lines. To add new content at a specific point, keep **Allow editing** selected in the Copilot panel and say where it should go, for example: *Add a short section called "Reporting Mistakes" after the Human Review section.*
 
-> **Practical tip:** Start with the Chat panel for big structural changes. Use Edit with Copilot for targeted section rewrites. Use the margin icon when you need to insert something new in a specific place.
+> **Practical tip:** Start with the Copilot panel for big structural changes and new sections. Use Edit with Copilot for targeted rewrites of a selected paragraph.
 
 ---
 
@@ -100,7 +100,7 @@ This is useful for checking your AI Usage Guide against existing company policie
 
 ## Tips for Working with Copilot in Word
 
-- Use the **inline Copilot** (margin icon) for section-level edits and the **Chat panel** for document-wide tasks.
+- Use **Edit with Copilot** (select text first) for section-level edits and the **Copilot panel** for document-wide tasks and new sections.
 - Always review Copilot's output before finalising. It will sometimes rephrase things in ways that do not match your intended meaning.
 - Turn on **Track Changes** (Review tab) before asking Copilot to make revisions so you can compare before and after and accept or reject changes selectively.
 - If the document is very long, Copilot may not see all of it at once. Work section by section rather than asking it to revise everything in one prompt.

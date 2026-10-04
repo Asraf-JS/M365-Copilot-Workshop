@@ -69,11 +69,10 @@ be encouraging, not threatening.
 
 After keeping the draft, review each question and mark the correct answer:
 
-1. Click any question to expand it
-2. Click **Answer key** at the bottom of the question
-3. Select the correct answer
-4. Assign a point value (suggested: 1 point per question)
-5. Optionally add a feedback message for correct and incorrect answers
+1. Click any question to edit it
+2. Check that the correct answer is marked with a tick (Copilot usually marks it for you; click the tick next to an option to change it)
+3. Assign a point value (suggested: 1 point per question)
+4. Optionally add a feedback message for correct and incorrect answers
 
 ```
 For each question, suggest a one-sentence feedback message 
@@ -165,13 +164,13 @@ Allow multiple selections.
 After the survey has collected responses:
 
 1. Click **View responses** in the top bar
-2. In the Insights panel on the right, click **Open results in Excel**
-3. The Excel file saves automatically to your **OneDrive > Documents** folder
+2. At the top right of the Responses Overview, click the linked Excel workbook card to open your results in Excel
+3. The Excel file is kept in your **OneDrive** — the folder is shown under the file name on the card
 4. The file is named after your form title
 
-> **Find it later:** Go to OneDrive, open the Documents folder, and look for the `.xlsx` file matching your form name. This file updates automatically as new responses come in — you do not need to re-export.
+> **Find it later:** Go to OneDrive and search for the `.xlsx` file matching your form name. This file updates automatically as new responses come in — you do not need to re-export.
 
-> **For the workshop:** If you do not have real responses, use `AI_Guideline_Survey_Responses.xlsx` from the `09-copilot-excel` folder in the workshop GitHub repo. It has 30 pre-populated responses ready for analysis in Topic 09.
+> **For the workshop:** If you do not have real responses, use `AI_Guideline_Survey_Responses.xlsx` from the `09-copilot-excel` folder in the workshop GitHub repo. It has 100 pre-populated responses ready for analysis in Topic 09.
 
 ---
 

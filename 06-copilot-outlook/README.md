@@ -50,7 +50,7 @@ When you start a new email, look for the **Help me write** button in the compose
 
 ![Help me write when drafting a new email](./images/when-drafting-a-new-email.png)
 
-*The "Help me write" button appears in the compose window. Click it to open the Copilot drafting prompt.*
+*"Start typing or Help me write" appears in the body of a new email. Click **Help me write** (or press Alt + I) to open the Copilot drafting prompt.*
 
 Click **Help me write**, describe what you want the email to say, and Copilot will generate a full draft. You can then refine it by asking Copilot to make it shorter, more formal, or to adjust the tone before sending.
 
