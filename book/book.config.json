@@ -29,7 +29,7 @@
   "front": [
     {
       "title": "About the author",
-      "file": "front/about-the-author.md",
+      "file": "kit:front/about-the-author.md",
       "class": "about"
     }
   ],

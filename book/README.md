@@ -2,6 +2,8 @@
 
 This folder builds [M365-Copilot-Workshop-Book.pdf](../M365-Copilot-Workshop-Book.pdf), a printable book of the whole workshop, from the same Markdown files the website uses. Edit a topic's `README.md` or `prompts.md`, rebuild, and the book picks up the change.
 
+The build tools, layout, colour palettes and the About the author page live in the shared [training-book-kit](https://github.com/Asraf-JS/training-book-kit), so every book in the series looks the same. This folder only holds what is specific to this workshop.
+
 ## Build it
 
 You need [Node.js](https://nodejs.org/) 20 or later.
@@ -19,25 +21,18 @@ The PDF is written to the repository root.
 
 | File | What it does |
 |------|-------------|
-| `book.config.json` | Everything specific to this book: title, cover text, author, palette, and the list of chapters |
-| `front/` | Pages that exist only in the book: About the author and the introduction |
-| `theme/series.css` | The shared layout for every book in the series. Don't change it for one book |
-| `theme/palettes/` | One colour file per product. This book uses `copilot.css` |
-| `build.mjs` | Turns the Markdown into HTML, lays out pages with paged.js, and prints the PDF with Chromium |
+| `book.config.json` | Everything specific to this book: title, cover text, palette, chapter list and program flow steps |
+| `front/introduction.md` | The "Before you begin" chapter |
+| `package.json` | Installs the shared kit |
 
-## Reusing it for another book in the series
+## Picking up kit changes
 
-1. Copy this `book/` folder into the other course repository.
-2. In `book.config.json`, change the title lines, kicker, subtitle, blurb, cover icons, output file name and chapter list.
-3. Set `palette` to the product, for example `power-automate`. To add a product, copy a palette file and change the colours. Everything else stays the same, which is what keeps the series consistent.
+`package-lock.json` pins the kit to a specific version, so the book only changes when you choose. After the layout, a palette or the author page changes in the kit, run this before you build:
 
-Cover icons can be any of `chat`, `doc`, `check`, `spark`, `play`, `plus` and `lines`.
+```
+npm update training-book-kit
+```
 
-## How the Markdown is converted
+Then commit the updated `package-lock.json` along with the rebuilt PDF.
 
-- Each topic's `README.md` becomes a chapter. Its `prompts.md` follows as "Hands-on exercises".
-- The topic number is dropped from the heading ("03 — Copilot Chat" becomes Chapter 3, "Copilot Chat").
-- Website-only lines are removed: the "Prompts to Try" link and the Back/Next navigation.
-- An image followed by an italic line becomes a figure with a caption.
-- Callouts are coloured by their opening bold label: Tip and Good habit are teal, Try it is purple, Key point and Why it matters are orange, and everything else (Note, License note) is blue.
-- Links to other pages of the site become plain text. Links to sample files point to the GitHub repository.
+See the [kit's README](https://github.com/Asraf-JS/training-book-kit#readme) for every config option and for how the Markdown is converted.
