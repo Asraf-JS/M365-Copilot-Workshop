@@ -89,6 +89,21 @@ If Facilitator is on, it joins the meeting as a participant and works for everyo
 
 *Facilitator's notes, shown here on the Notes tab of the Recap after a meeting: the agenda with each item ticked off, and meeting notes grouped by topic.*
 
+### Ask Facilitator in the meeting chat
+
+Facilitator also joins the meeting chat, so anyone in the meeting can ask it a question there. Type **@Facilitator** followed by your question, for example *@Facilitator what have we agreed so far?*, or select **Ask Facilitator** under one of its earlier replies to follow up.
+
+<!-- SCREENSHOT: images/ask-facilitator.png | The meeting chat with an @Facilitator question and Facilitator's reply listing decisions and action items, with Ask Facilitator highlighted -->
+
+The difference from Copilot is who sees the answer:
+
+| | Copilot | Facilitator in the chat |
+|---|---------|------------------------|
+| **Who sees the question and answer** | Only you | Everyone in the meeting chat |
+| **Best for** | Private questions, such as "what did I miss?" or "what should I ask next?" | Questions the whole group benefits from, such as "what are the action items so far?" |
+
+> **Tip:** ask Facilitator to list the decisions and action items in the chat just before the meeting ends. Everyone sees the same list, so people can correct an owner or a date while they are still in the meeting.
+
 ### Turning the AI off mid-meeting
 
 Organisers can stop the AI during a live meeting when the conversation moves to something that should not be summarised, such as a personal matter or a confidential deal:
