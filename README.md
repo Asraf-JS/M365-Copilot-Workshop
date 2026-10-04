@@ -42,6 +42,7 @@ This guide will explain how your team should use AI tools responsibly and effect
 | Present | Turn the approved document into a team presentation using Copilot in PowerPoint |
 | Survey | Build a knowledge quiz and feedback survey using Copilot in Forms |
 | Analyse | Use Copilot in Excel to analyse the quiz results and surface insights |
+| Launch | Run the launch meeting in Teams, with Copilot capturing questions, decisions and follow-ups |
 | Automate | Build a simple weekly check-in agent in Copilot Studio to keep the feedback loop running |
 
 ---
@@ -59,8 +60,8 @@ This guide will explain how your team should use AI tools responsibly and effect
 | 07 | [Copilot in PowerPoint](./07-copilot-powerpoint/) | [Prompts](./07-copilot-powerpoint/prompts) | Generate a team presentation from your Word document, improve slides, add speaker notes, and create custom images using the Create feature |
 | 08 | [Copilot in Forms](./08-copilot-forms/) | [Prompts](./08-copilot-forms/prompts) | Build a knowledge quiz from your AI Usage Guide PDF and a feedback survey, then export the results to Excel |
 | 09 | [Copilot in Excel](./09-copilot-excel/) | [Prompts](./09-copilot-excel/prompts) | Analyse quiz results, add calculated columns, identify weak areas by department, and use Python in Excel to generate charts |
-| 10 | [Copilot Studio Intro](./10-copilot-studio-intro/) | [Prompts](./10-copilot-studio-intro/prompts) | Build a simple weekly check-in agent that asks your team one question about the AI guideline and collects their response |
-| 11 | [Copilot in Teams](./11-copilot-teams/) | [Prompts](./11-copilot-teams/prompts) | Run the launch meeting for your guide with Copilot and Facilitator, use the recap to follow up, and catch up on busy chats |
+| 10 | [Copilot in Teams](./10-copilot-teams/) | [Prompts](./10-copilot-teams/prompts) | Run the launch meeting for your guide with Copilot and Facilitator, use the recap to follow up, and catch up on busy chats |
+| 11 | [Copilot Studio Intro](./11-copilot-studio-intro/) | [Prompts](./11-copilot-studio-intro/prompts) | Build a simple weekly check-in agent that asks your team one question about the AI guideline and collects their response |
 
 ---
 

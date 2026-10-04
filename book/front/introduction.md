@@ -28,6 +28,7 @@ Each chapter moves the project one step forward:
 | Present | Turn the approved document into a team presentation using Copilot in PowerPoint |
 | Survey | Build a knowledge quiz and feedback survey using Copilot in Forms |
 | Analyse | Use Copilot in Excel to analyse the quiz results and surface insights |
+| Launch | Run the launch meeting in Teams, with Copilot capturing questions, decisions and follow-ups |
 | Automate | Build a simple weekly check-in agent in Copilot Studio to keep the feedback loop running |
 
 ## Sample files

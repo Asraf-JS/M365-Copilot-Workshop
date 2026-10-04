@@ -137,7 +137,7 @@ You can also ask in the Copilot pane, for example *Find 30 minutes next week wit
 
 ## Workshop Scenario
 
-You will send your AI Usage Guide proposal to your supervisor for approval, then manage the back-and-forth conversation using Copilot to draft replies, track what has been agreed, and finally announce the approved guideline to your team. Along the way you will tidy the replies into their own folder and schedule the launch meeting you run in Topic 11.
+You will send your AI Usage Guide proposal to your supervisor for approval, then manage the back-and-forth conversation using Copilot to draft replies, track what has been agreed, and finally announce the approved guideline to your team. Along the way you will tidy the replies into their own folder and schedule the launch meeting you run in Topic 10.
 
 ---
 

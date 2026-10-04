@@ -10,7 +10,7 @@
   ],
   "runningTitle": "Microsoft 365 Copilot Workshop",
   "subtitle": "Two-day participant guide",
-  "blurb": "Research, draft, refine, present and automate one connected project with Copilot across Chat, Pages, Word, Outlook, PowerPoint, Forms, Excel, Copilot Studio and Teams.",
+  "blurb": "Research, draft, refine, present and automate one connected project with Copilot across Chat, Pages, Word, Outlook, PowerPoint, Forms, Excel, Teams and Copilot Studio.",
   "coverIcons": [
     "chat",
     "doc",
@@ -75,15 +75,15 @@
       "exercises": "../09-copilot-excel/prompts.md"
     },
     {
-      "notes": "../10-copilot-studio-intro/README.md",
-      "exercises": "../10-copilot-studio-intro/prompts.md"
+      "notes": "../10-copilot-teams/README.md",
+      "exercises": "../10-copilot-teams/prompts.md"
     },
     {
-      "notes": "../11-copilot-teams/README.md",
-      "exercises": "../11-copilot-teams/prompts.md"
+      "notes": "../11-copilot-studio-intro/README.md",
+      "exercises": "../11-copilot-studio-intro/prompts.md"
     }
   ],
-  "backCover": "This guide accompanies the two-day Microsoft 365 Copilot workshop. It follows one project, an AI Usage Guide for your department, from first research in Copilot Chat to a weekly check-in agent in Copilot Studio. Every chapter pairs short notes with copy-ready prompts you can use during the session and back at your desk.",
+  "backCover": "This guide accompanies the two-day Microsoft 365 Copilot workshop. It follows one project, an AI Usage Guide for your department, from first research in Copilot Chat, through a launch meeting in Teams, to a weekly check-in agent in Copilot Studio. Every chapter pairs short notes with copy-ready prompts you can use during the session and back at your desk.",
   "programFlow": {
     "title": "Your Copilot training journey",
     "lead": "One project, start to finish: build an AI Usage Guide for your department, using a different Copilot app at each step.",
@@ -165,22 +165,22 @@
       },
       {
         "n": 10,
-        "app": "Copilot Studio",
-        "icon": "nodes",
-        "color": "#6b4fbb",
-        "stage": "Automate",
-        "desc": "Automate weekly check-ins with an agent",
-        "output": "Check-in agent",
-        "optional": true
-      },
-      {
-        "n": 11,
         "app": "Teams",
         "icon": "T",
         "color": "#5b5fc7",
         "stage": "Launch",
         "desc": "Run the launch meeting and follow up",
         "output": "Meeting recap",
+        "optional": true
+      },
+      {
+        "n": 11,
+        "app": "Copilot Studio",
+        "icon": "nodes",
+        "color": "#6b4fbb",
+        "stage": "Automate",
+        "desc": "Automate weekly check-ins with an agent",
+        "output": "Check-in agent",
         "optional": true
       }
     ]

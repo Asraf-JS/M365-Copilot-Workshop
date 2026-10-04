@@ -1,4 +1,4 @@
-# 10 — Copilot Studio: Introduction to Agents
+# 11 — Copilot Studio: Introduction to Agents
 
 You have used Copilot as a tool that responds when you ask it something. An agent takes that further — it can act on your behalf, run on a schedule, and interact with other systems automatically. This topic is an introduction to what agents are and how to build a simple one.
 
@@ -8,9 +8,9 @@ You have used Copilot as a tool that responds when you ask it something. An agen
 
 ---
 
-## Continuing from Topic 09
+## Continuing from Topic 10
 
-You have now researched, drafted, refined, sent, presented, surveyed, and analysed your AI Usage Guide. This final topic closes the loop by showing you how to automate the ongoing feedback process using a Copilot Studio agent.
+You have now researched, drafted, refined, sent, presented, surveyed, analysed, and launched your AI Usage Guide. This final topic closes the loop by showing you how to automate the ongoing feedback process using a Copilot Studio agent.
 
 Instead of manually sending a survey every week, an agent can ask your team one question, collect the response, and report back to you automatically.
 
@@ -150,6 +150,6 @@ This introduction covered the basics. A full Copilot Studio workshop would go in
 
 ---
 
-*You have completed the core workshop. Well done. Topic 11 covers Copilot in Teams.*
+*You have completed the workshop. Well done.*
 
-*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot in Teams](../11-copilot-teams/)*
+*Back to: [10 — Copilot in Teams](../10-copilot-teams/) | Return to: [Workshop Home](../)*

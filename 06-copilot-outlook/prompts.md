@@ -231,7 +231,7 @@ items: welcome, walkthrough of the key rules, questions, and
 next steps.
 ```
 
-This is the meeting you run in Topic 11 (Copilot in Teams).
+This is the meeting you run in Topic 10 (Copilot in Teams).
 
 ---
 

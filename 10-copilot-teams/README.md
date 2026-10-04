@@ -1,10 +1,10 @@
-# 11 — Copilot in Teams
+# 10 — Copilot in Teams
 
 Your AI Usage Guide is approved and you have a deck to present it. The next step is the launch meeting: walk your team through the guide, answer their questions, agree what happens next, and make sure people who missed it can catch up. Copilot in Teams helps with all of that, before, during and after the meeting.
 
 > **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
 
-> **When to teach this topic:** it follows on naturally from Topic 07, since the launch meeting is where you present your deck. Run it straight after Topic 07, or at the end as an extra.
+> **When to teach this topic:** it follows on naturally from Topic 07, since the launch meeting is where you present your deck. Run it straight after Topic 07 if you prefer, or here, before Copilot Studio.
 
 ---
 
@@ -171,4 +171,4 @@ You run the launch meeting for your AI Usage Guide. Before the meeting you get C
 
 ---
 
-*Back to: [10 — Copilot Studio Intro](../10-copilot-studio-intro/) | Return to: [Workshop Home](../)*
+*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot Studio Intro](../11-copilot-studio-intro/)*

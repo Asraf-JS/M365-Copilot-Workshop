@@ -115,4 +115,4 @@ This is the target output for Exercise 1. Your dashboard may look slightly diffe
 
 ---
 
-*Back to: [08 — Copilot in Forms](../08-copilot-forms/) | Next: [10 — Copilot Studio Intro](../10-copilot-studio-intro/)*
+*Back to: [08 — Copilot in Forms](../08-copilot-forms/) | Next: [10 — Copilot in Teams](../10-copilot-teams/)*

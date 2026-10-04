@@ -1,4 +1,4 @@
-# 11 — Copilot in Teams: Prompts
+# 10 — Copilot in Teams: Prompts
 
 Use these prompts to plan, run and follow up on the launch meeting for your AI Usage Guide.
 
@@ -120,4 +120,4 @@ each one was made.
 
 ---
 
-*Back to: [10 — Copilot Studio Intro](../10-copilot-studio-intro/) | Return to: [Workshop Home](../)*
+*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot Studio Intro](../11-copilot-studio-intro/)*
