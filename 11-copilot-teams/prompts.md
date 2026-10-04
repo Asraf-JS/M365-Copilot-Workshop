@@ -52,6 +52,13 @@ where it is clear who agreed to do it.
 
 > **Try it:** ask the "questions not answered yet" prompt about five minutes before the end, then use the answer to close the open questions while everyone is still in the meeting.
 
+If Facilitator is on, you can also ask it in the **meeting chat**, where everyone sees the answer:
+
+```
+@Facilitator what decisions and action items have we agreed
+so far? List each action with its owner.
+```
+
 ---
 
 ## Part 3 — After the meeting
