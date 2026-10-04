@@ -40,7 +40,7 @@ Facilitator works best when the meeting has an agenda. It looks for one in the m
 1. In Teams, select **Calendar**, then **New** (top right).
 2. Give it a title, for example *AI Usage Guide launch*, and invite your team (or your partner).
 3. Turn on the **Teams meeting** toggle. A line appears next to it saying whether Facilitator is on, with a **Turn on** link, and an **Options** button appears on the right.
-4. Scroll to the bottom of the invitation and select **Add an agenda**. A Loop component appears with an **Agenda** list. Type your agenda items into it, one per line. Part 1 of the prompts shows how to get Copilot to write them for you (the **Draft an agenda for me** button above the description can also do this).
+4. Scroll to the bottom of the invitation and select **Add an agenda** (if the meeting starts straight away, the link may say **Add meeting notes** instead; it adds the same Loop component). A Loop component appears with an **Agenda** list. Type your agenda items into it, one per line. Part 1 of the prompts shows how to get Copilot to write them for you (the **Draft an agenda for me** button above the description can also do this).
 
 ![The new meeting form with an agenda](./images/new-meeting-agenda.png)
 
@@ -87,13 +87,15 @@ If Facilitator is on, it joins the meeting as a participant and works for everyo
 
 ![Facilitator's notes](./images/facilitator-notes.png)
 
-*Facilitator's notes, shown here on the Notes tab of the Recap after a meeting: the agenda with each item ticked off, and meeting notes grouped by topic.*
+*Facilitator's notes for the AI Usage Guide launch, on the Notes tab of the Recap. Callout 1: the agenda (items are ticked off when the meeting moves through them). Callout 2: Facilitator's meeting notes, grouped by topic.*
 
 ### Ask Facilitator in the meeting chat
 
-Facilitator also joins the meeting chat, so anyone in the meeting can ask it a question there. Type **@Facilitator** followed by your question, for example *@Facilitator what have we agreed so far?*, or select **Ask Facilitator** under one of its earlier replies to follow up.
+Facilitator also joins the meeting chat, so anyone in the meeting can ask it a question there. Type **@Facilitator**, pick **Facilitator** from the suggestions, then type your question, for example *what have we agreed so far?* Select **Ask Facilitator** under one of its replies to follow up. When you ask about action items, Facilitator replies with a list of trackable tasks, each with an owner and a status such as **Not started**.
 
-<!-- SCREENSHOT: images/ask-facilitator.png | The meeting chat with an @Facilitator question and Facilitator's reply listing decisions and action items, with Ask Facilitator highlighted -->
+![Ask Facilitator in the meeting chat](./images/ask-facilitator.png)
+
+*Callout 1: the @Facilitator question. Callout 2: Facilitator's reply, with each action as a task and its owner. Callout 3: Ask Facilitator, to follow up.*
 
 The difference from Copilot is who sees the answer:
 
@@ -129,11 +131,11 @@ When the meeting ends, open the meeting chat and select **Recap** at the top. Yo
 - **Notes**: Facilitator's Loop notes, if Facilitator was on
 - **Custom summary**, **Mentions** and **Transcript** tabs
 - **Copilot** (top right): keep asking questions about the meeting (if Copilot ran during and after the meeting)
-- **Video recap** and **Audio recap**: a short summary you can watch or listen to, useful for anyone who missed the meeting
+- **Audio recap** (and **Video recap** if the meeting was recorded): a short summary you can listen to or watch, useful for anyone who missed the meeting
 
 ![The Recap tab in the meeting chat](./images/meeting-recap.png)
 
-*The Recap tab, with Video recap and Audio recap, the AI summary tab, Meeting notes, and Follow-up tasks highlighted.*
+*The Recap of the AI Usage Guide launch, with Audio recap, the AI summary tab, Meeting notes, and Follow-up tasks with their owners highlighted. This meeting was not recorded, so there is no Video recap.*
 
 > **Good habit:** read the action items before you share them. Copilot is good at spotting who agreed to something, but it can attach an action to the wrong person if two people spoke at once.
 
@@ -149,7 +151,7 @@ Copilot also works in ordinary Teams chats and channels, not just meetings.
 
 ![Copilot in a Teams chat](./images/copilot-in-chat.png)
 
-*The Copilot icon at the top right of a chat opens Copilot in a side pane, here summarising the highlights of a meeting chat.*
+*The Copilot icon at the top right of the meeting chat opens Copilot in a side pane, here answering "What were the main questions about the AI Usage Guide?" from the meeting transcript.*
 
 By default Copilot looks at the last 30 days of the conversation. You can ask for a shorter or longer window, such as *the last 7 days*.
 

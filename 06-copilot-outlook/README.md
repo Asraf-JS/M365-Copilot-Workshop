@@ -62,13 +62,15 @@ Click **Help me write**, describe what you want the email to say, and Copilot wi
 
 ## Ask About Your Whole Mailbox
 
-Open the **Copilot** pane from the top right. If an email is open, Copilot focuses on that thread. Remove the email from the prompt box to ask about your whole mailbox instead, for example:
+Open the **Copilot** pane with the **Copilot** button at the right end of the ribbon. If an email is open, Copilot attaches it to the prompt box and focuses on that thread. Hover over the email in the prompt box and select its **X** to remove it and ask about your whole mailbox instead, for example:
 
 - *What do I need to reply to today?*
 - *Has anyone replied about the AI Usage Guide since Monday?*
 - *Find the email where my manager mentioned the approval deadline.*
 
-<!-- SCREENSHOT: images/copilot-pane-scope.png | The Copilot pane in Outlook with an email attached as context in the prompt box, and the X to remove it highlighted -->
+![The Copilot pane with an email attached](./images/copilot-pane-scope.png)
+
+*Callout 1: the open email, attached to the prompt box. Callout 2: the X that removes it, so Copilot searches your whole mailbox.*
 
 > **Tip:** leave the email in the prompt when you want answers about that one conversation. Remove it when the answer could be anywhere in your mailbox.
 
@@ -92,9 +94,11 @@ Copilot can also create, list, change and delete **inbox rules**, so the same ti
 - *Create a rule that moves emails with "AI Usage Guide" in the subject to the AI Guide folder.*
 - *Show me my inbox rules.*
 
-Before it creates or changes a rule, Copilot shows a summary (the condition, the action, and that it applies to future emails only) and asks you to confirm.
+Before it creates or changes a rule, Copilot shows a summary (the rule name, its **Conditions** and its **Actions**) and asks you to **Confirm** or **Cancel**. Like any inbox rule, it applies to email you receive from then on.
 
-<!-- SCREENSHOT: images/copilot-rule-confirm.png | Copilot's summary of a new inbox rule in the Copilot pane, with the condition, the action and the Confirm button highlighted -->
+![Copilot's summary of a new inbox rule](./images/copilot-rule-confirm.png)
+
+*Callout 1: the condition. Callout 2: the actions, including stopping any further rules for that message. Callout 3: Confirm. Nothing changes until you select it.*
 
 > **Key point:** Copilot asks for confirmation before it acts on more than five emails or changes a rule. Read the summary before you confirm, especially anything that deletes email.
 
@@ -106,13 +110,15 @@ Before it creates or changes a rule, Copilot shows a summary (the condition, the
 
 Copilot can sort incoming email by importance, marking each message **high**, **normal** or **low** priority based on who sent it and what it is about, with a short reason.
 
-1. Select **Settings** (the gear icon, top right).
-2. Open the **Copilot** section and turn on **Prioritize my inbox**.
-3. Optionally tick the boxes to show Copilot's summary in the message preview and to label low-priority email.
+1. Open **Settings**: the gear icon at the top right, or **…** (top right) then **Settings** if the gear is hidden.
+2. Select **Copilot**, then **Prioritize**, and turn on **Let Copilot prioritize my email on arrival**.
+3. Optionally tick **Show AI-generated summaries in the message list** and **Apply low priority label**, then select **Save**.
 
-<!-- SCREENSHOT: images/prioritize-my-inbox.png | Settings > Copilot with the Prioritize my inbox toggle and its two options highlighted -->
+![Settings, Copilot, Prioritize](./images/prioritize-my-inbox.png)
 
-The same Copilot settings page is where you add **draft instructions** (how Copilot should write for you, such as tone and sign-off) and **calendar instructions**.
+*Callout 1: the Let Copilot prioritize my email on arrival toggle. Callout 2: its two options. Under Customize you can also tell Copilot what makes email higher or lower priority for you.*
+
+The same Copilot settings section has **Draft instructions** (how Copilot should write for you, such as tone and sign-off) and **Calendar instructions**.
 
 > **Good habit:** treat the priority as a suggestion. Spend a week checking what Copilot marks as low priority before you rely on it to decide what you can skip.
 
@@ -123,11 +129,13 @@ The same Copilot settings page is where you add **draft instructions** (how Copi
 When an email conversation needs a meeting, Copilot can set it up from the thread:
 
 1. Open the email thread.
-2. Select **Schedule with Copilot** in the **Respond** section of the ribbon.
-3. Copilot drafts the meeting: subject, attendees from the thread, a suggested time when people are free, an agenda, and a summary of the conversation so far.
-4. Check the draft, change anything that is wrong, and send it.
+2. Select **Schedule with Copilot** in the **Respond** section of the ribbon. The meeting invitation opens in a new window.
+3. Copilot drafts the meeting: subject, attendees from the thread, a suggested time when people are free, and a Copilot card with an **Agenda** and a summary of the conversation so far.
+4. Select **Insert** to add the agenda and summary to the invitation, check the draft, change anything that is wrong, and send it.
 
-<!-- SCREENSHOT: images/schedule-with-copilot.png | An email thread with Schedule with Copilot highlighted in the ribbon, and the drafted meeting invite with its agenda -->
+![Schedule with Copilot](./images/schedule-with-copilot.png)
+
+*Callout 1: Schedule with Copilot in the ribbon. Callout 2: the drafted subject, attendees and time. Callout 3: Copilot's agenda. Callout 4: Insert, which adds the agenda to the invitation.*
 
 You can also ask in the Copilot pane, for example *Find 30 minutes next week with everyone on this thread*. Copilot suggests the slots that suit the most people, within your working hours and time zone.
 
