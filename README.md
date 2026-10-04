@@ -21,6 +21,8 @@ To copy a prompt: open the prompts file, find the prompt you want, and click the
 
 To download everything: click the green **Code** button on the main repo page, then **Download ZIP**.
 
+To read offline or print: download the **[participant book (PDF)](./M365-Copilot-Workshop-Book.pdf)**. It has every topic's notes and prompts in one file.
+
 ---
 
 ## Workshop Scenario

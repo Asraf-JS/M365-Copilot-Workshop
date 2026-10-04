@@ -1,0 +1,35 @@
+{
+  "palette": "copilot",
+  "kicker": "Microsoft 365",
+  "titleLines": ["Microsoft", { "highlight": "365 Copilot" }, "Workshop"],
+  "runningTitle": "Microsoft 365 Copilot Workshop",
+  "subtitle": "Two-day participant guide",
+  "blurb": "Research, draft, refine, present and automate one connected project with Copilot across Chat, Pages, Word, Outlook, PowerPoint, Forms, Excel and Copilot Studio.",
+  "coverIcons": ["chat", "doc", "check", "spark"],
+  "edition": "Participant edition",
+  "year": "2026",
+  "version": "1.0",
+  "author": "Asraf Jaafar Sidik",
+  "authorShort": "Asraf",
+  "credential": "Microsoft Certified Trainer",
+  "repoUrl": "https://github.com/Asraf-JS/M365-Copilot-Workshop",
+  "trademark": "Microsoft, Microsoft 365, Copilot, Word, Excel, PowerPoint, Outlook, Teams, OneDrive and SharePoint are trademarks of the Microsoft group of companies. This guide is independent training material and is not published or endorsed by Microsoft.",
+  "output": "../M365-Copilot-Workshop-Book.pdf",
+  "front": [
+    { "title": "About the author", "file": "front/about-the-author.md", "class": "about" }
+  ],
+  "intro": { "title": "Before you begin", "file": "front/introduction.md" },
+  "chapters": [
+    { "notes": "../01-copilot-fundamentals/README.md", "exercises": "../01-copilot-fundamentals/prompts.md" },
+    { "notes": "../02-prompt-engineering/README.md", "exercises": "../02-prompt-engineering/prompts.md" },
+    { "notes": "../03-copilot-chat/README.md", "exercises": "../03-copilot-chat/prompts.md" },
+    { "notes": "../04-copilot-pages/README.md", "exercises": "../04-copilot-pages/prompts.md" },
+    { "notes": "../05-copilot-word/README.md", "exercises": "../05-copilot-word/prompts.md" },
+    { "notes": "../06-copilot-outlook/README.md", "exercises": "../06-copilot-outlook/prompts.md" },
+    { "notes": "../07-copilot-powerpoint/README.md", "exercises": "../07-copilot-powerpoint/prompts.md" },
+    { "notes": "../08-copilot-forms/README.md", "exercises": "../08-copilot-forms/prompts.md" },
+    { "notes": "../09-copilot-excel/README.md", "exercises": "../09-copilot-excel/prompts.md" },
+    { "notes": "../10-copilot-studio-intro/README.md", "exercises": "../10-copilot-studio-intro/prompts.md" }
+  ],
+  "backCover": "This guide accompanies the two-day Microsoft 365 Copilot workshop. It follows one project, an AI Usage Guide for your department, from first research in Copilot Chat to a weekly check-in agent in Copilot Studio. Every chapter pairs short notes with copy-ready prompts you can use during the session and back at your desk."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "m365-copilot-workshop-book",
+  "version": "1.0.0",
+  "description": "Builds the participant book PDF",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "author": "Asraf Jaafar Sidik",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "marked": "^14.1.4",
+    "pagedjs": "^0.4.3",
+    "playwright": "^1.56.1"
+  },
+  "private": true,
+  "type": "module"
+}
