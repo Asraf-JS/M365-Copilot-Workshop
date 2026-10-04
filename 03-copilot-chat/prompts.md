@@ -252,7 +252,7 @@ Once you have the outline, click **...** under the response → **Edit in Pages*
 
 Create a notebook called *AI Usage Guide research*. Move your research chat from Parts 1 to 8 into it (chat **…** menu → **Move to notebook**) and add the [Data_Privacy_AI_Acceptable_Use_Policy.pdf](./Data_Privacy_AI_Acceptable_Use_Policy.pdf) as a reference.
 
-Then select **Add Copilot Instructions** and paste:
+Then open the notebook's **…** menu (top right), select **Instructions**, paste the text below and select **Save**:
 
 ```
 I am writing an AI Usage Guide for my department. My readers
