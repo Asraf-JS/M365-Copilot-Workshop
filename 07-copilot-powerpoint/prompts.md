@@ -2,13 +2,13 @@
 
 Use these prompts to build your team presentation from the approved AI Usage Guide.
 
-> **Session guide:** All prompts in this topic are used inside PowerPoint. Use the **Copilot panel** (bottom right button or Home tab) for generating and editing the presentation. Attach your Word document from Topic 05 as the source before submitting Part 1.
+> **Session guide:** All prompts in this topic are used inside PowerPoint. Use the **Copilot panel** (the round Copilot button at the bottom right) for generating and editing the presentation. Attach your Word document from Topic 05 as the source before submitting Part 1.
 
 ---
 
 ## Part 1 — Generate the presentation from your Word document
 
-**Attach your AI Usage Guide Word document first using the + button in the Copilot panel, then submit this prompt.**
+**Attach your AI Usage Guide Word document first using **+** → **Add work content** in the Copilot panel, then submit this prompt.**
 
 ```
 Create a presentation from this AI Usage Guide proposal. 

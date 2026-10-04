@@ -20,7 +20,7 @@ At the end of Topic 04 you exported your draft from Copilot Pages as a Word docu
 **If you cannot find your Pages document:**
 Go to [m365.cloud.microsoft](https://m365.cloud.microsoft/), click the **...** menu at the top right, and select **Recent pages**. Your Topic 04 document should be listed there.
 
-> Once the Word document is open, make sure you are connected to Microsoft 365 (signed in with your work account) so Copilot in Word is available. Look for the Copilot icon in the **Home** tab on the ribbon.
+> Once the Word document is open, make sure you are connected to Microsoft 365 (signed in with your work account) so Copilot in Word is available. Look for the round **Copilot** button floating at the bottom right of the document.
 
 ---
 
@@ -74,11 +74,11 @@ Use this for:
 
 This is the most precise entry point since it only acts on exactly what you have selected.
 
-### 3. Copilot icon in the margin
+### 3. Adding new content in a specific place
 
-When you click at the start of a blank line or paragraph, a small Copilot icon appears in the left margin. Clicking it lets you generate new content at that position. Use this for inserting new sections or adding content between existing paragraphs.
+Word for the web no longer shows a Copilot icon in the margin on blank lines. To add new content at a specific point, keep **Allow editing** selected in the Copilot panel and say where it should go, for example: *Add a short section called "Reporting Mistakes" after the Human Review section.*
 
-> **Practical tip:** Start with the Chat panel for big structural changes. Use Edit with Copilot for targeted section rewrites. Use the margin icon when you need to insert something new in a specific place.
+> **Practical tip:** Start with the Copilot panel for big structural changes and new sections. Use Edit with Copilot for targeted rewrites of a selected paragraph.
 
 ---
 
@@ -100,7 +100,7 @@ This is useful for checking your AI Usage Guide against existing company policie
 
 ## Tips for Working with Copilot in Word
 
-- Use the **inline Copilot** (margin icon) for section-level edits and the **Chat panel** for document-wide tasks.
+- Use **Edit with Copilot** (select text first) for section-level edits and the **Copilot panel** for document-wide tasks and new sections.
 - Always review Copilot's output before finalising. It will sometimes rephrase things in ways that do not match your intended meaning.
 - Turn on **Track Changes** (Review tab) before asking Copilot to make revisions so you can compare before and after and accept or reject changes selectively.
 - If the document is very long, Copilot may not see all of it at once. Work section by section rather than asking it to revise everything in one prompt.

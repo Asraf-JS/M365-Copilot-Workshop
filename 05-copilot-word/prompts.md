@@ -2,7 +2,7 @@
 
 Use these prompts to turn your AI Usage Guide draft into a formal management proposal.
 
-> **Session guide:** All prompts in this topic are used inside Microsoft Word, not in Copilot Chat. Use the **Copilot panel** (round Copilot button, bottom right of the document) for structural and document-wide prompts. Use the **inline Copilot** (margin icon) for section-level rewrites. You do not need to start a new Copilot Chat session for this topic.
+> **Session guide:** All prompts in this topic are used inside Microsoft Word, not in Copilot Chat. Use the **Copilot panel** (round Copilot button, bottom right of the document) for structural and document-wide prompts. Use **Edit with Copilot** (select the text, then click Edit with Copilot in the mini toolbar) for section-level rewrites. You do not need to start a new Copilot Chat session for this topic.
 
 ---
 
@@ -31,7 +31,7 @@ formal and suitable for senior management.
 
 ## Part 2 — Strengthen the Executive Summary
 
-**Use the inline Copilot or Chat panel.**
+**Select the Executive Summary and use Edit with Copilot, or use the Copilot panel.**
 
 ```
 Rewrite the Executive Summary in exactly 3 sentences:
