@@ -153,7 +153,7 @@ figure.spread img { display: block; width: 100%; max-height: none; border: 0; bo
 .flow h2 { margin-top: 0; font-size: 18pt; }
 .flow h2::after { content: ""; display: block; width: 18mm; height: 2pt; margin-top: 3mm; background: var(--grad); border-radius: 2pt; }
 .flow-lead { font-size: 10.5pt; color: #3d4157; max-width: 150mm; }
-.flow-label { font: 700 7.5pt "Inter"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin: 6mm 0 2.5mm; }
+.flow-label { font: 700 7.5pt "Inter"; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin: 5mm 0 2.2mm; }
 .flow-found { display: flex; gap: 4mm; }
 .flow-found .card { flex: 1; border: 0.7pt solid #e2e0f0; border-radius: 4pt; padding: 3mm 4mm; background: var(--table-zebra); display: flex; flex-direction: column; }
 .flow-found .n, .flow-steps .n { font: 700 7.5pt "Inter"; color: var(--accent); letter-spacing: 0.06em; }
@@ -162,7 +162,7 @@ figure.spread img { display: block; width: 100%; max-height: none; border: 0; bo
 
 .flow-steps { list-style: none; margin: 0; padding: 0 0 0 7mm; position: relative; }
 .flow-steps::before { content: ""; position: absolute; left: 1.6mm; top: 6mm; bottom: 6mm; width: 1.4pt; background: linear-gradient(180deg, var(--g1), var(--g2), var(--g3), var(--g4), var(--g5)); }
-.flow-steps li { position: relative; display: flex; align-items: center; gap: 4mm; margin: 0 0 2.4mm; padding: 2.4mm 3.5mm; border: 0.7pt solid #e2e0f0; border-radius: 4pt; break-inside: avoid; }
+.flow-steps li { position: relative; display: flex; align-items: center; gap: 4mm; margin: 0 0 1.8mm; padding: 1.9mm 3.5mm; border: 0.7pt solid #e2e0f0; border-radius: 4pt; break-inside: avoid; }
 .flow-steps li.optional { border-style: dashed; border-color: #b9addf; }
 .flow-steps .dot { position: absolute; left: -7mm; top: 50%; width: 3.4mm; height: 3.4mm; margin-top: -1.7mm; border-radius: 50%; background: #fff; border: 1.4pt solid var(--accent); box-sizing: border-box; }
 .flow-steps .tile { flex: none; width: 10mm; height: 10mm; border-radius: 2.6pt; display: flex; align-items: center; justify-content: center; color: #fff; font: 800 13pt "Inter"; }

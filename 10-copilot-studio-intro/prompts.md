@@ -186,4 +186,4 @@ it connect to?
 
 ---
 
-*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Return to: [Workshop Home](../)*
+*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot in Teams](../11-copilot-teams/)*
