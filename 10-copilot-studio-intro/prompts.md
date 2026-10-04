@@ -1,14 +1,14 @@
 # 10 — Copilot Studio Intro: Prompts
 
-Use these when building your first agent in Microsoft Copilot Studio at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/).
+Use these when building your first agent in **Agent Builder** (Copilot Chat → **Agents** → **New agent**), the quick builder that is part of Copilot Studio. The full Copilot Studio is at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/).
 
-> **Session guide:** Parts 1 and 2 are used inside Copilot Studio to build and configure your agent. Parts 3 and 4 are used in the Copilot Studio test panel to check how the agent responds. Part 5 is used in Copilot Chat to brainstorm future agent ideas.
+> **Session guide:** Parts 1 and 2 are used in Agent Builder to build and configure your agent. Part 3 needs the full Copilot Studio (topics are not available in Agent Builder). Part 4 is used in the **Preview** tab of Agent Builder to check how the agent responds. Part 5 is used in Copilot Chat to brainstorm future agent ideas.
 
 ---
 
 ## Part 1 — Create the agent using the chat builder
 
-**Paste this into the chat input on the Copilot Studio home screen to generate the initial agent configuration.**
+**Paste this into the Message Agent Builder box to generate the initial agent configuration.**
 
 ```
 Create a weekly check-in agent for our AI Usage Guideline. 
@@ -81,7 +81,7 @@ and recommend they contact IT Governance.
 
 ## Part 3 — Writing conversation topics
 
-**Use these when adding or editing a topic in the Copilot Studio topic designer.**
+**Use these when adding or editing a topic in the full Copilot Studio topic designer at copilotstudio.microsoft.com (optional, advanced).**
 
 Opening message for the Weekly Check-in topic:
 
@@ -115,7 +115,7 @@ customer details, or confidential financial information?
 
 ## Part 4 — Testing your agent
 
-**Type these in the Test your agent panel to check how it responds.**
+**Click the Preview tab at the top of Agent Builder and type these to check how it responds.**
 
 ```
 weekly check-in

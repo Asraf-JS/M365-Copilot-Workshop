@@ -7,7 +7,7 @@ Use these prompts to build, refine, and finalise your AI Usage Guide draft in Co
 >
 > **If you are still in the same Copilot Chat session from Topic 03:** click **...** under your consolidation response → **Edit in Pages** → **Add to new page** and skip straight to Part 3.
 >
-> **If you closed that session:** paste your outline into a new Copilot Chat, run the Part 2 prompt below, then click **Edit in Pages** on the response.
+> **If you closed that session:** paste your outline into a new Copilot Chat, run the Part 2 prompt below, then click **...** under the response → **Edit in Pages** → **Add to new page**.
 >
 > **If you did not complete Topic 03:** run the Part 2 prompt directly in Copilot Chat. It will generate a draft from scratch.
 >
@@ -19,7 +19,7 @@ Use these prompts to build, refine, and finalise your AI Usage Guide draft in Co
 
 Before continuing, rename your Copilot Chat session so it is easy to find later.
 
-Click the pencil icon next to the chat title at the top and rename it to:
+In the left sidebar, hover over the chat under **Chats**, click the three dots (**...**), choose **Rename**, and rename it to:
 
 ```
 AI Usage Guide Draft - [your department]

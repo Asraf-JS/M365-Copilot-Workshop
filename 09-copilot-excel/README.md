@@ -14,11 +14,10 @@ At the end of Topic 08 you exported your Forms responses as an Excel file saved 
 
 > **Sample data:** [AI_Guideline_Survey_Responses.xlsx](./AI_Guideline_Survey_Responses.xlsx)
 
-The workbook has 4 sheets:
+The workbook has 3 sheets:
 - **Quiz Responses:** 100 rows of quiz answers. Green cells are correct, red cells are incorrect.
 - **Answer Key:** the correct answer for each of the 20 questions.
 - **Summary:** pre-built stats by department and question accuracy.
-- **Trainer Notes:** guidance on using the file for each exercise.
 
 ---
 

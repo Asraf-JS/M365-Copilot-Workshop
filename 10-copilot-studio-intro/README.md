@@ -145,8 +145,8 @@ This introduction covered the basics. A full Copilot Studio workshop would go in
 
 **Microsoft Learn resources:**
 - [Get started with Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
-- [Build your first agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/quickstart-get-started)
-- [Add knowledge to your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-existing-sources)
+- [Build your first agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started)
+- [Add knowledge to your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-existing-copilot)
 
 ---
 
