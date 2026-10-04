@@ -322,16 +322,19 @@ use AI responsibly. Employees have mixed levels of AI experience,
 and leadership wants to protect confidential data while
 encouraging adoption.
 
-Scope: Cover acceptable and unacceptable uses, data privacy and
-confidentiality, human review of AI output, the responsible-AI
-principles the organisation commits to, roles and
-responsibilities, and practical do's and don'ts for everyday
-tasks. Include examples relevant to our work and a short FAQ.
+Source: Base it on Microsoft's Responsible AI principles,
+Malaysia's Personal Data Protection Act (PDPA 2010), and any
+existing IT security or data protection policies in our
+organisation.
 
-Expectation: Produce a clear, professional manual written for
-non-technical staff, organised with headings and short sections,
-in plain language, with a one-page summary at the front that
-people can read in two minutes.
+Expectations: Cover acceptable and unacceptable uses, data
+privacy and confidentiality, human review of AI output, roles
+and responsibilities, and practical do's and don'ts for
+everyday tasks, with examples relevant to our work and a short
+FAQ. Write it as a clear, professional manual for non-technical
+staff, organised with headings and short sections, in plain
+language, with a one-page summary at the front that people can
+read in two minutes.
 ```
 
 Once you are happy with the GCSE answer, hover over the prompt, click **Save prompt** (the bookmark icon), and title it *AI Guideline*. Then open a new chat, click the ellipsis (**…**) under the message box, choose **Prompt Lab**, and find it under **Your saved prompts**.

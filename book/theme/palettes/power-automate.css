@@ -1,0 +1,25 @@
+/* Power Automate: blue, matching the existing participant manual cover. */
+:root {
+  --cover-bg: #08122b;
+  --cover-glow-1: rgba(40, 110, 240, 0.60);
+  --cover-glow-2: rgba(110, 80, 230, 0.55);
+  --cover-glow-3: rgba(40, 140, 255, 0.25);
+  --cover-kicker: #7fb6ff;
+  --cover-line-1: #3d8bff;
+  --cover-line-2: #8f7bff;
+
+  --g1: #3fa3ff; --g2: #4f97ff; --g3: #5b8cff; --g4: #7b7cff; --g5: #9a6bff;
+  --grad: linear-gradient(90deg, #3fa3ff 0%, #5b8cff 50%, #9a6bff 100%);
+
+  --ink: #10224a;
+  --accent: #1f5fd6;
+  --table-head: #17346b;
+  --table-zebra: #f3f7fd;
+  --code-bg: #f3f6fb;
+  --code-rule: #3d8bff;
+
+  --tint-note: #edf4fe;  --rule-note: #2f7bec;
+  --tint-tip: #eaf6f1;   --rule-tip: #1f9d6b;
+  --tint-try: #eef0fe;   --rule-try: #5b6cf0;
+  --tint-key: #fff4e6;   --rule-key: #e58a1f;
+}

@@ -1,0 +1,174 @@
+{
+  "palette": "copilot",
+  "kicker": "Microsoft 365",
+  "titleLines": [
+    "Microsoft",
+    {
+      "highlight": "365 Copilot"
+    },
+    "Workshop"
+  ],
+  "runningTitle": "Microsoft 365 Copilot Workshop",
+  "subtitle": "Two-day participant guide",
+  "blurb": "Research, draft, refine, present and automate one connected project with Copilot across Chat, Pages, Word, Outlook, PowerPoint, Forms, Excel and Copilot Studio.",
+  "coverIcons": [
+    "chat",
+    "doc",
+    "check",
+    "spark"
+  ],
+  "edition": "Participant edition",
+  "year": "2026",
+  "version": "1.0",
+  "author": "Asraf Jaafar Sidik",
+  "authorShort": "Asraf",
+  "credential": "Microsoft Certified Trainer",
+  "repoUrl": "https://github.com/Asraf-JS/M365-Copilot-Workshop",
+  "trademark": "Microsoft, Microsoft 365, Copilot, Word, Excel, PowerPoint, Outlook, Teams, OneDrive and SharePoint are trademarks of the Microsoft group of companies. This guide is independent training material and is not published or endorsed by Microsoft.",
+  "output": "../M365-Copilot-Workshop-Book.pdf",
+  "front": [
+    {
+      "title": "About the author",
+      "file": "front/about-the-author.md",
+      "class": "about"
+    }
+  ],
+  "intro": {
+    "title": "Before you begin",
+    "file": "front/introduction.md"
+  },
+  "chapters": [
+    {
+      "notes": "../01-copilot-fundamentals/README.md",
+      "exercises": "../01-copilot-fundamentals/prompts.md"
+    },
+    {
+      "notes": "../02-prompt-engineering/README.md",
+      "exercises": "../02-prompt-engineering/prompts.md"
+    },
+    {
+      "notes": "../03-copilot-chat/README.md",
+      "exercises": "../03-copilot-chat/prompts.md"
+    },
+    {
+      "notes": "../04-copilot-pages/README.md",
+      "exercises": "../04-copilot-pages/prompts.md"
+    },
+    {
+      "notes": "../05-copilot-word/README.md",
+      "exercises": "../05-copilot-word/prompts.md"
+    },
+    {
+      "notes": "../06-copilot-outlook/README.md",
+      "exercises": "../06-copilot-outlook/prompts.md"
+    },
+    {
+      "notes": "../07-copilot-powerpoint/README.md",
+      "exercises": "../07-copilot-powerpoint/prompts.md"
+    },
+    {
+      "notes": "../08-copilot-forms/README.md",
+      "exercises": "../08-copilot-forms/prompts.md"
+    },
+    {
+      "notes": "../09-copilot-excel/README.md",
+      "exercises": "../09-copilot-excel/prompts.md"
+    },
+    {
+      "notes": "../10-copilot-studio-intro/README.md",
+      "exercises": "../10-copilot-studio-intro/prompts.md"
+    }
+  ],
+  "backCover": "This guide accompanies the two-day Microsoft 365 Copilot workshop. It follows one project, an AI Usage Guide for your department, from first research in Copilot Chat to a weekly check-in agent in Copilot Studio. Every chapter pairs short notes with copy-ready prompts you can use during the session and back at your desk.",
+  "programFlow": {
+    "title": "Your Copilot training journey",
+    "lead": "One project, start to finish: build an AI Usage Guide for your department, using a different Copilot app at each step.",
+    "foundations": [
+      {
+        "n": 1,
+        "name": "Copilot Fundamentals",
+        "desc": "The interface, licences, models and grounding"
+      },
+      {
+        "n": 2,
+        "name": "Prompt Engineering",
+        "desc": "Writing clear prompts with the GCSE framework"
+      }
+    ],
+    "steps": [
+      {
+        "n": 3,
+        "app": "Copilot Chat",
+        "icon": "chat",
+        "color": "#5b6cf0",
+        "stage": "Research",
+        "desc": "Research best practice and regulations",
+        "output": "Research outline"
+      },
+      {
+        "n": 4,
+        "app": "Copilot Pages",
+        "icon": "doc",
+        "color": "#7b4be6",
+        "stage": "Draft",
+        "desc": "Shape the draft together with Copilot",
+        "output": "First draft"
+      },
+      {
+        "n": 5,
+        "app": "Word",
+        "icon": "W",
+        "color": "#185abd",
+        "stage": "Formalise",
+        "desc": "Turn the draft into a formal proposal",
+        "output": "Formal proposal"
+      },
+      {
+        "n": 6,
+        "app": "Outlook",
+        "icon": "O",
+        "color": "#0f6cbd",
+        "stage": "Approve",
+        "desc": "Submit for approval and manage replies",
+        "output": "Approval email"
+      },
+      {
+        "n": 7,
+        "app": "PowerPoint",
+        "icon": "P",
+        "color": "#c43e1c",
+        "stage": "Present",
+        "desc": "Present the guide to your team",
+        "output": "Team briefing deck"
+      },
+      {
+        "n": 8,
+        "app": "Forms",
+        "icon": "F",
+        "color": "#077568",
+        "stage": "Measure",
+        "desc": "Check understanding and gather feedback",
+        "output": "Quiz and survey"
+      },
+      {
+        "n": 9,
+        "app": "Excel",
+        "icon": "X",
+        "color": "#107c41",
+        "stage": "Analyse",
+        "desc": "Analyse the responses and find gaps",
+        "output": "Insights dashboard"
+      },
+      {
+        "n": 10,
+        "app": "Copilot Studio",
+        "icon": "nodes",
+        "color": "#6b4fbb",
+        "stage": "Automate",
+        "desc": "Automate weekly check-ins with an agent",
+        "output": "Check-in agent",
+        "optional": true
+      }
+    ]
+  }
+}

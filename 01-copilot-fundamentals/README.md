@@ -54,6 +54,7 @@ The screen has three zones: the sidebar on the left, the controls along the top,
 | **Library** | Files and content you have created with Copilot |
 | **Agents** | Specialised assistants, such as Researcher and Analyst |
 | **Notebooks** | Group related chats and files together |
+| **Pinned** | Agents you have pinned for quick access, such as Researcher and Analyst |
 | **Chats** | Your chat history |
 
 ![Sidebar navigation](./images/sidebar.png)
@@ -139,11 +140,11 @@ Personalization controls how Copilot tailors its answers to you.
 
 *Opening Settings from the gear icon.*
 
-Then choose **Personalization**.
+Then choose **Personalisation** (the menu uses British spelling).
 
-![Personalization settings panel](./images/personalization-panel.png)
+![Personalisation settings panel](./images/personalization-panel.png)
 
-*The Personalization panel.*
+*The Personalisation panel.*
 
 ### The four options
 
@@ -152,7 +153,7 @@ Then choose **Personalization**.
 | **Custom instructions** | Tell Copilot how you want it to respond: tone, format, your role | Set once; saves you repeating yourself in every prompt |
 | **Work profile** | Uses your organization's profile data to make answers relevant to your job | Set up by your organization |
 | **Saved memories** | Remembers facts you ask it to remember | Say "remember that…"; review under **Manage saved memories** |
-| **Chat history** | Lets Copilot use past chats to personalize replies | Turn off if you want each chat to start fresh |
+| **Chat history (Frontier)** | Lets Copilot use past chats to personalize replies. Frontier means it is a preview feature | Turn off if you want each chat to start fresh |
 
 > **Try it:** click **Edit instructions** and write two or three lines about your role and how you like answers formatted. Run your EV prompt again and compare. For a fuller template, see [Exercise 6 in the prompts](./prompts.md#exercise-6---write-your-personalisation-prompt).
 
@@ -198,14 +199,14 @@ Hover over any chat in the sidebar and click the three dots (**…**).
 
 ## 8. Write better prompts with GCSE
 
-A prompt is just an instruction, and a bare one gives you a generic answer. There are many prompting frameworks (zero-shot, few-shot, chain of thought, CRAFT), but the one Microsoft recommends for Copilot is **GCSE: Goal, Context, Scope, Expectation**. Spelling out all four turns a vague request into a precise brief. Topic 02 goes deeper; this is the short version.
+A prompt is just an instruction, and a bare one gives you a generic answer. There are many prompting frameworks (zero-shot, few-shot, chain of thought, CRAFT), but the one Microsoft recommends for Copilot is **GCSE: Goal, Context, Source, Expectations**. Spelling out all four turns a vague request into a precise brief. Topic 02 goes deeper; this is the short version.
 
 | Part | What it covers |
 |------|---------------|
 | **Goal** | The one thing you want produced, in a sentence. *Create an AI usage guideline manual for our workplace.* |
 | **Context** | The background and the why: the situation, the audience, what is at stake |
-| **Scope** | How wide to cast the work: the specific topics, angles, comparisons, and outputs to include (statistics, charts, SWOT, recommendations) |
-| **Expectation** | The shape of the answer: structure, tone, length, and format, for example a Point, Evidence, Explanation, Implication structure with an executive summary |
+| **Source** | What Copilot should reference or use: the files, policies, data or web sources to base the answer on, for example *the attached report* or *Malaysia's PDPA 2010* |
+| **Expectations** | The shape of the answer: what to cover, structure, tone, length, and format, for example a Point, Evidence, Explanation, Implication structure with an executive summary |
 
 > **Try it:** run the bare prompt first, `Create a report on EV adoption in Malaysia`, then run the full GCSE version and compare. The difference in quality is the whole point of the framework.
 
@@ -220,16 +221,19 @@ use AI responsibly. Employees have mixed levels of AI experience,
 and leadership wants to protect confidential data while
 encouraging adoption.
 
-Scope: Cover acceptable and unacceptable uses, data privacy and
-confidentiality, human review of AI output, the responsible-AI
-principles the organisation commits to, roles and
-responsibilities, and practical do's and don'ts for everyday
-tasks. Include examples relevant to our work and a short FAQ.
+Source: Base it on Microsoft's Responsible AI principles,
+Malaysia's Personal Data Protection Act (PDPA 2010), and any
+existing IT security or data protection policies in our
+organisation.
 
-Expectation: Produce a clear, professional manual written for
-non-technical staff, organised with headings and short sections,
-in plain language, with a one-page summary at the front that
-people can read in two minutes.
+Expectations: Cover acceptable and unacceptable uses, data
+privacy and confidentiality, human review of AI output, roles
+and responsibilities, and practical do's and don'ts for
+everyday tasks, with examples relevant to our work and a short
+FAQ. Write it as a clear, professional manual for non-technical
+staff, organised with headings and short sections, in plain
+language, with a one-page summary at the front that people can
+read in two minutes.
 ```
 
 This is the prompt the rest of the guide builds on: you will run it across different models, save it, and ground it in your own files in the sections that follow.
@@ -334,10 +338,11 @@ Under every Copilot response is a row of actions:
 | **Thumbs up** | Tells Copilot you want more answers like this |
 | **Thumbs down** | Tells Copilot you want fewer answers like this |
 | **Ellipsis (…)** | Opens more options (below) |
+| **Sources** | Lists the files and web pages behind the response |
 
 ![The response toolbar](./images/response-toolbar.png)
 
-*The toolbar under every response: copy, thumbs up, thumbs down, and the ellipsis (…).*
+*The toolbar under every response: copy, thumbs up, thumbs down, the ellipsis (…), and Sources.*
 
 ### The ellipsis menu
 
@@ -395,8 +400,10 @@ The plus (**+**) button to the left of the message box lets you choose what Copi
 | **Add content** | Adding content such as a file already in your cloud storage |
 | **Upload images and files** | Files on your local computer only |
 | **Attach cloud files** | Files already in OneDrive or SharePoint |
-| **Research a topic / Analyse data** | Starting a focused research or data-analysis task |
-| **More / Change data sources** | Further options and where Copilot draws its data from |
+| **Research a topic** | Starting a focused research task |
+| **Analyse data** | Starting a data-analysis task |
+| **More** | Further options |
+| **Change data sources** | Choosing where Copilot draws its data from |
 
 ### Upload a file from your computer
 
