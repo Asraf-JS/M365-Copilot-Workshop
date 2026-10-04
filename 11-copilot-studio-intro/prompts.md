@@ -1,4 +1,4 @@
-# 10 — Copilot Studio Intro: Prompts
+# 11 — Copilot Studio Intro: Prompts
 
 Use these when building your first agent in **Agent Builder** (Copilot Chat → **Agents** → **New agent**), the quick builder that is part of Copilot Studio. The full Copilot Studio is at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/).
 
@@ -186,4 +186,4 @@ it connect to?
 
 ---
 
-*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot in Teams](../11-copilot-teams/)*
+*Back to: [10 — Copilot in Teams](../10-copilot-teams/) | Return to: [Workshop Home](../)*

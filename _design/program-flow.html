@@ -1,0 +1,178 @@
+<!doctype html>
+<!--
+  Source for program-flow.png, the banner on the workshop home page.
+  Edit the TOPICS list below, then run:  cd _design && npm install && npm run render
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Program flow banner</title>
+<style>
+  @font-face { font-family: "Figtree"; font-weight: 400; src: url("node_modules/@fontsource/figtree/files/figtree-latin-400-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 500; src: url("node_modules/@fontsource/figtree/files/figtree-latin-500-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 600; src: url("node_modules/@fontsource/figtree/files/figtree-latin-600-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 700; src: url("node_modules/@fontsource/figtree/files/figtree-latin-700-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 800; src: url("node_modules/@fontsource/figtree/files/figtree-latin-800-normal.woff2"); }
+
+  :root {
+    --bg: #0b1220;
+    --card-top: #152039;
+    --card-bottom: #111a2e;
+    --card-border: #24314f;
+    --white: #f3f6fb;
+    --muted: #9aa7c0;
+    --label: #6c7a96;
+    --cyan: #5ec8f2;
+    --violet: #8a7ef6;
+    --violet-soft: #a99cff;
+    --optional-border: #5b5f9a;
+    --pill: #c9c3ff;
+
+    --pad: 72px;
+    --found-w: 249px;
+    --card-w: 160px;
+    --gap: 14px;
+    --cards-top: 267px;
+    --card-h: 323px;
+    --line-y: 628px;
+  }
+
+  html, body { margin: 0; }
+  body {
+    width: var(--canvas-w);
+    height: 740px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Figtree", sans-serif;
+    color: var(--white);
+    background:
+      radial-gradient(circle at 92% 6%, rgba(40, 55, 130, 0.35), transparent 34%),
+      radial-gradient(circle at 2% 98%, rgba(20, 85, 110, 0.30), transparent 30%),
+      var(--bg);
+  }
+
+  .kicker { position: absolute; left: var(--pad); top: 66px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.3em; color: var(--cyan); }
+  h1 { position: absolute; left: var(--pad); top: 92px; margin: 0; font-size: 56px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  h1 .grad { background: linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { position: absolute; left: var(--pad); top: 167px; margin: 0; font-size: 19.5px; color: var(--muted); }
+  .lead strong { color: var(--white); font-weight: 600; }
+
+  .label { position: absolute; top: 238px; font-size: 12px; font-weight: 700; letter-spacing: 0.3em; color: var(--label); }
+
+  .card {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    background: linear-gradient(180deg, var(--card-top), var(--card-bottom));
+  }
+  .card .num { position: absolute; left: 16px; top: 23px; font-size: 13.5px; font-weight: 800; letter-spacing: 0.08em; color: var(--cyan); }
+
+  .found { width: var(--found-w); background: var(--card-bottom); }
+  .found .num { left: 22px; top: 38px; }
+  .found .name { position: absolute; left: 22px; top: 56px; font-size: 19.5px; font-weight: 600; }
+  .found .desc { position: absolute; left: 22px; right: 26px; top: 85px; font-size: 14px; line-height: 20px; color: var(--muted); }
+
+  .step { top: var(--cards-top); width: var(--card-w); height: var(--card-h); }
+  .step .tile {
+    position: absolute; left: 16px; top: 52px; width: 52px; height: 52px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 25px; font-weight: 800; color: #fff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  }
+  .step .tile svg { width: 26px; height: 26px; }
+  .step .name { position: absolute; left: 16px; right: 12px; top: 122px; font-size: 17.5px; font-weight: 600; white-space: nowrap; }
+  .step .desc { position: absolute; left: 16px; right: 22px; top: 175px; font-size: 14px; line-height: 21px; color: var(--muted); }
+  .step .rule { position: absolute; left: 16px; right: 16px; top: 252px; border-top: 1px solid var(--card-border); }
+  .step .out-label { position: absolute; left: 16px; top: 268px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--label); }
+  .step .out { position: absolute; left: 16px; right: 10px; top: 287px; font-size: 14px; font-weight: 700; white-space: nowrap; }
+
+  .step.optional { background: transparent; border: 1.5px dashed var(--optional-border); }
+  .step.optional .num { color: var(--violet-soft); }
+  .pill { position: absolute; right: 14px; top: 17px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.12em; color: var(--pill); border: 1.5px solid var(--optional-border); border-radius: 999px; padding: 3px 10px; }
+
+  svg.timeline { position: absolute; left: 0; top: 0; overflow: visible; }
+
+  .trail { position: absolute; left: var(--pad); top: 688px; font-size: 14px; color: var(--muted); }
+  .trail b { color: var(--white); font-weight: 700; }
+  .url { position: absolute; right: var(--pad); top: 688px; font-size: 14px; color: var(--label); }
+</style>
+</head>
+<body>
+<script>
+// Each project step becomes one card, left to right. "optional" draws a dashed card
+// and a dashed stretch of the timeline. "icon" is a glyph name or a letter.
+const TOPICS = [
+  { n: "03", app: "Copilot Chat",   icon: "chat",  tile: "linear-gradient(135deg, #3b82f6, #8b5cf6 55%, #ec4899)", desc: "Research best practice and regulations", out: "Research outline", stage: "Research" },
+  { n: "04", app: "Copilot Pages",  icon: "doc",   tile: "#7b3fd6", desc: "Shape the draft together with Copilot", out: "First draft", stage: "Draft" },
+  { n: "05", app: "Word",           icon: "W",     tile: "#185abd", desc: "Turn the draft into a formal proposal", out: "Formal proposal", stage: "Formalise" },
+  { n: "06", app: "Outlook",        icon: "O",     tile: "#0f6cbd", desc: "Submit for approval and manage replies", out: "Approval email", stage: "Approve" },
+  { n: "07", app: "PowerPoint",     icon: "P",     tile: "#c43e1c", desc: "Present the guide to your team", out: "Team briefing deck", stage: "Present" },
+  { n: "08", app: "Forms",          icon: "F",     tile: "#038387", desc: "Check understanding and gather feedback", out: "Quiz and survey", stage: "Measure" },
+  { n: "09", app: "Excel",          icon: "X",     tile: "#107c41", desc: "Analyse the responses and find gaps", out: "Insights dashboard", stage: "Analyse" },
+  { n: "10", app: "Teams",          icon: "T",     tile: "#4f52b2", desc: "Run the launch meeting and follow up", out: "Meeting recap", stage: "Launch", optional: true },
+  { n: "11", app: "Copilot Studio", icon: "nodes", tile: "#4b3b8f", desc: "Automate weekly check-ins with an agent", out: "Check-in agent", stage: "Automate", optional: true },
+];
+const FOUNDATIONS = [
+  { n: "01", name: "Copilot Fundamentals", desc: "The interface, licences, models and grounding" },
+  { n: "02", name: "Prompt Engineering", desc: "Writing clear prompts with the GCSE framework" },
+];
+
+const GLYPHS = {
+  chat: '<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8l-5 4v-4h-1a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2z"/>',
+  doc: '<rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+  nodes: '<rect x="9.5" y="3" width="5" height="5" rx="1"/><rect x="3" y="16" width="5" height="5" rx="1"/><rect x="16" y="16" width="5" height="5" rx="1"/><path d="M12 8v4M5.5 16v-4h13v4"/>',
+};
+
+const css = getComputedStyle(document.documentElement);
+const px = (v) => parseFloat(css.getPropertyValue(v));
+const pad = px("--pad"), foundW = px("--found-w"), cardW = px("--card-w"), gap = px("--gap"), lineY = px("--line-y");
+const startX = pad + foundW + 29;
+const canvasW = startX + TOPICS.length * cardW + (TOPICS.length - 1) * gap + pad;
+document.documentElement.style.setProperty("--canvas-w", canvasW + "px");
+
+const html = [];
+html.push(`<div class="kicker">MICROSOFT 365 COPILOT WORKSHOP &nbsp;·&nbsp; 2 DAYS</div>`);
+html.push(`<h1>Your Copilot <span class="grad">Training Journey</span></h1>`);
+html.push(`<p class="lead">One project, start to finish: <strong>build an AI Usage Guide for your department</strong>, using a different Copilot app at each step.</p>`);
+html.push(`<div class="label" style="left:${pad}px">FOUNDATIONS</div>`);
+html.push(`<div class="label" style="left:${startX}px">THE PROJECT, APP BY APP</div>`);
+
+const foundTops = [267, 437], foundH = [154, 153];
+FOUNDATIONS.forEach((f, i) => html.push(
+  `<div class="card found" style="left:${pad}px;top:${foundTops[i]}px;height:${foundH[i]}px"><div class="num">${f.n}</div><div class="name">${f.name}</div><div class="desc">${f.desc}</div></div>`));
+
+const centers = [];
+TOPICS.forEach((t, i) => {
+  const x = startX + i * (cardW + gap);
+  centers.push(x + cardW / 2);
+  const glyph = GLYPHS[t.icon]
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${GLYPHS[t.icon]}</svg>`
+    : t.icon;
+  html.push(`<div class="card step${t.optional ? " optional" : ""}" style="left:${x}px">
+    <div class="num">${t.n}</div>${t.optional ? '<div class="pill">OPTIONAL</div>' : ""}
+    <div class="tile" style="background:${t.tile}">${glyph}</div>
+    <div class="name">${t.app}</div><div class="desc">${t.desc}</div>
+    <div class="rule"></div><div class="out-label">OUTPUT</div><div class="out">${t.out}</div></div>`);
+});
+
+// Timeline: solid gradient under the core steps, dashed under the optional ones.
+const firstOpt = TOPICS.findIndex((t) => t.optional);
+const solidEnd = firstOpt > 0 ? (centers[firstOpt - 1] + centers[firstOpt]) / 2 : centers.at(-1);
+const lastX = centers.at(-1);
+let svg = `<svg class="timeline" width="${canvasW}" height="740">
+  <defs><linearGradient id="tl" gradientUnits="userSpaceOnUse" x1="${startX}" x2="${solidEnd}"><stop offset="0" stop-color="#5ec8f2"/><stop offset="1" stop-color="#8a7ef6"/></linearGradient></defs>
+  <line x1="${startX}" y1="${lineY}" x2="${solidEnd}" y2="${lineY}" stroke="url(#tl)" stroke-width="2.5"/>`;
+if (firstOpt > 0) svg += `<line x1="${solidEnd}" y1="${lineY}" x2="${lastX}" y2="${lineY}" stroke="#5b5f9a" stroke-width="2.5" stroke-dasharray="5 5"/>`;
+centers.forEach((cx, i) => {
+  svg += `<circle cx="${cx}" cy="${lineY}" r="7.5" fill="#0b1220" stroke="${TOPICS[i].optional ? "#8a7ef6" : "#5ec8f2"}" stroke-width="3"/>`;
+});
+svg += `</svg>`;
+html.push(svg);
+
+html.push(`<div class="trail">${TOPICS.map((t, i) => (i === 0 ? `<b>${t.stage}</b>` : t.stage)).join(" → ")}</div>`);
+html.push(`<div class="url">asraf-js.github.io/M365-Copilot-Workshop</div>`);
+document.body.insertAdjacentHTML("beforeend", html.join("\n"));
+</script>
+</body>
+</html>
