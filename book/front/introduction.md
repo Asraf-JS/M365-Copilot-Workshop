@@ -11,10 +11,6 @@ Look out for the coloured boxes. Blue boxes are notes and license differences, t
 
 Prefer to copy prompts rather than retype them? Every prompt in this book is also online at **github.com/Asraf-JS/M365-Copilot-Workshop**, where each code block has a copy button.
 
-## Program flow
-
-![Microsoft Copilot Training Journey](../../program-flow.png)
-
 ## Workshop scenario
 
 Throughout this workshop you work on one connected project from start to finish.
@@ -44,3 +40,5 @@ Two practice files come with the workshop. Both are fictional, so you don't need
 | AI_Guideline_Survey_Responses.xlsx | Chapter 9 | 100 simulated quiz responses across 8 departments |
 
 Download them from the workshop repository: **github.com/Asraf-JS/M365-Copilot-Workshop**.
+
+![Program flow](../../program-flow.png "landscape")

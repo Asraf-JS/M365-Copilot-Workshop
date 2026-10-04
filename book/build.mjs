@@ -82,6 +82,9 @@ function renderFile(file, { demote = 0, sectionPrefix = "s" } = {}) {
       image({ href, title: t, text }) {
         const abs = resolve(baseDir, decodeURIComponent(href));
         if (!existsSync(abs)) console.warn(`  missing image: ${relative(repoRoot, abs)}`);
+        // A "landscape" title puts a wide graphic on its own landscape page, headed by its alt text.
+        if (t === "landscape")
+          return `<span class="spread-marker"></span><figure class="spread"><div class="rot"><h2>${esc(text)}</h2><img src="${toUrl(abs)}" alt="${esc(text)}"></div></figure>`;
         return `<img src="${toUrl(abs)}" alt="${esc(text)}"${t ? ` title="${esc(t)}"` : ""}>`;
       },
       link({ href, tokens }) {
@@ -102,6 +105,8 @@ function renderFile(file, { demote = 0, sectionPrefix = "s" } = {}) {
   });
 
   let html = marked.parse(src);
+
+  html = html.replace(/<p><span class="spread-marker"><\/span>(<figure class="spread">[\s\S]*?<\/figure>)<\/p>/g, "$1");
 
   // An image on its own line, optionally followed by an italic line, becomes a figure with a caption.
   html = html.replace(

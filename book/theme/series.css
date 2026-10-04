@@ -23,6 +23,7 @@
 @page cover { margin: 0; @top-left { content: none; } @top-right { content: none; } @bottom-center { content: none; } }
 @page plain { @top-left { content: none; } @top-right { content: none; } @bottom-center { content: none; } }
 @page front { @top-right { content: none; } }
+@page wide { @top-left { content: none; } @top-right { content: none; } }
 @page chapter:first { @top-left { content: none; } @top-right { content: none; } }
 
 html { font-family: "Inter", sans-serif; font-size: 9.6pt; line-height: 1.55; color: #262a3b; }
@@ -139,6 +140,13 @@ figure { margin: 3mm 0 5mm; text-align: center; break-inside: avoid; }
 figure img { max-width: 100%; max-height: 110mm; border: 0.6pt solid #dfe1ea; border-radius: 3pt; }
 figure img.small { max-width: 70%; }
 figcaption { font-size: 7.8pt; font-style: italic; color: #6b7088; margin-top: 1.6mm; }
+
+/* Wide graphics get their own page, turned sideways to use the page's full height.
+   (Chromium prints every page in one orientation, so the content rotates instead.) */
+figure.spread { page: wide; break-before: page; break-after: page; margin: 0; position: relative; height: 246mm; }
+figure.spread .rot { position: absolute; left: 50%; top: 50%; width: 244mm; transform: translate(-50%, -50%) rotate(-90deg); text-align: left; }
+figure.spread h2 { margin: 0 0 5mm; }
+figure.spread img { display: block; width: 100%; max-height: none; border: 0; border-radius: 4pt; }
 
 /* ---------- Back cover ---------- */
 

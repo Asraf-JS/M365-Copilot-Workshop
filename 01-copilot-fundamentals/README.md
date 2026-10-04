@@ -199,14 +199,14 @@ Hover over any chat in the sidebar and click the three dots (**…**).
 
 ## 8. Write better prompts with GCSE
 
-A prompt is just an instruction, and a bare one gives you a generic answer. There are many prompting frameworks (zero-shot, few-shot, chain of thought, CRAFT), but the one Microsoft recommends for Copilot is **GCSE: Goal, Context, Scope, Expectation**. Spelling out all four turns a vague request into a precise brief. Topic 02 goes deeper; this is the short version.
+A prompt is just an instruction, and a bare one gives you a generic answer. There are many prompting frameworks (zero-shot, few-shot, chain of thought, CRAFT), but the one Microsoft recommends for Copilot is **GCSE: Goal, Context, Source, Expectations**. Spelling out all four turns a vague request into a precise brief. Topic 02 goes deeper; this is the short version.
 
 | Part | What it covers |
 |------|---------------|
 | **Goal** | The one thing you want produced, in a sentence. *Create an AI usage guideline manual for our workplace.* |
 | **Context** | The background and the why: the situation, the audience, what is at stake |
-| **Scope** | How wide to cast the work: the specific topics, angles, comparisons, and outputs to include (statistics, charts, SWOT, recommendations) |
-| **Expectation** | The shape of the answer: structure, tone, length, and format, for example a Point, Evidence, Explanation, Implication structure with an executive summary |
+| **Source** | What Copilot should reference or use: the files, policies, data or web sources to base the answer on, for example *the attached report* or *Malaysia's PDPA 2010* |
+| **Expectations** | The shape of the answer: what to cover, structure, tone, length, and format, for example a Point, Evidence, Explanation, Implication structure with an executive summary |
 
 > **Try it:** run the bare prompt first, `Create a report on EV adoption in Malaysia`, then run the full GCSE version and compare. The difference in quality is the whole point of the framework.
 
@@ -221,16 +221,19 @@ use AI responsibly. Employees have mixed levels of AI experience,
 and leadership wants to protect confidential data while
 encouraging adoption.
 
-Scope: Cover acceptable and unacceptable uses, data privacy and
-confidentiality, human review of AI output, the responsible-AI
-principles the organisation commits to, roles and
-responsibilities, and practical do's and don'ts for everyday
-tasks. Include examples relevant to our work and a short FAQ.
+Source: Base it on Microsoft's Responsible AI principles,
+Malaysia's Personal Data Protection Act (PDPA 2010), and any
+existing IT security or data protection policies in our
+organisation.
 
-Expectation: Produce a clear, professional manual written for
-non-technical staff, organised with headings and short sections,
-in plain language, with a one-page summary at the front that
-people can read in two minutes.
+Expectations: Cover acceptable and unacceptable uses, data
+privacy and confidentiality, human review of AI output, roles
+and responsibilities, and practical do's and don'ts for
+everyday tasks, with examples relevant to our work and a short
+FAQ. Write it as a clear, professional manual for non-technical
+staff, organised with headings and short sections, in plain
+language, with a one-page summary at the front that people can
+read in two minutes.
 ```
 
 This is the prompt the rest of the guide builds on: you will run it across different models, save it, and ground it in your own files in the sections that follow.
