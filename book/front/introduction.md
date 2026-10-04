@@ -41,4 +41,4 @@ Two practice files come with the workshop. Both are fictional, so you don't need
 
 Download them from the workshop repository: **github.com/Asraf-JS/M365-Copilot-Workshop**.
 
-![Program flow](../../program-flow.png "landscape")
+{{program-flow}}

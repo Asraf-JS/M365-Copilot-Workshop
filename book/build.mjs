@@ -134,7 +134,39 @@ const ICONS = {
   play: '<path d="M-3 -6l9 6l-9 6z"/>',
   plus: '<path d="M0 -6v12 M-6 0h12"/>',
   lines: '<path d="M-6 -4h12 M-6 0h12 M-6 4h12"/>',
+  nodes: '<path d="M-2 -7h4v4h-4z M-8 3h4v4h-4z M4 3h4v4h-4z M0 -3v3 M-6 3v-3h12v3"/>',
 };
+
+// The program flow page: foundations, then one row per project step.
+// Icons are either a glyph name from ICONS or a single letter (W, X, P...).
+function programFlowHtml(pf) {
+  const pad = (n) => String(n).padStart(2, "0");
+  const glyph = (icon) =>
+    ICONS[icon]
+      ? `<svg viewBox="-10 -10 20 20"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[icon]}</g></svg>`
+      : `<span>${esc(icon)}</span>`;
+  return `<section class="flow">
+  <h2>${esc(pf.title)}</h2>
+  <p class="flow-lead">${esc(pf.lead)}</p>
+  <div class="flow-label">Foundations</div>
+  <div class="flow-found">${pf.foundations
+    .map((f) => `<div class="card"><span class="n">${pad(f.n)}</span><strong>${esc(f.name)}</strong><span class="d">${esc(f.desc)}</span></div>`)
+    .join("")}</div>
+  <div class="flow-label">The project, app by app</div>
+  <ol class="flow-steps">${pf.steps
+    .map(
+      (st) => `<li${st.optional ? ' class="optional"' : ""}>
+    <span class="dot"></span>
+    <span class="tile" style="background:${esc(st.color)}">${glyph(st.icon)}</span>
+    <div class="body"><div class="meta"><span class="n">${pad(st.n)}</span><span class="stage">${esc(st.stage)}</span>${st.optional ? '<span class="badge">Optional</span>' : ""}</div>
+      <div class="app">${esc(st.app)}</div><div class="d">${esc(st.desc)}</div></div>
+    <div class="out"><span>Output</span><strong>${esc(st.output)}</strong></div>
+  </li>`
+    )
+    .join("")}</ol>
+  <p class="flow-trail">${pf.steps.map((st) => esc(st.stage)).join(" <span>→</span> ")}</p>
+</section>`;
+}
 
 function coverMotif(names) {
   const pts = [[30, 120], [170, 60], [300, 120], [300, 185]];
@@ -162,6 +194,7 @@ console.log("Rendering Markdown...");
 
 const front = cfg.front.map((f) => ({ ...renderFile(f.file, { demote: 1, sectionPrefix: "f" }), ...f }));
 const intro = { ...renderFile(cfg.intro.file, { sectionPrefix: "i" }), ...cfg.intro };
+if (cfg.programFlow) intro.html = intro.html.replace(/<p>\{\{program-flow\}\}<\/p>/, programFlowHtml(cfg.programFlow));
 const chapters = cfg.chapters.map((c, i) => {
   const notes = renderFile(c.notes, { sectionPrefix: `c${i + 1}` });
   const ex = c.exercises ? renderFile(c.exercises, { demote: 1, sectionPrefix: `c${i + 1}x` }) : null;
