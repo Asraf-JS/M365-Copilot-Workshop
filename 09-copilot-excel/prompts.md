@@ -208,9 +208,9 @@ the difference?
 
 ## Exercise 4 — Python in Excel
 
-**Mode: Allow editing | Sources: Python Tool must be enabled**
+**Mode: Allow editing | Ask for Python in your prompt**
 
-> **Before starting:** Click the sources icon in the Copilot panel and make sure the **Python Tool** toggle is turned on.
+> **Before starting:** There is no separate Python Tool toggle any more — keep the prompts below, which ask Copilot to use Python explicitly.
 
 ### Part 4A: Score distribution chart
 

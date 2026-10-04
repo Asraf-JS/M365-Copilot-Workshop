@@ -35,7 +35,7 @@ Access Microsoft Forms at [forms.cloud.microsoft](https://forms.cloud.microsoft/
 
 ![Create new form](./images/create-new-form.png)
 
-*The Forms home screen. Click **New Form** to create a feedback survey or **New Quiz** to create a scored knowledge check. Quick Import lets you import questions from an existing Excel file.*
+*The Forms home screen. Click **New Form** to create a feedback survey or **New Quiz** to create a scored knowledge check. Quick import lets you import questions from an existing file, and Explore templates offers ready-made starting points.*
 
 For this workshop you will use **New Quiz** for the knowledge check and a separate **New Form** for the feedback survey.
 
@@ -43,27 +43,27 @@ For this workshop you will use **New Quiz** for the knowledge check and a separa
 
 ## Step 1: Attach Your AI Usage Guide
 
-When the form or quiz editor opens, click **Draft with Copilot** and attach your document.
+When the form or quiz editor opens, the **Draft with Copilot** box appears at the top. Click the paperclip to attach your document, then describe what you want (see [prompts.md](./prompts.md)) and click the send arrow.
 
 ![Attaching the guideline in Copilot Forms](./images/attaching-the-guidelines-in-copilotforms.png)
 
-*Callout 1: the paperclip icon to attach a file from your Microsoft 365 account. Callout 2: your AI Usage Guide PDF or Word document appears in the file list. Select it as the source for Copilot to generate questions from.*
+*Callout 1: the paperclip icon to attach a file from your Microsoft 365 account. Callout 2: your AI Usage Guide document in the file list (type after the / to search). Select it as the source for Copilot to generate questions from.*
 
 ---
 
 ## Step 2: Review the Generated Form
 
-After Copilot generates the form, it shows you the draft with a suggestion banner at the top.
-
-![Generated form with suggestions](./images/form-suggestions.png)
-
-*Copilot generates the form and shows a "I have 3 suggestions" banner. Click **View details** to see what Copilot recommends improving.*
-
-At the bottom of the screen, you can refine the draft, regenerate it entirely, or keep it if you are happy.
+Copilot first shows the draft questions in a preview ("Remove the questions you don't want"), with the correct answers ticked and answer explanations included. At the bottom of the preview, you can keep the draft, regenerate it, delete it, or refine it.
 
 ![Keep it or refine](./images/keepit-if-you-are-happy-with-the-results.png)
 
-*The bar at the bottom lets you keep the current draft, regenerate it, delete it, or add more details to fine-tune before keeping.*
+*Callout 1: Keep and continue with Copilot. Callout 2: regenerate. Callout 3: delete the draft. Callout 4: add more details for Copilot to fine-tune the draft.*
+
+When you click **Keep and continue with Copilot**, the questions are added to your form and a Copilot panel opens on the right. Copilot automatically reviews the form and lists suggestions to improve it.
+
+![Generated form with suggestions](./images/form-suggestions.png)
+
+*The kept quiz on the left, and Copilot's review suggestions in the panel on the right.*
 
 ---
 
@@ -71,7 +71,7 @@ At the bottom of the screen, you can refine the draft, regenerate it entirely, o
 
 ![Review and finish suggestions](./images/review-and-finish.png)
 
-*Copilot's suggestions for the form. In this example it recommends enabling submission receipts, boosting responses through multiple channels, and applying a professional theme. Click **Finish reviewing** once you have applied or dismissed the suggestions.*
+*Copilot's suggestions for the form. In this example it recommends requiring every question, shuffling questions, adding a completion message, and adding a scenario-based question. Click **Apply suggestions 1–4** to apply them all, or type in the Copilot box to apply only the ones you want. **Set up distribution** helps you plan the launch.*
 
 ---
 
@@ -81,7 +81,7 @@ Once you are satisfied with the form, click **Collect responses** in the top bar
 
 ![Collect responses button](./images/collect-response.png)
 
-*The Collect responses button in the top navigation bar.*
+*The Collect responses button in the top bar of the form editor.*
 
 This opens the distribution panel where you can configure how responses are collected.
 
@@ -100,7 +100,7 @@ After responses come in, click **View responses** in the top bar.
 
 ![View responses](./images/view-responses.png)
 
-*The View responses tab shows a live summary of all responses as they come in.*
+*Click View responses (top bar) to see the Responses Overview — a live summary of all responses as they come in, with Back to questions to return to the editor.*
 
 ---
 
@@ -110,15 +110,15 @@ This step is important. The Excel file you export here is what you will use for 
 
 ![Open results in Excel](./images/open-results-in-excel.png)
 
-*In the Insights panel, click **Open results in Excel** to export all responses as a spreadsheet.*
+*At the top right of the Responses Overview, your responses are already linked to an Excel workbook (callout 1) — click it to open the results in Excel for the web. Use the drop-down arrow for Open in Excel Desktop (callout 2), Download a copy, or Disconnect and sync to a new workbook.*
 
 **Where to find the Excel file after exporting:**
 
-When you click Open results in Excel, Microsoft Forms saves the file automatically to your **OneDrive** in a folder called **Documents**. The file is named after your form title. It will also open immediately in Excel online.
+Microsoft Forms keeps the linked workbook in your **OneDrive**. The file is named after your form title, and the folder it lives in is shown under the file name on the Excel card. Clicking the card opens it immediately in Excel for the web.
 
 To find it later:
 1. Go to [onedrive.live.com](https://onedrive.live.com/) or open OneDrive from the Microsoft 365 app launcher
-2. Navigate to **Documents**
+2. Search for your form title, or open the folder shown on the Excel card
 3. Look for a file with your form title ending in `.xlsx`
 
 > **For the workshop:** If you do not have real responses yet, use the pre-populated sample file `AI_Guideline_Survey_Responses.xlsx` from the `09-copilot-excel` folder in the workshop GitHub repo. It contains 30 simulated responses across 8 departments and is ready to use in Topic 09.

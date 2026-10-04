@@ -3,8 +3,8 @@
 Use these prompts to research your **AI Usage Guide** for your department.
 
 > **Grounding modes explained:**
-> - **Web mode (globe icon):** Copilot searches the public internet. Use this for Parts 1 to 5 to research best practices, regulations, and external information.
-> - **Work mode (briefcase icon):** Copilot searches your Microsoft 365 data (OneDrive, SharePoint, emails, Teams). Use this for Part 6 only, after uploading the sample policy document.
+> - **Web mode (Work IQ off):** Click **Work IQ** at the top left so the label is struck through. Copilot searches the public internet only. Use this for Parts 1 to 5 to research best practices, regulations, and external information.
+> - **Work mode (Work IQ on):** The default. Copilot searches your Microsoft 365 data (OneDrive, SharePoint, emails, Teams). Use this for Part 6 only, after uploading the sample policy document.
 >
 > **Session guide:** Parts 1 through 5 and Part 8 run in the **same chat session** using Web mode. Part 6 is a new chat in Work mode. Part 7 is flexible.
 
@@ -162,13 +162,13 @@ Notice whether the models differ more on creative writing tasks or analytical on
 
 ## Part 6 — Work mode: referencing your own documents
 
-**Session: new chat | Grounding: Work mode (briefcase icon)**
+**Session: new chat | Grounding: Work mode (Work IQ on)**
 
 > **Before you start this part:**
 > 1. Download the file: [Data_Privacy_AI_Acceptable_Use_Policy.pdf](./Data_Privacy_AI_Acceptable_Use_Policy.pdf)
 > 2. Upload it to your **OneDrive** (drag and drop into any folder)
 > 3. Wait about 30 seconds for Microsoft Graph to index it
-> 4. Open a new Copilot Chat and switch to **Work mode** (click the briefcase icon)
+> 4. Open a new Copilot Chat and switch to **Work mode** (make sure **Work IQ** at the top left is on — not struck through)
 > 5. You are now ready to submit the prompts below
 
 Copilot will search your Microsoft 365 data including the document you just uploaded. This simulates how you would use Work mode to reference your own company policies.
@@ -197,7 +197,7 @@ responsibilities when using AI tools? Quote the key obligations
 in plain language that a non-technical employee would understand.
 ```
 
-> **If Copilot cannot find the document:** make sure you are in Work mode (briefcase icon active, not the globe). If it still cannot find it, wait another minute and try again. Microsoft Graph indexing can take a few minutes for new files.
+> **If Copilot cannot find the document:** make sure you are in Work mode (Work IQ on, not struck through). If it still cannot find it, wait another minute and try again. Microsoft Graph indexing can take a few minutes for new files.
 
 ---
 
@@ -242,7 +242,7 @@ the key ideas. Include a note on any areas where I still
 need to do more research.
 ```
 
-Once you have the outline, click the **Edit in Pages** button (pencil icon on the response) to open it as a Copilot Page. That is where Topic 04 begins.
+Once you have the outline, click **...** under the response → **Edit in Pages** → **Add to new page** to open it as a Copilot Page. That is where Topic 04 begins.
 
 ---
 

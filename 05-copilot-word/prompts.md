@@ -2,7 +2,7 @@
 
 Use these prompts to turn your AI Usage Guide draft into a formal management proposal.
 
-> **Session guide:** All prompts in this topic are used inside Microsoft Word, not in Copilot Chat. Use the **Copilot Chat panel** (Home tab, ribbon) for structural and document-wide prompts. Use the **inline Copilot** (margin icon) for section-level rewrites. You do not need to start a new Copilot Chat session for this topic.
+> **Session guide:** All prompts in this topic are used inside Microsoft Word, not in Copilot Chat. Use the **Copilot panel** (round Copilot button, bottom right of the document) for structural and document-wide prompts. Use the **inline Copilot** (margin icon) for section-level rewrites. You do not need to start a new Copilot Chat session for this topic.
 
 ---
 

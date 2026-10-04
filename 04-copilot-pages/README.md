@@ -11,7 +11,7 @@ Copilot Pages is where your research becomes a document. Think of it as a collab
 At the end of Topic 03 you ran the consolidation prompt (Part 8) which produced a structured outline of your research. That outline is your starting point here.
 
 **If you are still in the same Copilot Chat session:**
-Click the **Edit in Pages** button (pencil icon) on the consolidation response. This opens your outline as a live Copilot Page. You are ready to start Topic 04.
+Click **...** under the consolidation response → **Edit in Pages** → **Add to new page**. This opens your outline as a live Copilot Page. You are ready to start Topic 04.
 
 **If you closed the session or started a new chat:**
 1. Open a new Copilot Chat
@@ -69,12 +69,17 @@ Mermaid is a text-based diagramming tool. You write simple instructions and it r
 
 1. Place your cursor where you want the diagram
 2. Type `/` to open the insert menu
-3. Select **Code block**
-4. In the language selector at the top right of the code block, change it to **Mermaid**
+3. Select **Mermaid**
+
+![Insert menu with the Mermaid option](./images/insert-mermaid.png)
+
+*Type / on an empty line and pick Mermaid from the insert menu.*
+
+4. Replace the sample code with your own diagram. The preview updates as you type.
 
 ![Mermaid diagram in Copilot Pages](./images/mermaid-diagram.png)
 
-*The language selector (top right, highlighted in red) is where you switch to Mermaid. Use the Preview toggle to switch between code view and the rendered diagram.*
+*Callout 1: the language selector at the top right of the block — it must say Mermaid for the diagram to render. Callout 2: Display options, where you choose Code, Preview, or Horizontal split view (code above, diagram below).*
 
 > **Common mistake:** When Copilot generates a Mermaid code block, it sometimes sets the language to "code" or leaves it blank. Always check the top right of the code block and change it to **Mermaid** if it is not already set. Otherwise the diagram will not render.
 
@@ -103,7 +108,7 @@ When your draft is ready to move to Word:
 
 1. Click the **...** menu at the top right of your Page
 2. Select **Export**
-3. Choose **Word document (.docx)**
+3. Choose **Document** (Word) — or **PDF** if you only need a read-only copy
 
 You will use this Word document in Topic 05 to reformat it as a formal management proposal.
 
