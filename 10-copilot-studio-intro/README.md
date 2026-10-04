@@ -50,20 +50,20 @@ Access it at: [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/
 ## Two Ways to Get Agents
 
 ### 1. Agents from Copilot Chat
-In Copilot Chat, click the **Agents** section in the left sidebar to find and use pre-built agents for common tasks like HR queries, IT helpdesk, and document search. You saw these in Topic 01.
+In Copilot Chat, click **Agents** in the left sidebar to open the Agent Store, where you can find and use pre-built agents for common tasks like HR queries, IT helpdesk, and document search. Your favourites are pinned below the navigation, as you saw in Topic 01.
 
 ### 2. Agents you build in Copilot Studio
 You build these yourself using the Copilot Studio designer. You define the agent's name, what it knows, what it can do, and how it behaves.
 
 ---
 
-## The Copilot Studio Interface
+## The Agent Builder Interface
 
 ![Copilot Studio agent builder interface](./images/agent-builder-interface.png)
 
-*Callout 1: the New Agent button to start building from scratch. Callout 2: the chat-based agent creator where you describe what you want the agent to do and Copilot Studio builds it for you. Callout 3: explore pre-built agents from Microsoft or view your own previously built agents.*
+*Callout 1: **Agents** in the Copilot Chat sidebar — click the arrow next to it and choose **New agent** to open Agent Builder. Callout 2: the chat-based agent creator where you describe what you want the agent to do and Agent Builder builds it for you (or click **Skip** to configure it yourself). Callout 3: start from Microsoft Templates or view My agents.*
 
-The fastest way to build a new agent is using Callout 2 — describe your agent in plain language and Copilot Studio generates the initial configuration for you. You can then refine it in the builder.
+The fastest way to build a new agent is using Callout 2 — describe your agent in plain language and Agent Builder (part of Copilot Studio, built into Copilot Chat) generates the initial configuration for you. You can then refine it in the builder.
 
 ---
 
@@ -82,8 +82,8 @@ This is a simple conversational agent, but it shows the core concept behind ever
 
 ## How to Build the Agent
 
-### Step 1: Open Copilot Studio
-Go to [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/) and sign in with your Microsoft 365 account.
+### Step 1: Open Agent Builder
+In Copilot Chat at [m365.cloud.microsoft](https://m365.cloud.microsoft/), click the arrow next to **Agents** in the left sidebar and choose **New agent**. (For advanced agents with triggers, topics, and workflows, use the full Copilot Studio at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/).)
 
 ### Step 2: Create a new agent using the chat builder
 Click the chat input (Callout 2 in the interface screenshot) and describe your agent:
@@ -96,25 +96,26 @@ response, and thank them. Keep the conversation to
 3 exchanges maximum. Friendly and encouraging tone.
 ```
 
-Copilot Studio will generate the initial agent configuration for you.
+Agent Builder will reason through your request and generate the initial agent configuration for you. The first time, a "What's new in Agent Builder" dialog may appear — close it to continue.
 
 ### Step 3: Review and refine the configuration
 
 ![Agent builder configuration screen](./images/agent-builder-configuration.png)
 
-*The agent builder configuration screen where you can edit the agent's name, description, instructions, and knowledge sources. This is where you fine-tune what the agent knows and how it behaves.*
+*The Agent Builder Configure tab. Callout 1: the agent's name and description. Callout 2: Instructions (role, purpose, and guidelines), with Suggest improvements. Callout 3: Skills and Knowledge. Callout 4: switch between Configure and Preview. Callout 5: Create, to save and publish the agent. The chat on the left summarises what Agent Builder drafted.*
 
 Review and adjust:
 - **Name:** AI Guideline Weekly Check-in
 - **Description:** A short summary of what the agent does
 - **Instructions:** The full system prompt that defines the agent's behaviour
+- **Skills:** Reusable plans Agent Builder creates for the agent (here, a weekly check-in skill)
 - **Knowledge:** Any documents you want the agent to reference (optional: add your AI Usage Guide PDF here)
 
 ### Step 4: Test the agent
-Use the **Test your agent** panel on the right side of Copilot Studio. Type "weekly check-in" and see how the agent responds. Adjust the instructions if the response is not right.
+Click the **Preview** tab at the top of Agent Builder. Type "weekly check-in" and see how the agent responds. Adjust the instructions if the response is not right.
 
 ### Step 5: Publish and share
-Once you are satisfied, click **Publish**. You can then share the agent with your team via Teams or a direct link.
+Once you are satisfied, click **Create** (top right). You can then share the agent with your team via Teams or a direct link.
 
 ---
 

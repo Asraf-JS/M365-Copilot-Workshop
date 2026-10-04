@@ -13,7 +13,7 @@ At the end of Topic 04 you exported your draft from Copilot Pages as a Word docu
 **If you have not exported from Pages yet:**
 1. Open your Copilot Page from Topic 04
 2. Click the **...** menu at the top right of the page
-3. Select **Export** then **Word document (.docx)**
+3. Select **Export** then **Document**
 4. Save the file to your OneDrive or desktop
 5. Open it in Microsoft Word
 
@@ -41,11 +41,11 @@ This is where participants often get confused. There are three separate Copilot 
 
 ### 1. Copilot Chat panel (side panel)
 
-Click the **Copilot** button in the **Home** tab on the ribbon to open the full Copilot Chat panel on the right side of the screen.
+Click the round **Copilot** button that floats at the bottom right of the document to open the full Copilot panel on the right side of the screen. (It may already be open when you first open a document.) The panel starts with **Allow editing** selected, so Copilot can make changes to the document directly, plus suggested prompts such as *Catch me up on this document*.
 
 ![Copilot Chat panel in Word](./images/copilot-in-word.png)
 
-*Callout 1: the Copilot Chat panel opens on the right side. Callout 2: the document summary bar appears at the top of the document when the panel is open.*
+*Callout 1: the Copilot panel ("Let's edit your document") opens on the right side. Callout 2: the Summary bar appears at the top of the document — click View more to expand it.*
 
 Use the Chat panel for:
 

@@ -303,7 +303,7 @@ this presentation? Give me the top 5 with suggested answers.
 
 ## Part 10 — Generate images for your slides using Create
 
-**Use the Create section in Copilot Chat (left sidebar at m365.cloud.microsoft), not inside PowerPoint.**
+**Use Create in Copilot Chat (apps grid at the top of the sidebar at m365.cloud.microsoft, or + Create in Library), not inside PowerPoint.**
 
 > **Note:** Image generation uses OpenAI's GPT-Image-1.5 model, which is separate from the chat models. Switching to Claude Opus or GPT in the chat panel does not affect image generation. Set the image shape to **Wide** (16:9) before generating so it matches your slide dimensions.
 

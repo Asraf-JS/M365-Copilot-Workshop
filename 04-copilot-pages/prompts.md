@@ -5,7 +5,7 @@ Use these prompts to build, refine, and finalise your AI Usage Guide draft in Co
 > **How this topic connects to Topic 03:**
 > At the end of Topic 03 you produced a structured research outline using the consolidation prompt. That outline is your starting point here.
 >
-> **If you are still in the same Copilot Chat session from Topic 03:** click the **Edit in Pages** button (pencil icon) on your consolidation response and skip straight to Part 3.
+> **If you are still in the same Copilot Chat session from Topic 03:** click **...** under your consolidation response → **Edit in Pages** → **Add to new page** and skip straight to Part 3.
 >
 > **If you closed that session:** paste your outline into a new Copilot Chat, run the Part 2 prompt below, then click **Edit in Pages** on the response.
 >
@@ -84,7 +84,7 @@ Reference PDPA 2010 in the Data Privacy section.
 Aim for 600 to 800 words total.
 ```
 
-Once the draft appears, click the **Edit in Pages** button (pencil icon on the response). All remaining prompts in this topic should be run inside Copilot Pages.
+Once the draft appears, click **...** under the response → **Edit in Pages** → **Add to new page**. All remaining prompts in this topic should be run inside Copilot Pages.
 
 ---
 
@@ -259,12 +259,11 @@ Give me the raw Mermaid code only, no explanation.
 
 1. In your Copilot Page, place your cursor where you want the diagram
 2. Type `/` to open the insert menu
-3. Select **Code block**
-4. Look at the top right of the code block and change the language selector to **Mermaid**
-5. Paste the Mermaid code Copilot generated
-6. Click the preview toggle to see the rendered diagram
+3. Select **Mermaid**
+4. Select the sample code inside the block and paste the Mermaid code Copilot generated over it
+5. The diagram renders below the code. Use **Display options** (top right of the block) to switch between Code, Preview, and Horizontal split view
 
-> **If the diagram does not render:** check that the language is set to Mermaid and not to "code" or left blank. This is the most common reason it does not work.
+> **If the diagram does not render:** check that the language selector at the top right of the block is set to Mermaid and not to "code" or left blank. This is the most common reason it does not work.
 
 ---
 
@@ -288,7 +287,7 @@ senior management review. Focus on:
 Once you are satisfied with the draft:
 1. Click the **...** menu at the top right of your Page
 2. Select **Export**
-3. Choose **Word document (.docx)**
+3. Choose **Document** (Word)
 
 You will use this Word document in Topic 05 to reformat it as a formal management proposal.
 

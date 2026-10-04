@@ -24,12 +24,12 @@ You access it at: **[m365.cloud.microsoft](https://m365.cloud.microsoft/)**
 
 | # | Area | What it does |
 |---|------|-------------|
-| 1 | **Navigation** | New chat, Search, Library (past conversations), Create (agents/notebooks) |
-| 2 | **Agents** | Pre-built and custom agents — Copilot instances with a specific role and knowledge base. Includes Researcher, Analyst, M365 Admin, and any agents your organisation has built |
-| 3 | **Notebooks** | Persistent context you create for a project or topic. Unlike a regular chat, a Notebook remembers your background instructions across sessions |
+| 1 | **Chat / Cowork** | Switch between a regular chat and Cowork mode, where Copilot works through multi-step tasks with you |
+| 2 | **Navigation** | New chat, Search, Library (your files and creations), Agents (pre-built and custom agents), and Notebooks (persistent context for a project or topic) |
+| 3 | **Pinned agents** | Agents you have pinned for quick access — Researcher and Analyst by default, plus any agents your organisation has built |
 | 4 | **Chats** | Your recent conversation history. Each chat is independent — Copilot does not carry memory between chats by default |
-| 5 | **Your profile** | Your Microsoft 365 account. Click here to access personal instructions and settings |
-| 6 | **Work / Web toggle** | Switch between searching your Microsoft 365 data (Work) and the public internet (Web) |
+| 5 | **Your profile & settings** | Your Microsoft 365 account. The gear icon opens Settings, including Personalisation |
+| 6 | **Work IQ toggle & model selector** | Work IQ grounds answers in your Microsoft 365 data — turn it off to answer from the web only. **Auto** opens the model selector |
 | 7 | **Message box** | Where you type your prompt. The `+` button lets you attach files, images, or reference M365 content |
 
 ---
@@ -104,12 +104,13 @@ When you switch between models, you are talking to a completely different AI sys
 
 ![Model switcher](./images/model-switcher.png)
 
-*Click the model selector (① top right) to switch between available AI models*
+*Click the model selector (① top left, next to Work IQ) to switch between available AI models*
 
 | # | What it is |
 |---|-----------|
-| 1 | **Model selector button** — shows the currently active model. Click to open the switcher |
-| 2 | **Third-party models** — Opus (Claude by Anthropic) and the GPT family (Open AI), including specific versions like GPT 5.5 Think Deeper, GPT 5.4 Think Deeper, and GPT 5.2 |
+| 1 | **Model selector button** — shows the current mode or model (Auto by default). Click to open the switcher |
+| 2 | **Response modes** — Auto (decides how long to think), Quick response, Think deeper, and Advanced reasoning (Experimental) |
+| 3 | **Model families** — Claude (Anthropic: Sonnet and Opus) and GPT (OpenAI). Hover or click a family to pick a specific model |
 
 > **Workshop exercise:** Try the same prompt in Opus and GPT. Notice the difference in tone, structure, and depth. Which output would you edit less?
 
@@ -132,24 +133,24 @@ Within a single chat session, Copilot holds the entire conversation in its **con
 By default, Copilot Chat does **not** remember anything from previous sessions. Each new conversation starts fresh. If you start a new chat, Copilot has no memory of what you discussed yesterday.
 
 ### Saved memories — and how to invoke them
-If your tenant has **Saved memories** enabled (visible in Chat settings → Personalisation), Copilot can retain specific facts about you across sessions. You invoke this simply by telling Copilot directly in plain language:
+If your tenant has **Saved memories** enabled (visible in Settings → Personalisation), Copilot can retain specific facts about you across sessions. You invoke this simply by telling Copilot directly in plain language:
 
 > `Remember I prefer formal English in all my responses`
 > `Remember I am an HR manager at a logistics company`
 > `Remember my team works on shift schedules and we use Excel for tracking`
 
-When Copilot saves a memory, you will see a **"Memory updated"** confirmation appear, along with a summary of what was saved.
+When Copilot saves a memory, you will see a **"Memory updated"** confirmation above its reply, with a **Manage** link.
 
 ![Saved memory confirmation](./images/memory.png)
 
-*Copilot confirms when a memory has been saved. Click "Manage memories" to review or delete saved memories.*
+*Copilot confirms when a memory has been saved. Click "Manage" to review or delete saved memories.*
 
-Saved memories persist across all future sessions and silently inform Copilot's responses — you do not need to repeat the context each time. To review or delete what Copilot has stored, click **Manage memories** in the confirmation toast, or go to Chat settings → Personalisation → Saved memories.
+Saved memories persist across all future sessions and silently inform Copilot's responses — you do not need to repeat the context each time. To review or delete what Copilot has stored, click **Manage** next to the confirmation, or go to Settings → Personalisation → **Manage saved memories**.
 
 > **Note:** Saved memories depend on your organisation's settings. If you do not see the "Memory updated" confirmation after telling Copilot to remember something, this feature may not be enabled on your tenant. Check with your IT admin.
 
 ### Notebooks (Persistent context)
-Copilot Chat includes a **Notebooks** feature (item **③** in the interface above) that lets you create a persistent context — a set of instructions or background information that Copilot always has available in that notebook, even across sessions. Think of it as giving Copilot a permanent briefing document for a specific project or topic.
+Copilot Chat includes a **Notebooks** feature (in the navigation, item **②** in the interface above) that lets you create a persistent context — a set of instructions or background information that Copilot always has available in that notebook, even across sessions. Think of it as giving Copilot a permanent briefing document for a specific project or topic.
 
 ### What this means for you
 - Use **Saved memories** for personal preferences that should apply everywhere: your role, tone, language style
@@ -164,16 +165,16 @@ Copilot Chat includes a **Notebooks** feature (item **③** in the interface abo
 You can shape how Copilot responds to you — both personally and at an organisational level.
 
 ### Personal instructions (Your profile)
-Access this via your profile (item **⑤** in the interface above) → **Chat settings** → **Personalisation**.
+Access this via the gear icon next to your profile (item **⑤** in the interface above) → **Settings** → **Personalisation**.
 
-![Chat settings — Personalisation](./images/personalisation.png)
-*The Personalisation panel in Chat settings*
+![Settings — Personalisation](./images/personalisation.png)
+*The Personalisation panel in Settings*
 
 | Setting | What it does |
 |---------|-------------|
 | **Custom instructions** | Add details about your preferences so Copilot responds your way — your role, preferred tone, output format, and any constraints. Click **Edit instructions** to set yours |
 | **Work profile** | Copilot uses your Microsoft 365 work data (emails, calendar, files) for more relevant answers. Click **View work data** to see what it has access to |
-| **Saved memories** | Allows Copilot to remember details from your conversations to improve future responses over time |
+| **Saved memories** | Allows Copilot to remember details from your conversations to improve future responses over time. Click **Manage saved memories** to review or delete them |
 | **Chat history (Frontier)** | Lets Copilot use your past chats to personalise responses. Marked as Frontier — a preview feature that may not be available in all tenants |
 
 Examples of what to put in your Custom instructions:
@@ -183,7 +184,7 @@ Examples of what to put in your Custom instructions:
 - `My audience is non-technical — avoid jargon`
 
 ### Agents (Custom Copilots)
-In Copilot Chat, you can access pre-built or custom-built agents under the **Agents** panel (item **②** in the interface above). These are Copilot instances that have been given a specific role, a custom knowledge base, and a defined set of behaviours. For example, an HR agent that only answers questions using your company's HR policy documents.
+In Copilot Chat, you can access pre-built or custom-built agents under **Agents** in the navigation (item **②** in the interface above), with your favourites pinned below it (item **③**). These are Copilot instances that have been given a specific role, a custom knowledge base, and a defined set of behaviours. For example, an HR agent that only answers questions using your company's HR policy documents.
 
 You can also build your own agents in Copilot Studio (covered in Topic 10).
 
