@@ -4,7 +4,7 @@ Use these prompts to draft, send, and manage the email conversation around your 
 
 > **Prompts to Try:** Open the [copy-paste prompt exercises](./prompts.md) for this topic.
 
-> **Session guide:** All prompts in this topic are used inside Outlook. Use **Help me write** for new emails. Use the **Copilot panel** for thread summaries and coaching. You do not need Copilot Chat for this topic.
+> **Session guide:** All prompts in this topic are used inside Outlook. Use **Help me write** for new emails. Use the **Copilot panel** for thread summaries and coaching, and for tidying, catching up and scheduling in Parts 10 to 12. You do not need Copilot Chat for this topic.
 
 ---
 
@@ -175,6 +175,63 @@ What would you change?
 Is this email too long? What could be cut without 
 losing the key message?
 ```
+
+---
+
+## Part 10 — Tidy the replies into a folder
+
+**Use the Copilot pane (top right). Remove any open email from the prompt box first.**
+
+```
+Move all emails about the AI Usage Guide from the last two
+weeks into a new folder called AI Guide.
+```
+
+Then make it automatic for future replies:
+
+```
+Create a rule that moves emails with "AI Usage Guide" in the
+subject to the AI Guide folder.
+```
+
+Read the summary Copilot shows before you confirm. It should say the rule applies to future emails only.
+
+```
+Show me my inbox rules.
+```
+
+---
+
+## Part 11 — Catch up across your mailbox
+
+**Use the Copilot pane with no email attached to the prompt.**
+
+```
+What has been agreed about the AI Usage Guide so far, and who
+has not replied yet?
+```
+
+```
+List any emails from this week that need a reply from me,
+most urgent first.
+```
+
+---
+
+## Part 12 — Schedule the launch meeting
+
+**Open your supervisor's approval email, then select Schedule with Copilot in the ribbon.**
+
+Check the draft Copilot creates: attendees, time, agenda and summary. Then refine it in the Copilot pane if needed:
+
+```
+Make this a 30-minute Teams meeting next week with my whole
+team, titled "AI Usage Guide launch". Keep the agenda to 4
+items: welcome, walkthrough of the key rules, questions, and
+next steps.
+```
+
+This is the meeting you run in Topic 11 (Copilot in Teams).
 
 ---
 
