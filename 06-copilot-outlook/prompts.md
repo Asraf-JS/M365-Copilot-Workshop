@@ -194,7 +194,7 @@ Create a rule that moves emails with "AI Usage Guide" in the
 subject to the AI Guide folder.
 ```
 
-Read the summary Copilot shows before you confirm. It should say the rule applies to future emails only.
+Read the summary Copilot shows (the rule name, conditions and actions) before you select **Confirm**. The rule applies to email you receive from then on.
 
 ```
 Show me my inbox rules.
@@ -222,7 +222,7 @@ most urgent first.
 
 **Open your supervisor's approval email, then select Schedule with Copilot in the ribbon.**
 
-Check the draft Copilot creates: attendees, time, agenda and summary. Then refine it in the Copilot pane if needed:
+The invitation opens in a new window. Check the draft Copilot creates (attendees, time, agenda and summary) and select **Insert** to add the agenda to the invitation. Then refine it in the Copilot pane if needed:
 
 ```
 Make this a 30-minute Teams meeting next week with my whole
