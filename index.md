@@ -8,6 +8,8 @@ title: Home
 
 Prompts, reference notes, and sample datasets for the 2-day Microsoft 365 Copilot workshop.
 
+> **Participant book:** [download the whole workshop as one PDF](./M365-Copilot-Workshop-Book.pdf), with every topic's notes and prompts, to read offline or print.
+
 ---
 
 ## Program Flow
@@ -23,8 +25,6 @@ Each topic has a **Notes** page covering the concepts and a **Prompts** page wit
 To copy a prompt: open the prompts file, find the prompt you want, and click the copy icon on the top right of the code block.
 
 To download everything: click the green **Code** button on the main repo page, then **Download ZIP**.
-
-To read offline or print: download the **[participant book (PDF)](./M365-Copilot-Workshop-Book.pdf)**. It has every topic's notes and prompts in one file.
 
 ---
 
