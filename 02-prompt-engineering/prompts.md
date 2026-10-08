@@ -278,7 +278,3 @@ What are the weakest parts of this response and how would you improve them?
 ```
 If a critical reader reviewed this, what objections might they raise?
 ```
-
----
-
-*Back to: [01 — Copilot Fundamentals](../01-copilot-fundamentals/) | Next: [03 — Copilot Chat](../03-copilot-chat/)*

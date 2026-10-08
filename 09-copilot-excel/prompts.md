@@ -280,7 +280,3 @@ department head report. Keep it under 200 words.
 Insert it as a formatted text block in a new sheet 
 called "Management Summary".
 ```
-
----
-
-*Back to: [08 — Copilot in Forms](../08-copilot-forms/) | Next: [10 — Copilot in Teams](../10-copilot-teams/)*

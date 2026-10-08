@@ -183,7 +183,3 @@ guideline acknowledgement form. What would the
 flow look like and what Microsoft 365 tools would 
 it connect to?
 ```
-
----
-
-*Back to: [10 — Copilot in Teams](../10-copilot-teams/) | Return to: [Workshop Home](../)*

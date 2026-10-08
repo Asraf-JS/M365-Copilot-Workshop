@@ -472,7 +472,3 @@ You will hear these terms throughout the workshop.
 | RAG | Retrieving from a specific knowledge source before responding; what Work IQ does with your files |
 | Agentic AI | AI that takes actions, not just answers questions |
 | Notebook | A place to group related chats and files for a project |
-
----
-
-*Next: [02 - Prompt Engineering](../02-prompt-engineering/)*

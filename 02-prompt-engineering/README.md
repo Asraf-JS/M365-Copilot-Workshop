@@ -241,7 +241,3 @@ Act as a sceptical employee who is unsure about using AI at work.
 List 5 concerns you might have, then provide a brief reassurance 
 for each one from an employer's perspective.
 ```
-
----
-
-*Back to: [01 — Copilot Fundamentals](../01-copilot-fundamentals/) | Next: [03 — Copilot Chat](../03-copilot-chat/)*

@@ -105,7 +105,3 @@ This is useful for checking your AI Usage Guide against existing company policie
 - Turn on **Track Changes** (Review tab) before asking Copilot to make revisions so you can compare before and after and accept or reject changes selectively.
 - If the document is very long, Copilot may not see all of it at once. Work section by section rather than asking it to revise everything in one prompt.
 - Save regularly. Copilot edits in Word are not automatically undoable the same way typing is.
-
----
-
-*Back to: [04 — Copilot Pages](../04-copilot-pages/) | Next: [06 — Copilot in Outlook](../06-copilot-outlook/)*

@@ -171,7 +171,3 @@ After the survey has collected responses:
 > **Find it later:** Go to OneDrive and search for the `.xlsx` file matching your form name. This file updates automatically as new responses come in — you do not need to re-export.
 
 > **For the workshop:** If you do not have real responses, use `AI_Guideline_Survey_Responses.xlsx` from the `09-copilot-excel` folder in the workshop GitHub repo. It has 100 pre-populated responses ready for analysis in Topic 09.
-
----
-
-*Back to: [07 — Copilot in PowerPoint](../07-copilot-powerpoint/) | Next: [09 — Copilot in Excel](../09-copilot-excel/)*

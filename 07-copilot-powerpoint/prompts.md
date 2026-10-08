@@ -345,7 +345,3 @@ non-technical employee seeing it for the first time.
 What is unclear, missing, or likely to confuse the 
 audience? List your findings with suggested fixes.
 ```
-
----
-
-*Back to: [06 — Copilot in Outlook](../06-copilot-outlook/) | Next: [08 — Copilot in Forms](../08-copilot-forms/)*

@@ -374,7 +374,3 @@ into AI tools? Quote the relevant section.
 ```
 
 > **Tip:** before uploading the same file again, check the **Microsoft Copilot Chat Files** folder in OneDrive. If it is already there, use **Attach cloud files** instead.
-
----
-
-Back to: [Workshop Home](../README.md) | Next: [02 - Prompt Engineering](../02-prompt-engineering/)

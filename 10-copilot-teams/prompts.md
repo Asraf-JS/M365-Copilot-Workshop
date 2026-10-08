@@ -117,7 +117,3 @@ followed up on it?
 List any decisions made in this conversation, with the date
 each one was made.
 ```
-
----
-
-*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot Studio Intro](../11-copilot-studio-intro/)*

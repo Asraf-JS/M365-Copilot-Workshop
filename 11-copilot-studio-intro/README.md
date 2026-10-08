@@ -151,5 +151,3 @@ This introduction covered the basics. A full Copilot Studio workshop would go in
 ---
 
 *You have completed the workshop. Well done.*
-
-*Back to: [10 — Copilot in Teams](../10-copilot-teams/) | Return to: [Workshop Home](../)*
