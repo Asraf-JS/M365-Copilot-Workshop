@@ -605,10 +605,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- Image lightbox for course sites. Paste this whole block into _layouts/default.html,
      just before </body>. Click (or Enter on) any screenshot in .main-inner to open it
-     full size with its alt text as the caption; click anywhere, press Esc or use the
-     close button to go back. Open in new window pops the image out into its own
-     window, to put beside the work or on a second screen. No libraries, works in
-     light and dark mode. -->
+     in its own window, sized to the image, to put beside the work or on a second
+     screen. If the browser blocks pop-ups, the image enlarges in the page instead,
+     with its alt text as the caption (click anywhere or press Esc to go back).
+     No libraries, works in light and dark mode. -->
 <style>
 .main-inner img.zoomable{cursor:zoom-in;}
 .main-inner img.zoomable:focus-visible{outline:3px solid #0078D4;outline-offset:3px;}
@@ -678,32 +678,46 @@ document.addEventListener("DOMContentLoaded", function () {
     if (opener) opener.focus();
   }
 
+  // Opens an image in its own window, sized to fit the image and the screen.
+  // `from` is the window the click happened in (the page, or a side window).
+  // Returns false if the browser blocked the pop-up.
+  function popOut(src, alt, natW, natH, from) {
+    const scr = from.screen;
+    const w = Math.min(natW || 1280, scr.availWidth - 40);
+    const h = Math.min(natH || 720, scr.availHeight - 80);
+    const win = from.open("", "_blank", "popup,width=" + w + ",height=" + h);
+    if (!win) return false;
+    win.document.title = alt || "Screenshot";
+    win.document.body.style.cssText = "margin:0;background:#111;display:flex;align-items:center;justify-content:center;min-height:100vh;";
+    const pic = win.document.createElement("img");
+    pic.src = src;
+    pic.alt = alt;
+    pic.style.cssText = "max-width:100%;max-height:100vh;";
+    win.document.body.appendChild(pic);
+    return true;
+  }
+
   // Screenshots only: images that are links (badges, logos) keep their link.
+  // One click opens the image in its own window; if that's blocked, it enlarges in the page.
   document.querySelectorAll(".main-inner img").forEach(function (img) {
     if (img.closest("a")) return;
     img.classList.add("zoomable");
     img.tabIndex = 0;
-    img.title = "Click to enlarge";
-    img.addEventListener("click", function () { open(img); });
+    img.title = "Click to open in a new window";
+    function show() {
+      const from = img.ownerDocument.defaultView || window;
+      if (!popOut(img.currentSrc || img.src, img.alt, img.naturalWidth, img.naturalHeight, from)) open(img);
+    }
+    img.addEventListener("click", show);
     img.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); }
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(); }
     });
   });
 
-  // Pop the image out into its own window, sized to fit the image and the screen.
+  // In the enlarged view, the button tries the pop-up again (or opens a tab).
   popBtn.addEventListener("click", function (e) {
     e.stopPropagation();
-    const w = Math.min(big.naturalWidth || 1280, screen.availWidth - 40);
-    const h = Math.min(big.naturalHeight || 720, screen.availHeight - 80);
-    const win = window.open("", "_blank", "popup,width=" + w + ",height=" + h);
-    if (!win) { window.open(big.src, "_blank"); return; } // pop-ups blocked: open a tab
-    win.document.title = big.alt || "Screenshot";
-    win.document.body.style.cssText = "margin:0;background:#111;display:flex;align-items:center;justify-content:center;min-height:100vh;";
-    const pic = win.document.createElement("img");
-    pic.src = big.src;
-    pic.alt = big.alt;
-    pic.style.cssText = "max-width:100%;max-height:100vh;";
-    win.document.body.appendChild(pic);
+    if (!popOut(big.src, big.alt, big.naturalWidth, big.naturalHeight, window)) window.open(big.src, "_blank");
     close();
   });
 
@@ -774,6 +788,112 @@ document.addEventListener("DOMContentLoaded", function () {
   if (prev) link(prev, "prev", "← Previous chapter: ", name(prev));
   if (next) link(next, "next", current < 0 ? "Start with: " : "Next chapter: ", name(next) + " →");
   main.appendChild(nav);
+});
+</script>
+
+<!-- "Pop out" side window for course sites. Paste this whole block into
+     _layouts/default.html, just before the closing body tag (after the lightbox).
+
+     Every chapter page (notes and prompts) gets a Pop out button above its title.
+     In Edge and Chrome it moves the page into a Picture-in-Picture window, which
+     stays on top of other windows, a quarter of the screen wide and full height,
+     so participants can follow the steps while they work in the app. Copy buttons,
+     What should you see? boxes and screenshots keep working in it. A link opens in
+     the main window. Other browsers get an ordinary window on the right quarter of
+     the screen, which isn't always on top. -->
+<style>
+.side-pop{
+  display:inline-flex;align-items:center;gap:6px;
+  margin:0 0 18px;padding:7px 14px;
+  border:1px solid var(--teal);border-radius:999px;
+  background:var(--bg);color:var(--teal);
+  font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+}
+.side-pop:hover,.side-pop:focus-visible{background:var(--teal-light);outline:none;}
+.side-away{
+  margin:0 0 24px;padding:16px 18px;
+  border:1px dashed var(--border);border-radius:10px;
+  color:var(--text-mid);font-size:14px;
+}
+.side-away button{
+  margin-left:8px;padding:5px 12px;border:1px solid var(--teal);border-radius:999px;
+  background:var(--bg);color:var(--teal);font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const main = document.querySelector(".main-inner");
+  if (!main) return;
+  // Chapter pages only: this page sits under one of the sidebar's chapters.
+  const here = location.pathname;
+  const inChapter = Array.from(document.querySelectorAll(".sidebar-nav a.nav-item")).some(function (a) {
+    return here.indexOf(new URL(a.href, location.href).pathname) === 0;
+  });
+  if (!inChapter) return;
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "side-pop";
+  btn.title = "Open this page in a narrow window on the right, to follow while you work";
+  btn.textContent = "Pop out ↗";
+  const h1 = main.querySelector("h1");
+  main.insertBefore(btn, h1 || main.firstChild);
+
+  btn.addEventListener("click", async function () {
+    const scr = window.screen;
+    const w = Math.round(scr.availWidth * 0.25);
+    const h = scr.availHeight;
+
+    if ("documentPictureInPicture" in window) {
+      try {
+        const pip = await documentPictureInPicture.requestWindow({ width: w, height: h });
+        const doc = pip.document;
+        doc.title = document.title;
+        // Same styles as the page, with stylesheet links made absolute.
+        document.querySelectorAll("style, link[rel=stylesheet]").forEach(function (n) {
+          const c = n.cloneNode(true);
+          if (c.tagName === "LINK") c.href = n.href;
+          doc.head.appendChild(c);
+        });
+        const fit = doc.createElement("style");
+        fit.textContent = "body{display:block;min-height:0;} .main-inner{padding:20px 18px 40px !important;max-width:none;} .side-pop,.breadcrumb{display:none;}";
+        doc.head.appendChild(fit);
+
+        // Links and images keep working once moved: make their addresses absolute.
+        main.querySelectorAll("a[href]").forEach(function (a) { a.setAttribute("href", a.href); });
+        main.querySelectorAll("img[src]").forEach(function (i) { i.setAttribute("src", i.src); });
+
+        // Leave a note in the page, then move the content (with its buttons) to the side window.
+        const away = document.createElement("div");
+        away.className = "side-away";
+        away.innerHTML = 'This page is open in the side window. <button type="button">Bring it back</button>';
+        main.parentNode.insertBefore(away, main);
+        doc.body.appendChild(main);
+
+        // Copy buttons write through the window that was clicked.
+        Object.defineProperty(navigator, "clipboard", { configurable: true, get: function () { return pip.navigator.clipboard; } });
+
+        // A link opens in the main window; the side window closes.
+        doc.addEventListener("click", function (e) {
+          const a = e.target.closest("a[href]");
+          if (!a || a.target === "_blank" || a.getAttribute("href").indexOf("#") === 0) return;
+          e.preventDefault();
+          location.href = a.href;
+          pip.close();
+        });
+        away.querySelector("button").addEventListener("click", function () { pip.close(); });
+        pip.addEventListener("pagehide", function () {
+          delete navigator.clipboard;
+          away.replaceWith(main);
+        });
+        return;
+      } catch (err) { /* not allowed here: fall back to an ordinary window */ }
+    }
+
+    const left = (scr.availLeft || 0) + scr.availWidth - w;
+    const top = scr.availTop || 0;
+    window.open(location.href, "course-side-window", "popup,left=" + left + ",top=" + top + ",width=" + w + ",height=" + h);
+  });
 });
 </script>
 
