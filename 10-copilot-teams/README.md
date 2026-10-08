@@ -170,7 +170,3 @@ You run the launch meeting for your AI Usage Guide. Before the meeting you get C
 - Ask Copilot "What questions have not been answered yet?" near the end of the meeting, while people are still there to answer them.
 - Use **Only during the meeting** for sensitive discussions, so no transcript is kept.
 - Copilot in a chat only reads that chat. To pull information from across your emails, files and meetings, use Copilot Chat with Work IQ on (Topic 03).
-
----
-
-*Back to: [09 — Copilot in Excel](../09-copilot-excel/) | Next: [11 — Copilot Studio Intro](../11-copilot-studio-intro/)*

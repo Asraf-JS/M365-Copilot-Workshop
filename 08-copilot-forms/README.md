@@ -132,7 +132,3 @@ To find it later:
 - For a knowledge quiz, set the correct answers after generating. Copilot generates the questions and options but does not always mark the correct answer.
 - Use the QR code option when presenting live so participants can respond on their phones immediately after the session.
 - The Excel export updates automatically as new responses come in. You do not need to re-export every time.
-
----
-
-*Back to: [07 — Copilot in PowerPoint](../07-copilot-powerpoint/) | Next: [09 — Copilot in Excel](../09-copilot-excel/)*

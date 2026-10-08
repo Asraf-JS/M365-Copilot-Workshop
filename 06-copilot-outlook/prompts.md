@@ -232,7 +232,3 @@ next steps.
 ```
 
 This is the meeting you run in Topic 10 (Copilot in Teams).
-
----
-
-*Back to: [05 — Copilot in Word](../05-copilot-word/) | Next: [07 — Copilot in PowerPoint](../07-copilot-powerpoint/)*

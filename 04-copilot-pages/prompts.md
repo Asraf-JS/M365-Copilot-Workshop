@@ -290,7 +290,3 @@ Once you are satisfied with the draft:
 3. Choose **Document** (Word)
 
 You will use this Word document in Topic 05 to reformat it as a formal management proposal.
-
----
-
-*Back to: [03 — Copilot Chat](../03-copilot-chat/) | Next: [05 — Copilot in Word](../05-copilot-word/)*

@@ -714,5 +714,68 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<!-- Previous / next chapter links for course sites. Paste this whole block into
+     _layouts/default.html, just before </body>. It reads the chapter list from the
+     sidebar (.sidebar-nav a.nav-item), so it needs no per-course setup, and it still
+     works when the sidebar is hidden on narrow or split-screen windows. -->
+<style>
+.page-nav{
+  display:flex;justify-content:space-between;gap:16px;
+  margin-top:48px;padding-top:20px;border-top:1px solid var(--border);
+}
+.page-nav a{
+  flex:1 1 0;max-width:48%;
+  display:block;padding:12px 16px;
+  border:1px solid var(--border);border-radius:8px;
+  font-size:14px;line-height:1.4;color:var(--text-dark);text-decoration:none;
+  transition:border-color .15s,background .15s;
+}
+.page-nav a:hover{border-color:var(--teal);background:var(--teal-light);text-decoration:none;}
+.page-nav a.next{margin-left:auto;text-align:right;}
+.page-nav .page-nav-label{color:var(--text-muted);}
+.page-nav .page-nav-topic{font-weight:600;color:var(--teal);}
+@media(max-width:600px){
+  .page-nav{flex-direction:column;}
+  .page-nav a,.page-nav a.next{max-width:100%;margin-left:0;}
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const main = document.querySelector(".main-inner");
+  const items = Array.from(document.querySelectorAll(".sidebar-nav a.nav-item"));
+  if (!main || !items.length) return;
+
+  const here = location.pathname;
+  const path = function (a) { return new URL(a.href, location.href).pathname; };
+  const name = function (a) {
+    const n = a.querySelector(".nav-name");
+    return (n ? n.textContent : a.textContent).trim();
+  };
+  // The current chapter is the sidebar link whose address starts this page's address.
+  let current = -1;
+  items.forEach(function (a, i) { if (here.indexOf(path(a)) === 0) current = i; });
+
+  const prev = current > 0 ? items[current - 1] : null;
+  const next = current < 0 ? items[0] : items[current + 1] || null;
+  if (!prev && !next) return;
+
+  const nav = document.createElement("nav");
+  nav.className = "page-nav";
+  nav.setAttribute("aria-label", "Chapter navigation");
+  function link(a, cls, label, topic) {
+    const el = document.createElement("a");
+    el.className = cls;
+    el.href = a.href;
+    el.innerHTML = '<span class="page-nav-label"></span><span class="page-nav-topic"></span>';
+    el.querySelector(".page-nav-label").textContent = label;
+    el.querySelector(".page-nav-topic").textContent = topic;
+    nav.appendChild(el);
+  }
+  if (prev) link(prev, "prev", "← Previous chapter: ", name(prev));
+  if (next) link(next, "next", current < 0 ? "Start with: " : "Next chapter: ", name(next) + " →");
+  main.appendChild(nav);
+});
+</script>
+
 </body>
 </html>

@@ -212,7 +212,3 @@ for a response, and who to contact with questions.
 ```
 
 Save this output. You will use it in Topic 06.
-
----
-
-*Back to: [04 — Copilot Pages](../04-copilot-pages/) | Next: [06 — Copilot in Outlook](../06-copilot-outlook/)*

@@ -275,7 +275,3 @@ each rule comes from.
 ```
 
 > **Tip:** come back to this notebook in Topics 04 and 05. Because the references stay attached, you can ask Copilot about your research at any point without re-uploading anything.
-
----
-
-*Back to: [02 — Prompt Engineering](../02-prompt-engineering/) | Next: [04 — Copilot Pages](../04-copilot-pages/)*

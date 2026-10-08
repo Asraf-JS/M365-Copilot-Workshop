@@ -295,7 +295,3 @@ Topic 04 covers Copilot Pages in detail. The research you build here is the raw 
 - Save prompts that work well using the bookmark icon so you can reuse them in future sessions.
 - Use the **Edit** button on your prompts to refine and resubmit without retyping from scratch.
 - When you have enough research, use the consolidation prompt in [prompts.md](./prompts.md) to turn your notes into a structured outline before moving to Pages.
-
----
-
-*Back to: [02 — Prompt Engineering](../02-prompt-engineering/) | Next: [04 — Copilot Pages](../04-copilot-pages/)*

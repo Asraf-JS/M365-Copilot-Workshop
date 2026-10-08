@@ -112,7 +112,3 @@ This is the target output for Exercise 1. Your dashboard may look slightly diffe
 - For complex analysis tasks, switch to **Claude Opus** for more thorough reasoning.
 - For Python exercises, ask for Python explicitly in your prompt (for example, "Use Python to..."). There is no separate Python Tool toggle in Sources any more.
 - Save your workbook regularly. Copilot edits cannot always be undone with Ctrl+Z.
-
----
-
-*Back to: [08 — Copilot in Forms](../08-copilot-forms/) | Next: [10 — Copilot in Teams](../10-copilot-teams/)*

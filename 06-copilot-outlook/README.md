@@ -158,7 +158,3 @@ You will send your AI Usage Guide proposal to your supervisor for approval, then
 - Use **Coaching by Copilot** before sending any important email, especially one going to senior management. It flags tone issues you might not notice yourself.
 - Remove the open email from the Copilot prompt box when you want to search your whole mailbox.
 - Turn a one-off tidy-up into a rule once you find yourself asking for it twice.
-
----
-
-*Back to: [05 — Copilot in Word](../05-copilot-word/) | Next: [07 — Copilot in PowerPoint](../07-copilot-powerpoint/)*

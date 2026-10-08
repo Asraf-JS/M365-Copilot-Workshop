@@ -177,7 +177,3 @@ The prompt in Part 5 walks you through this with a step-by-step workflow: you de
 - Speaker notes are often the most valuable output. Even if you adjust the slides manually, keep the notes as a script reference when presenting.
 - Use **Design Suggestions** (also in the ribbon under Copilot) alongside the Copilot panel to improve visual layout after the content is generated.
 - If you are not happy with the first result, you can ask Copilot to regenerate with different instructions rather than starting over.
-
----
-
-*Back to: [06 — Copilot in Outlook](../06-copilot-outlook/) | Next: [08 — Copilot in Forms](../08-copilot-forms/)*
