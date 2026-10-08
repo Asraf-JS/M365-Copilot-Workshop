@@ -603,5 +603,88 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<!-- Image lightbox for course sites. Paste this whole block into _layouts/default.html,
+     just before </body>. Click (or Enter on) any screenshot in .main-inner to open it
+     full size with its alt text as the caption; click anywhere, press Esc or use the
+     close button to go back. No libraries, works in light and dark mode. -->
+<style>
+.main-inner img.zoomable{cursor:zoom-in;}
+.main-inner img.zoomable:focus-visible{outline:3px solid #0078D4;outline-offset:3px;}
+.lightbox{
+  position:fixed;inset:0;z-index:1000;
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  padding:56px 24px 24px;
+  background:rgba(0,0,0,.86);
+  cursor:zoom-out;
+}
+.lightbox.open{display:flex;}
+.lightbox img{
+  max-width:100%;max-height:calc(100vh - 140px);
+  border-radius:6px;background:#fff;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
+}
+.lightbox-caption{
+  color:#fff;font-size:14px;line-height:1.5;text-align:center;
+  max-width:900px;margin-top:14px;
+}
+.lightbox-close{
+  position:absolute;top:14px;right:18px;
+  width:40px;height:40px;border:none;border-radius:50%;
+  background:rgba(255,255,255,.14);color:#fff;
+  font-size:26px;line-height:40px;cursor:pointer;
+}
+.lightbox-close:hover,.lightbox-close:focus-visible{background:rgba(255,255,255,.28);outline:none;}
+body.lightbox-lock{overflow:hidden;}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-modal", "true");
+  box.setAttribute("aria-label", "Enlarged image");
+  box.innerHTML = '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
+                  '<img alt=""><div class="lightbox-caption"></div>';
+  document.body.appendChild(box);
+  const big = box.querySelector("img");
+  const caption = box.querySelector(".lightbox-caption");
+  const closeBtn = box.querySelector(".lightbox-close");
+  let opener = null;
+
+  function open(img) {
+    opener = img;
+    big.src = img.currentSrc || img.src;
+    big.alt = img.alt;
+    caption.textContent = img.alt;
+    box.classList.add("open");
+    document.body.classList.add("lightbox-lock");
+    closeBtn.focus();
+  }
+  function close() {
+    box.classList.remove("open");
+    document.body.classList.remove("lightbox-lock");
+    big.removeAttribute("src");
+    if (opener) opener.focus();
+  }
+
+  // Screenshots only: images that are links (badges, logos) keep their link.
+  document.querySelectorAll(".main-inner img").forEach(function (img) {
+    if (img.closest("a")) return;
+    img.classList.add("zoomable");
+    img.tabIndex = 0;
+    img.title = "Click to enlarge";
+    img.addEventListener("click", function () { open(img); });
+    img.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); }
+    });
+  });
+
+  box.addEventListener("click", close);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && box.classList.contains("open")) close();
+  });
+});
+</script>
+
 </body>
 </html>
