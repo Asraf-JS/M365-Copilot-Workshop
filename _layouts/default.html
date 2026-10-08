@@ -194,6 +194,21 @@ body{
 
 .sidebar-footer a:hover{color:rgba(255,255,255,.8);}
 
+/* Teal cloud: a light sidebar with a pale teal tint, in light mode only.
+   Dark mode keeps the dark sidebar above. */
+@media (prefers-color-scheme: light){
+  .sidebar{background:#F1F7F8;border:1px solid #DCEAEC;box-shadow:0 10px 30px rgba(30,39,97,.08);}
+  .sidebar::-webkit-scrollbar-thumb{background:rgba(30,39,97,.15);}
+  .sidebar-header,.sidebar-footer{border-color:#DCE9EC;}
+  .sidebar-logo-name{color:#1E2761;}
+  .sidebar-subtitle,.nav-section-label,.nav-num{color:#76869A;}
+  .nav-name{color:#34405C;}
+  .nav-item:hover{background:#E3F0F2;}
+  .nav-item.active{background:#D6ECEE;}
+  .nav-item.active .nav-num,.nav-item.active .nav-name{color:#027080;}
+  .sidebar-footer a{color:#76869A;}
+  .sidebar-footer a:hover{color:#027080;}
+}
 .main-wrap{
   margin-left:calc(max(24px, calc((100vw - var(--layout-w)) / 2)) + var(--sidebar-w) + var(--layout-gap));
   flex:1;
