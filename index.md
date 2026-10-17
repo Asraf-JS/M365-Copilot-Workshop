@@ -24,7 +24,7 @@ Each topic has a **Notes** page covering the concepts and a **Prompts** page wit
 
 To copy a prompt: open the prompts file, find the prompt you want, and click the copy icon on the top right of the code block.
 
-To download everything: click the green **Code** button on the main repo page, then **Download ZIP**.
+> **Download:** **[all workshop files (ZIP)](https://github.com/Asraf-JS/M365-Copilot-Workshop/archive/refs/heads/main.zip)**. Save the ZIP, then right-click it and choose **Extract All** before you open any file.
 
 ---
 

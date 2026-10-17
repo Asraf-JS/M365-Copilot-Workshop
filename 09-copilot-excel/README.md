@@ -12,7 +12,7 @@ At the end of Topic 08 you exported your Forms responses as an Excel file saved 
 
 **If you do not have real response data:** download the sample file below and open it in Excel. It contains 100 simulated quiz responses across 8 departments with realistic Malaysian names and varied correct/incorrect answer patterns.
 
-> **Sample data:** [AI_Guideline_Survey_Responses.xlsx](./AI_Guideline_Survey_Responses.xlsx)
+> **Download:** **[AI_Guideline_Survey_Responses.xlsx](./AI_Guideline_Survey_Responses.xlsx)**, then open it in the Excel desktop app.
 
 The workbook has 3 sheets:
 - **Quiz Responses:** 100 rows of quiz answers. Green cells are correct, red cells are incorrect.
