@@ -316,6 +316,41 @@ body{
 }
 
 .main-inner blockquote strong{color:var(--teal);}
+.main-inner blockquote.dl{
+  position:relative;
+  background:var(--purple-light);
+  border:1px solid var(--purple);
+  border-left:4px solid var(--purple);
+  border-radius:8px;
+  padding:16px 18px 16px 60px;
+  margin:20px 0;
+}
+.main-inner blockquote.dl::before{
+  content:"";
+  position:absolute;
+  left:16px;
+  top:50%;
+  transform:translateY(-50%);
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:var(--purple) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11M7 10l5 5 5-5M5 20h14'/%3E%3C/svg%3E") center/18px no-repeat;
+}
+.main-inner blockquote.dl p{font-size:14.5px;line-height:1.7;}
+.main-inner blockquote.dl strong{color:var(--purple);}
+.main-inner blockquote.dl a{
+  display:inline-block;
+  background:var(--purple);
+  color:var(--bg);
+  padding:3px 12px;
+  border-radius:6px;
+  font-weight:600;
+  text-decoration:none;
+}
+.main-inner blockquote.dl a strong{color:var(--bg);}
+.main-inner blockquote.dl a:hover{opacity:.88;}
+.main-inner blockquote.dl ul{margin:8px 0 0 18px;}
+.main-inner blockquote.dl li{font-size:14px;line-height:1.7;margin:6px 0;}
 
 .main-inner table{
   width:100%;
@@ -619,7 +654,16 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <!-- Image lightbox for course sites. Paste this whole block into _layouts/default.html,
-     just before </body>. Click (or Enter on) any screenshot in .main-inner to open it
+     just before <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // A blockquote that starts with a bold "Download" label gets the download box.
+  document.querySelectorAll(".main-inner blockquote").forEach(function (q) {
+    const first = q.querySelector("p > strong:first-child");
+    if (first && /^download/i.test(first.textContent.trim())) q.classList.add("dl");
+  });
+});
+</script>
+</body>. Click (or Enter on) any screenshot in .main-inner to open it
      in its own window, sized to the image, to put beside the work or on a second
      screen. If the browser blocks pop-ups, the image enlarges in the page instead,
      with its alt text as the caption (click anywhere or press Esc to go back).

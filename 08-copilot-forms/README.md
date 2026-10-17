@@ -121,7 +121,7 @@ To find it later:
 2. Search for your form title, or open the folder shown on the Excel card
 3. Look for a file with your form title ending in `.xlsx`
 
-> **For the workshop:** If you do not have real responses yet, use the pre-populated sample file `AI_Guideline_Survey_Responses.xlsx` from the `09-copilot-excel` folder in the workshop GitHub repo. It contains 100 simulated responses across 8 departments and is ready to use in Topic 09.
+> **Download:** **[AI_Guideline_Survey_Responses.xlsx](../09-copilot-excel/AI_Guideline_Survey_Responses.xlsx)** if you do not have real responses yet. It contains 100 simulated responses across 8 departments and is ready to use in Topic 09.
 
 ---
 
