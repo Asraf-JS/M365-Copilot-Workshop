@@ -76,4 +76,4 @@ The file [Data_Privacy_AI_Acceptable_Use_Policy.pdf](./03-copilot-chat/Data_Priv
 
 ---
 
-*Last updated: May 2026 | Trainer: Asraf*
+*Last updated: May 2026 \| Trainer: Asraf*
